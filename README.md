@@ -1,8 +1,8 @@
-# MIMIKARA N3 Flashcard
+# N3 Nihongo Go
 
-Ứng dụng flashcard miễn phí học trọn 880 từ vựng Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, cụm từ có furigana, thẻ chữ Hán, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
+N3 Nihongo Go: ứng dụng flashcard miễn phí học trọn 880 từ vựng Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, cụm từ có furigana, thẻ chữ Hán, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
 
-**Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/mimikara-n3/
+**Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/n3-nihongo-go/
 
 - 880 từ vựng Mimikara N3, lặp lại ngắt quãng (Quên / Khó / Nhớ / Dễ), lịch học theo mục tiêu 14–365 ngày.
 - Thẻ cách đọc và thẻ chữ Hán, Hán Việt từng chữ, cụm từ có furigana, cặp động từ tự/tha.
