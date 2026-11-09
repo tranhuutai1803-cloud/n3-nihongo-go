@@ -1,0 +1,28 @@
+{
+ "name": "MIMIKARA N3 Flashcard",
+ "short_name": "Mimikara N3",
+ "lang": "vi",
+ "start_url": "./",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#16151a",
+ "theme_color": "#16151a",
+ "description": "Ứng dụng flashcard miễn phí học trọn 880 từ vựng Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, cụm từ có furigana, thẻ chữ Hán, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png"
+  },
+  {
+   "src": "icon.svg",
+   "sizes": "any",
+   "type": "image/svg+xml"
+  }
+ ]
+}
