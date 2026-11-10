@@ -11,4 +11,4 @@ N3 Nihongo Go: ứng dụng flashcard miễn phí học 880 từ vựng và 110 
 - Luyện đề JLPT 4 dạng, kiểm tra 100 từ, mẹo nhớ cho từ hay quên.
 - Khách học ngay, tiến độ lưu trên máy. Thành viên nhóm đăng nhập để đồng bộ giữa điện thoại và máy tính.
 
-Phiên bản 5.0 · 2026-11-09
+Phiên bản 5.1 · 2026-11-10

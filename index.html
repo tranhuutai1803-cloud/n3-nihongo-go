@@ -20,7 +20,7 @@
 <link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "N3 Nihongo Go", "alternateName": "MIMIKARA N3 Flashcard", "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "N3 Nihongo Go: ứng dụng flashcard miễn phí học 880 từ vựng và 110 mẫu ngữ pháp Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, ví dụ có furigana, thẻ chữ Hán, xem ngẫu nhiên, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "5.0", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "N3 Nihongo Go", "alternateName": "MIMIKARA N3 Flashcard", "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "N3 Nihongo Go: ứng dụng flashcard miễn phí học 880 từ vựng và 110 mẫu ngữ pháp Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, ví dụ có furigana, thẻ chữ Hán, xem ngẫu nhiên, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "5.1", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
 <script>window.MMK_SERVER = "https://script.google.com/macros/s/AKfycbxplbNcR2JKVCaU0STY8ZG1f55cYr7YzoacVLbtRZrfuSxj7m7t16ZOMFjCPZcwNleAQw/exec";</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -721,6 +721,23 @@ body.gate .bnav,body.gate #sync,body.gate #acctBtn{display:none!important}
 body.six .brand small{display:none}
 @media (max-width:1040px){.tabs.six .tab span{display:none}.tabs.six .tab{padding:9px}}
 @media (max-width:560px){.urow{grid-template-columns:auto 1fr}.uacts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}.auth-card{padding:20px 16px 14px;border-radius:18px}.auth{padding-top:14px}}
+/* ===== v5.1: collapsible changelog, register button ===== */
+.vlog{margin-top:12px;border-top:1px solid var(--line)}
+.vlog details{border-bottom:1px solid var(--line)}
+.vlog summary{display:flex;align-items:baseline;gap:10px;padding:10px 6px;cursor:pointer;list-style:none;font-size:14.5px;border-radius:8px}
+.vlog summary::-webkit-details-marker{display:none}
+.vlog summary::before{content:'';flex:none;width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(-45deg);transition:transform .15s;position:relative;top:-2px}
+.vlog details[open] summary::before{transform:rotate(45deg)}
+.vlog summary b{flex:none}
+.vlog .vs{flex:1;min-width:0;color:var(--ink-2)}
+.vlog .vd{flex:none;font-size:12.5px;color:var(--muted)}
+.vlog summary:hover{background:var(--surface-2)}
+.vlog summary:focus-visible{outline:none;box-shadow:var(--ring)}
+.vlog .clog{margin:0 0 10px 26px}
+.acctbtn.reg{background:transparent;color:var(--pri-ink);border-color:color-mix(in srgb,var(--pri) 55%,var(--line-2))}
+.acctbtn.reg:hover{background:var(--pri-soft)}
+@media (max-width:420px){.tright{gap:6px}.acctbtn.reg{padding:6px 10px}.acctbtn:not(.in):not(.reg) .ic{display:none}.acctbtn:not(.in){padding:6px 11px}}
+.mrates .rate small{font-size:12px}
 /* ===== v5: library (bộ thẻ), grammar cards, random view ===== */
 .ic.fill{fill:currentColor}
 .segtabs{display:flex;gap:4px;background:var(--surface-3);padding:4px;border-radius:13px;margin:0 0 16px;width:max-content;max-width:100%;overflow-x:auto}
@@ -889,10 +906,10 @@ body.six .brand small{display:none}
     <div class="wrap top-in">
       <button class="brand" data-act="go" data-view="today" aria-label="N3 Nihongo Go — về trang Hôm nay">
         <span class="seal" aria-hidden="true">N3</span>
-        <span><b>N3 Nihongo Go</b><small>Flashcard · lặp lại ngắt quãng <em class="ver">v5.0</em></small></span>
+        <span><b>N3 Nihongo Go</b><small>Flashcard · lặp lại ngắt quãng <em class="ver">v5.1</em></small></span>
       </button>
       <nav class="tabs" id="tabs" aria-label="Điều hướng"></nav>
-      <div class="tright"><button class="acctbtn" id="acctBtn" data-act="acct" hidden></button><button class="sync" id="sync" data-act="go" data-view="settings" data-s="connecting" aria-label="Trạng thái lưu dữ liệu"></button></div>
+      <div class="tright"><button class="acctbtn reg" id="regBtn" data-act="register" hidden>Đăng ký</button><button class="acctbtn" id="acctBtn" data-act="acct" hidden></button><button class="sync" id="sync" data-act="go" data-view="settings" data-s="connecting" aria-label="Trạng thái lưu dữ liệu"></button></div>
     </div>
   </header>
   <main id="main" class="wrap"></main>
@@ -910,49 +927,45 @@ body.six .brand small{display:none}
 (() => {
 'use strict';
 /* ================= App identity ================= */
-const APP_VER = '5.0', BUILD = '2026-11-09', FILE_NAME = 'MIMIKARA_N3_Flashcard_v5_2026-11-09';
+const APP_VER = '5.1', BUILD = '2026-11-10', FILE_NAME = 'MIMIKARA_N3_Flashcard_v5_2026-11-10';
+const WEB_URL = 'https:\/\/tranhuutai1803-cloud.github.io\/n3-nihongo-go\/';   // public site of the group (accounts live there)
 const APP_NAME = 'MIMIKARA N3 Flashcard';
 const SCHEMA = 1, LS_KEY = 'mimikara-n3-flashcard', LS_UI = 'mimikara-n3-flashcard-ui';
 const CHANGELOG = [
-  {v:'5.0', d:'09/11/2026', t:[
-    'Ngữ pháp Mimikara N3: 110 mẫu theo 10 Unit của sách (cấp độ ★ → ★★★) và phụ lục kính ngữ (14 động từ đặc biệt + 6 mẫu). Mỗi thẻ có cách nối (接続), ý nghĩa (意味), câu ví dụ có furigana kèm bản dịch, lưu ý dễ nhầm; nghe phát âm từng câu.',
-    'Thư viện bộ thẻ theo giáo trình: Mimikara N3 Ngữ pháp, Mimikara N3 Từ vựng (24 nhóm), Của tôi (từ tự thêm, thẻ đánh dấu, thẻ đã bỏ qua); chỗ dành sẵn cho Shinkanzen.',
-    'Trang bộ thẻ: Tổng số / Đã học / Đã nhớ / Cần ôn tập, Luyện tập flashcards (ôn thẻ đến hạn + thẻ mới; số thẻ mới mỗi lần đổi trong Cài đặt), Dừng học bộ này, danh sách thẻ.',
-    'Xem ngẫu nhiên: lật nhanh cả bộ theo thứ tự ngẫu nhiên, đổi chiều Nhật ↔ Việt, tự phát, đánh dấu Biết / Chưa biết, gắn sao; phím tắt Space, ← →, ↑ ↓ (hoặc A D Z X), C, P; vuốt trái/phải trên điện thoại. Không làm thay đổi lịch ôn.',
-    'Luyện tập nhiều bộ trong một phiên; nút “Đã biết — bỏ khỏi ôn tập” (phím 5) cho thẻ đã thuộc chắc; thẻ ngữ pháp đến hạn được ôn cùng “Học hôm nay”; lịch hoạt động 20 tuần trên trang Hôm nay.'
+  {v:'5.1', d:'10/11/2026', s:'Đăng ký tài khoản như bản 4 · Luyện tập nhiều bộ chỉ còn Nhớ / Quên', t:[
+    'Giữ đăng nhập bằng tên đăng nhập + mật khẩu. Hộp đăng nhập luôn có thẻ Đăng ký (cần Mã lớp như bản 4); thêm nút Đăng ký ở đầu trang và trong Cài đặt. Bản claude.ai: nút Đăng nhập mở trang web của nhóm.',
+    'Luyện tập nhiều bộ chỉ còn 2 nút: 1 Nhớ — thẻ xong, bỏ khỏi lượt ôn này; 2 Quên — thẻ quay lại, xen ngẫu nhiên giữa các thẻ chưa ôn.',
+    'Lịch sử phiên bản thu gọn: mỗi bản một dòng, bấm vào để xem chi tiết.'
   ]},
-  {v:'4.1', d:'08/11/2026', t:[
-    'Có trang web công khai (GitHub Pages): ai cũng mở được, tìm thấy trên Google. Khách học ngay trên máy; thành viên nhóm bấm Đăng nhập là vào thẳng máy chủ của nhóm, không cần dán link.',
-    'Sửa lỗi trang trống khi chạy trên Google Apps Script (Google tự bỏ chú thích trong mã).'
+  {v:'5.0', d:'09/11/2026', s:'Ngữ pháp Mimikara N3 · Thư viện bộ thẻ · Xem ngẫu nhiên', t:[
+    '110 mẫu ngữ pháp theo 10 Unit + phụ lục kính ngữ: cách nối, ý nghĩa, ví dụ có furigana, lưu ý.',
+    'Thư viện bộ thẻ theo giáo trình; trang bộ thẻ có Tổng số / Đã học / Đã nhớ / Cần ôn tập, Luyện tập flashcards, Dừng học bộ này.',
+    'Xem ngẫu nhiên: phím tắt, tự phát, đổi chiều Nhật ↔ Việt, đánh dấu sao.',
+    'Nút “Đã biết — bỏ khỏi ôn tập” (phím 5), lịch hoạt động 20 tuần.'
   ]},
-  {v:'4.0', d:'07/11/2026', t:[
-    'Bỏ đăng nhập Google. Thay bằng tài khoản học viên riêng: tên đăng nhập + mật khẩu, mỗi người một tiến độ, học trên điện thoại hay laptop đều đồng bộ.',
-    'Máy chủ của nhóm chạy trên Google Sheet của quản trị viên (cài một lần); học viên chỉ mở link, không cần tài khoản Google. Mật khẩu được băm ngay trên trình duyệt, không gửi và không lưu dạng chữ.',
-    'Trang Quản trị: thêm học viên với mật khẩu tạm, đặt lại mật khẩu, khóa/mở khóa, xóa; mã lớp để học viên tự đăng ký; xem tiến độ từng người (từ đã học, đã thuộc, chuỗi ngày, luyện đề, mục tiêu).',
-    'Đổi mật khẩu, đăng xuất (xóa tiến độ của mình khỏi máy dùng chung); nhiều người dùng chung một máy, mỗi người đăng nhập tài khoản riêng.',
-    'Bản offline đăng nhập được vào máy chủ của nhóm (nhập link máy chủ một lần) và mang tiến độ đang có trên máy vào tài khoản; nút “Chép mã tiến độ” trong Cài đặt để chuyển tiến độ giữa các bản.'
+  {v:'4.1', d:'08/11/2026', s:'Trang web công khai N3 Nihongo Go', t:[
+    'Trang web trên GitHub Pages: khách học ngay trên máy, thành viên nhóm đăng nhập là vào máy chủ của nhóm.',
+    'Sửa lỗi trang trống khi chạy trên Google Apps Script.'
   ]},
-  {v:'3.0', d:'07/11/2026', t:[
-    'Thẻ đọc chữ Hán (漢→あ): từ có chữ Hán, sau khi nhớ cách đọc được 3 ngày, có thêm thẻ ngược — nhìn chữ Hán, gõ cách đọc bằng romaji hoặc kana; ứng dụng chấm, tô chỗ sai và gọi tên lỗi (trường âm, âm ngắt っ, âm đục, âm ghép).',
-    'Luyện đề JLPT N3: 20 câu trộn 4 dạng như đề thi — đọc chữ Hán (漢字読み), chọn chữ Hán (表記), điền từ (文脈規定), chọn nghĩa; đáp án nhiễu dựng từ lỗi hay gặp, có giải thích; từ làm sai tự quay lại lịch học.',
-    'Mặt sau thẻ: Hán Việt từng chữ kèm các từ khác dùng cùng chữ, từ đồng âm, nút nghe cho từng cụm từ.',
-    'Từ hay quên: thẻ quên từ 3 lần được đánh dấu và có mục ôn riêng; tự viết mẹo nhớ cho từng từ (lưu và đồng bộ cùng tiến độ).',
-    'Xáo trộn thứ tự thẻ (bật/tắt trong Cài đặt, nút trộn lại ngay trong phiên học) và chế độ nghe: mặt trước chỉ phát âm.'
+  {v:'4.0', d:'07/11/2026', s:'Tài khoản học viên: tên đăng nhập + mật khẩu', t:[
+    'Bỏ đăng nhập Google; mỗi người một tài khoản và tiến độ riêng, đồng bộ trên mọi máy.',
+    'Máy chủ của nhóm chạy trên Google Sheet của quản trị viên; mật khẩu được băm ngay trên trình duyệt.',
+    'Trang Quản trị: tạo học viên, đặt lại mật khẩu, khóa / xóa, mã lớp để tự đăng ký, xem tiến độ.',
+    'Đổi mật khẩu, đăng xuất; bản offline đăng nhập được và mang tiến độ trên máy vào tài khoản.'
   ]},
-  {v:'2.0', d:'07/11/2026', t:[
-    'Đặt mục tiêu học xong bộ từ trong 20, 30, 45, 60, 90, 120, 150 ngày, 6 tháng hoặc số ngày tùy chọn (14–365); ứng dụng tự chia số từ mới mỗi ngày, giữ theo chủ đề Mimikara.',
-    'Đổi mục tiêu giữa chừng: xếp lại lịch từ hôm nay cho các từ chưa học, từ đã học vẫn ôn như cũ.',
-    'Bảng Mục tiêu trên trang Hôm nay: đã học bao nhiêu, kế hoạch đến hôm nay, đang chậm hay vượt bao nhiêu từ.',
-    'Lịch học xem theo trang 5 tuần cho mục tiêu dài.',
-    'Bản Google: mở bằng tài khoản Google, tiến độ lưu trong tài khoản Google, dùng chung trên laptop và điện thoại.',
-    'Cài đặt hiển thị tài khoản đang lưu tiến độ.'
+  {v:'3.0', d:'07/11/2026', s:'Thẻ đọc chữ Hán · Luyện đề JLPT · Mẹo nhớ', t:[
+    'Thẻ đọc chữ Hán (漢→あ): gõ cách đọc, ứng dụng chấm và gọi tên lỗi.',
+    'Luyện đề JLPT N3: 20 câu, 4 dạng, có giải thích.',
+    'Hán Việt từng chữ, từ đồng âm, nghe từng cụm từ; từ hay quên + mẹo nhớ; xáo trộn thẻ, chế độ nghe.'
   ]},
-  {v:'1.0', d:'05/11/2026', t:[
-    '880 từ Mimikara N3 chia theo lịch 30 ngày (bắt đầu 01/11/2026), đúng như lịch học PDF v3.',
-    'Thẻ 2 mặt: mặt trước là cách đọc; mặt sau gồm từ vựng, từ loại & trợ từ, Hán Việt, nghĩa, cụm từ thường dùng (có furigana) và cặp tự/tha động từ.',
-    'Lặp lại ngắt quãng (SRS) với 4 mức Quên / Khó / Nhớ / Dễ, có hoàn tác.',
-    'Ngày ôn tuần, ngày luyện động từ, bài kiểm tra 100 từ.',
-    'Thêm từ mới (từng từ hoặc dán nhiều dòng từ Excel), sao lưu & khôi phục dữ liệu.'
+  {v:'2.0', d:'07/11/2026', s:'Chọn mục tiêu 14–365 ngày · Học bù', t:[
+    'Chọn thời gian học xong (20 ngày … 6 tháng hoặc tùy chọn), tự chia từ mới mỗi ngày; đổi mục tiêu thì xếp lại lịch từ hôm nay.',
+    'Bảng Mục tiêu trên trang Hôm nay, lịch học xem theo trang.'
+  ]},
+  {v:'1.0', d:'05/11/2026', s:'880 từ Mimikara N3 · Lịch 30 ngày · Lặp lại ngắt quãng', t:[
+    'Thẻ 2 mặt có cách đọc, Hán Việt, nghĩa, cụm từ có furigana, cặp tự/tha.',
+    'Lặp lại ngắt quãng Quên / Khó / Nhớ / Dễ, có hoàn tác; ôn tuần, kiểm tra 100 từ.',
+    'Thêm từ của tôi, sao lưu & khôi phục.'
   ]}
 ];
 const RAW = JSON.parse(document.getElementById('fc-data').textContent);
@@ -1114,7 +1127,7 @@ function applyCustom() {
 }
 const allIds = () => BASE_IDS.concat(CUSTOM_IDS);
 const getCard = id => { const a = S.cards[id]; return a ? {s:a[0], d:a[1], i:a[2], e:a[3], p:a[4], r:a[5], l:a[6], t:a[7], f:a[8]} : null; };
-const putCard = (id, c) => { S.cards[id] = [c.s, Math.round(c.d * 100) / 100, c.i, c.e, c.p, c.r, c.l, Math.round(c.t), c.f]; };
+const putCard = (id, c) => { S.cards[id] = [c.s, Math.round(c.d * 100) / 100, c.i, c.e, c.p, c.r, c.l, Math.max(Math.round(c.t), resetCut(id) + 1), c.f]; };   // answers made right after Dừng học bộ này still count as newer than the reset
 function stOf(id) { const a = S.cards[id]; if (!a || a[0] === 0) return 'new'; if (a[0] === 1 || a[0] === 3) return 'learn'; return a[2] >= MATURE ? 'mature' : 'review'; }
 function statsOf(ids) { const o = {total:ids.length, new:0, learn:0, review:0, mature:0}; for (const id of ids) o[stOf(id)]++; o.seen = o.total - o.new; return o; }
 
@@ -2026,10 +2039,10 @@ function accountHtml() {
       'Tiến độ lưu trên máy chủ của nhóm và tự đồng bộ trên mọi thiết bị đăng nhập tài khoản này. Dùng chung máy với người khác thì nhớ đăng xuất sau khi học.',
       `<div class="row" style="margin-top:10px"><button class="btn btn-sec btn-sm" data-act="pwopen">${ic('key')} Đổi mật khẩu</button>${u.role === 'admin' ? `<button class="btn btn-sec btn-sm" data-act="go" data-view="admin">${ic('users')} Quản trị học viên</button>` : ''}<button class="btn btn-ghost btn-sm" data-act="logout">${ic('logout')} Đăng xuất</button></div>${pwBoxHtml()}`);
   }
-  if (m === 'claude') { const who = esc(ACCOUNT.name || ''), mail = esc(ACCOUNT.email || ''); return box(uic, `Đã đăng nhập claude.ai${who || mail ? `: <b>${who}${who && mail ? ' · ' : ''}${mail}</b>` : ''}`, 'Đây là bản cá nhân trên claude.ai: tiến độ tự lưu vào tài khoản này. Muốn chuyển sang tài khoản học viên của nhóm, bấm “Chép mã tiến độ” bên dưới rồi trong ứng dụng của nhóm vào Cài đặt → Dán mã tiến độ.'); }
-  if (IN_CLAUDE) return box(uic, 'Chưa bật lưu vào tài khoản', 'Ứng dụng chưa được cho phép lưu dữ liệu nên tiến độ chỉ nằm trên trình duyệt này.', `<div class="row" style="margin-top:10px"><button class="btn btn-pri btn-sm" data-act="acct">${ic('login')} Bật lưu tài khoản</button></div>`);
+  if (m === 'claude') { const who = esc(ACCOUNT.name || ''), mail = esc(ACCOUNT.email || ''); return box(uic, `Đã đăng nhập claude.ai${who || mail ? `: <b>${who}${who && mail ? ' · ' : ''}${mail}</b>` : ''}`, 'Đây là bản cá nhân trên claude.ai: tiến độ tự lưu vào tài khoản này. Muốn chuyển sang tài khoản học viên của nhóm, bấm “Chép mã tiến độ” bên dưới rồi trong ứng dụng của nhóm vào Cài đặt → Dán mã tiến độ.', WEB_URL ? `<div class="row" style="margin-top:10px">${webBtn()}</div>` : ''); }
+  if (IN_CLAUDE) return box(uic, 'Chưa đăng nhập — tiến độ chỉ nằm trên trình duyệt này', 'Tài khoản học viên (tên đăng nhập + mật khẩu) dùng trên trang web của nhóm. Bản claude.ai này có thể lưu tiến độ vào tài khoản claude.ai của bạn.', `<div class="row" style="margin-top:10px">${webBtn('btn-pri btn-sm')}<button class="btn btn-sec btn-sm" data-act="cloudon">${ic('cloud')} Lưu vào tài khoản claude.ai</button></div>`);
   if (GAS) return box(uic, 'Chưa đăng nhập', 'Hãy đăng nhập tài khoản học viên.', '');
-  return box(uic, 'Chưa đăng nhập — tiến độ chỉ lưu trên máy này', 'Đăng nhập tài khoản học viên (tên đăng nhập + mật khẩu của nhóm) để lưu tiến độ lên máy chủ và học tiếp trên máy khác.', `<div class="row" style="margin-top:10px"><button class="btn btn-pri" data-act="acct">${ic('login')} Đăng nhập</button></div>`) + serverGuide();
+  return box(uic, 'Chưa đăng nhập — tiến độ chỉ lưu trên máy này', 'Đăng nhập tài khoản học viên (tên đăng nhập + mật khẩu của nhóm) để lưu tiến độ lên máy chủ và học tiếp trên máy khác. Chưa có tài khoản thì bấm Đăng ký (cần Mã lớp do quản trị viên gửi).', `<div class="row" style="margin-top:10px"><button class="btn btn-pri" data-act="acct">${ic('login')} Đăng nhập</button><button class="btn btn-sec" data-act="register">${ic('user')} Đăng ký tài khoản</button></div>`) + serverGuide();
 }
 function go(view) { if (VW.open) vwClose(true); if (!okView(view)) view = 'today'; UI.view = view; saveUI(); render(); window.scrollTo(0, 0); }
 function render() {
@@ -2498,13 +2511,14 @@ function viewSettings() {
       <p>Trong phiên học: nút ${ic('shuffle')} trộn lại các thẻ còn lại; nút ${ic('ear')} bật chế độ nghe (mặt trước chỉ phát âm).</p>
       <p><b>Thư viện</b>: bộ thẻ theo giáo trình — Mimikara N3 Ngữ pháp (10 Unit + kính ngữ) và Từ vựng (24 nhóm). Mở một bộ để <b>Luyện tập flashcards</b> (ôn thẻ đến hạn + tối đa ${deckNewLimit()} thẻ mới mỗi lần) hoặc <b>Xem ngẫu nhiên</b> cả bộ (không ảnh hưởng lịch ôn). <b>Dừng học bộ này</b> xóa tiến độ của riêng bộ đó.</p>
       <p><b>Thẻ ngữ pháp</b>: mặt trước là mẫu câu và một câu ví dụ — tự nhớ ý nghĩa và cách nối rồi lật để xem cách nối (接続), ý nghĩa (意味), các câu ví dụ có furigana và lưu ý. Thẻ ngữ pháp đến hạn được ôn chung trong “Học hôm nay”.</p>
+      <p><b>Luyện tập nhiều bộ</b>: gộp thẻ cần ôn của các bộ đã chọn và trộn ngẫu nhiên; lật thẻ rồi bấm <b>1 Nhớ</b> (thẻ xong, bỏ khỏi lượt này) hoặc <b>2 Quên</b> (thẻ quay lại, xen ngẫu nhiên giữa các thẻ chưa ôn). Lịch ôn của thẻ được cập nhật theo câu trả lời.</p>
       <p><b>Đã biết — bỏ khỏi ôn tập</b> (phím 5): thẻ bạn đã chắc chắn sẽ không xuất hiện trong lịch ôn nữa; xem lại hoặc đưa về lịch ôn trong Thư viện › Của tôi › Thẻ đã bỏ qua.</p>
       <p><b>Tài khoản học viên</b>: mỗi người đăng nhập bằng tên đăng nhập + mật khẩu của mình nên tiến độ không lẫn vào nhau; học trên máy nào cũng tiếp tục được. Dùng chung máy thì nhớ <b>Đăng xuất</b> sau khi học.</p>
-      <div class="keys"><kbd>Space</kbd><span>Lật thẻ (hoặc chạm vào thẻ)</span><kbd>1–4</kbd><span>Quên · Khó · Nhớ · Dễ · chọn đáp án khi luyện đề</span><kbd>Enter</kbd><span>Kiểm tra cách đọc đã gõ · câu tiếp khi luyện đề</span><kbd>5</kbd><span>Đã biết — bỏ thẻ khỏi lịch ôn</span><kbd>Z</kbd><span>Hoàn tác thẻ vừa chấm</span><kbd>Esc</kbd><span>Thoát phiên học</span><kbd>← →</kbd><span>Xem ngẫu nhiên: thẻ trước / sau (hoặc A / D) · <kbd>↑</kbd> <kbd>↓</kbd> biết / chưa biết (Z / X) · <kbd>C</kbd> đánh dấu · <kbd>P</kbd> tự phát</span></div>
+      <div class="keys"><kbd>Space</kbd><span>Lật thẻ (hoặc chạm vào thẻ)</span><kbd>1–4</kbd><span>Quên · Khó · Nhớ · Dễ · chọn đáp án khi luyện đề</span><kbd>1 · 2</kbd><span>Luyện tập nhiều bộ: Nhớ · Quên</span><kbd>Enter</kbd><span>Kiểm tra cách đọc đã gõ · câu tiếp khi luyện đề</span><kbd>5</kbd><span>Đã biết — bỏ thẻ khỏi lịch ôn</span><kbd>Z</kbd><span>Hoàn tác thẻ vừa chấm</span><kbd>Esc</kbd><span>Thoát phiên học</span><kbd>← →</kbd><span>Xem ngẫu nhiên: thẻ trước / sau (hoặc A / D) · <kbd>↑</kbd> <kbd>↓</kbd> biết / chưa biết (Z / X) · <kbd>C</kbd> đánh dấu · <kbd>P</kbd> tự phát</span></div>
     </div></section>
     <section class="panel"><h2>${ic('layers')} Phiên bản</h2>
       <div class="vbox"><span class="vbig">v${APP_VER}</span><span class="small muted">${esc(FILE_NAME)}<br>Cập nhật ${BUILD.split('-').reverse().join('/')}</span></div>
-      ${CHANGELOG.map(c => `<p class="small" style="margin:12px 0 4px"><b>v${c.v}</b> · ${c.d}</p><ul class="clog">${c.t.map(x => `<li>${esc(x)}</li>`).join('')}</ul>`).join('')}
+      <div class="vlog">${CHANGELOG.map(c => `<details><summary><b>v${c.v}</b><span class="vs">${esc(c.s)}</span><span class="vd">${c.d}</span></summary><ul class="clog">${c.t.map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>`).join('')}</div>
       <p class="note" style="margin:12px 0 0">Bản đang chạy: ${GAS ? 'máy chủ của nhóm (tài khoản học viên)' : Sync.mode === 'server' ? 'tệp HTML trên máy, đăng nhập máy chủ của nhóm' : Sync.mode === 'claude' ? 'claude.ai (bản cá nhân)' : 'offline / tệp HTML'}. Phông chữ: tiếng Việt TCVN 7284; tiếng Nhật UD Digi Kyokasho N (dùng phông đã cài trên máy; nếu máy chưa có, ứng dụng dùng phông kiểu chữ giáo khoa Klee One).</p>
     </section>
   </div></div>`;
@@ -2656,6 +2670,7 @@ function studyTop() {
   const rem = SES.main.length + SES.learn.length, tot = SES.done + rem, pc = tot ? Math.round(SES.done / tot * 100) : 100;
   let counts;
   if (SES.mode === 'srs') { const nn = SES.main.filter(id => !S.cards[id]).length; counts = `<span class="cnt c-new" title="Thẻ mới"><i></i>${nn}<em>mới</em></span><span class="cnt c-learn" title="Đang học"><i></i>${SES.learn.length}<em>đang học</em></span><span class="cnt c-rev" title="Ôn tập"><i></i>${SES.main.length - nn}<em>ôn</em></span>`; }
+  else if (SES.mode === 'multi') counts = `<span class="cnt c-new" title="Còn lại"><i></i>${SES.main.length}<em>còn lại</em></span><span class="cnt c-learn" title="Thẻ đã quên"><i></i>${SES.wrong.length}<em>đã quên</em></span><span class="cnt c-rev" title="Đã nhớ"><i></i>${SES.done}<em>đã nhớ</em></span>`;
   else counts = `<span class="cnt">${SES.done}<em>/ ${tot} thẻ</em></span>`;
   const lis = JA_VOICE ? `<button class="icon-btn tog${S.settings.listen ? ' on' : ''}" data-act="listen" aria-pressed="${S.settings.listen ? 'true' : 'false'}" aria-label="Chế độ nghe" title="Chế độ nghe: mặt trước chỉ phát âm">${ic('ear')}</button>` : '';
   return `<div class="s-top"><div class="wrap s-top-in"><button class="icon-btn" data-act="exit" aria-label="Thoát phiên học">${ic('close')}</button><div class="s-title"><b>${esc(SES.title)}</b><div class="s-prog" role="progressbar" aria-valuenow="${pc}" aria-valuemin="0" aria-valuemax="100"><i style="width:${pc}%"></i></div></div><div class="s-cnts">${counts}</div>${lis}<button class="icon-btn" data-act="shufflenow" aria-label="Xáo trộn các thẻ còn lại" title="Xáo trộn các thẻ còn lại">${ic('shuffle')}</button><button class="icon-btn" data-act="undo" ${SES.hist.length ? '' : 'disabled'} aria-label="Hoàn tác" title="Hoàn tác (Z)">${ic('undo')}</button></div></div>`;
@@ -2672,6 +2687,7 @@ function cardHtml(w) {
 function controlsHtml() {
   const flipLab = `<span class="fl">${SES.flipped ? '· đang xem mặt sau' : '· đang xem mặt trước'}</span>`;
   if (!SES.revealed) return `<div class="s-ctl-in"><button class="btn flip-main" data-act="flip">${ic('flip')} Lật thẻ <kbd>Space</kbd></button></div>`;
+  if (SES.mode === 'multi') return `<div class="s-ctl-in"><div class="rates two mrates"><button class="rate r3" data-act="rate" data-r="3"><b>Nhớ</b><small>xong, bỏ khỏi lượt này</small><kbd>1</kbd></button><button class="rate r1" data-act="rate" data-r="1"><b>Quên</b><small>gặp lại ngẫu nhiên</small><kbd>2</kbd></button></div></div>`;
   const ty = SES.typed, sg = ty ? (ty.ok ? 3 : 1) : 0;
   let rates;
   if (SES.mode === 'srs') { const c = getCard(SES.cur); rates = `<div class="rates">${[1, 2, 3, 4].map(r => `<button class="rate r${r}${r === sg ? ' sugg' : ''}" data-act="rate" data-r="${r}"><b>${RLABEL[r]}</b><small>${previewLabel(c, r)}</small><kbd>${r}</kbd></button>`).join('')}</div>`; }
@@ -2731,6 +2747,17 @@ function answer(r) {
     SES.main = SES.main.filter(x => x !== id); SES.learn = SES.learn.filter(x => x !== id);
     if (n.s === 1 || n.s === 3) SES.learn.push(id); else SES.done++;
     SES.stats[r] = (SES.stats[r] || 0) + 1;
+  } else if (SES.mode === 'multi') {
+    // Nhớ (r = 3): the card leaves this round. Quên (r = 1): it comes back at a random place among the cards not reviewed yet.
+    const c0 = getCard(id);
+    if (c0) putCard(id, schedule(c0.p === -1 ? Object.assign({}, c0, {p:0}) : c0, r, now(), true));
+    L[1]++;
+    SES.main = SES.main.filter(x => x !== id);
+    if (r === 1) {
+      SES.stats[1]++; L[2]++;
+      if (!SES.wrong.includes(id)) SES.wrong.push(id);
+      const k = SES.main.length; SES.main.splice(k ? 1 + Math.floor(Math.random() * k) : 0, 0, id);
+    } else { SES.stats[3]++; SES.done++; }
   } else {
     L[1]++;
     SES.main.shift();
@@ -2767,6 +2794,10 @@ function endHtml() {
     return `<div class="done"><div class="score" style="--p:${p}"><div><b>${ok}/${n}</b><span>${p}% đúng</span></div></div><h2>${p >= 90 ? 'Xuất sắc!' : p >= 70 ? 'Làm tốt lắm!' : 'Cố gắng thêm nhé!'}</h2><p>Kết quả đã được lưu. Các từ sai đã chuyển sang “học lại” trong lịch ôn.</p>${wrongChips()}<div class="dacts">${SES.wrong.length ? `<button class="btn btn-pri" data-act="practice" data-k="redo">${ic('layers')} Luyện lại ${SES.wrong.length} từ sai</button>` : ''}<button class="btn btn-sec" data-act="exit">Về trang chính</button></div></div>`;
   }
   const s = SES.stats;
+  if (SES.mode === 'multi') {
+    const n = SES.done, f = SES.wrong.length;
+    return `<div class="done"><div class="medal">${ic('check')}</div><h2>Đã ôn xong!</h2><p>${n} thẻ trong ${mins} phút. ${f ? `${f} thẻ đã quên và được ôn lại ngay trong lượt.` : 'Không quên thẻ nào.'} Lịch ôn đã được cập nhật.</p><div class="dgrid" style="grid-template-columns:repeat(3,1fr);max-width:420px"><div><b style="color:var(--good)">${Math.max(0, n - f)}</b><span>nhớ ngay</span></div><div><b style="color:var(--again)">${f}</b><span>thẻ đã quên</span></div><div><b>${s[1]}</b><span>lượt quên</span></div></div>${wrongChips()}<div class="dacts"><button class="btn btn-pri" data-act="multi">${ic('layers')} Ôn nhiều bộ lần nữa</button><button class="btn btn-sec" data-act="exit">Về trang chính</button></div></div>`;
+  }
   const grid = SES.mode === 'srs' ? `<div class="dgrid"><div><b style="color:var(--again)">${s[1]}</b><span>Quên</span></div><div><b style="color:var(--hard)">${s[2]}</b><span>Khó</span></div><div><b style="color:var(--good)">${s[3]}</b><span>Nhớ</span></div><div><b style="color:var(--easy)">${s[4]}</b><span>Dễ</span></div></div>` : `<div class="dgrid" style="grid-template-columns:repeat(3,1fr);max-width:400px"><div><b>${SES.done}</b><span>thẻ</span></div><div><b style="color:var(--again)">${SES.wrong.length}</b><span>từ đã quên</span></div><div><b>${mins}</b><span>phút</span></div></div>`;
   let next = '';
   if (SES.deck) {
@@ -2861,8 +2892,10 @@ function renderAcct() {
   const b = $('#acctBtn'); if (!b) return;
   const m = Sync.mode, sess = ACC.sess, inAcct = (m === 'server' && !!sess) || m === 'claude';
   const sy = $('#sync'); if (sy) sy.classList.toggle('compact', !inAcct);
-  if (needLogin() || (Sync.state === 'connecting' && !inAcct)) { b.hidden = true; return; }
+  const rb = $('#regBtn');
+  if (needLogin() || (Sync.state === 'connecting' && !inAcct)) { b.hidden = true; if (rb) rb.hidden = true; return; }
   b.hidden = false;
+  if (rb) rb.hidden = inAcct || IN_CLAUDE || GAS;
   if (inAcct) {
     const nm = sess ? sess.user.display : ACCOUNT.name, sub = sess ? '@' + sess.user.name : ACCOUNT.email;
     const gn = givenName(nm) || (ACCOUNT.email || '').split('@')[0] || 'Tài khoản';
@@ -2871,15 +2904,20 @@ function renderAcct() {
     b.title = `Đã đăng nhập: ${nm || gn}${sub ? ' (' + sub + ')' : ''} — tiến độ tự lưu vào tài khoản`;
   } else {
     b.className = 'acctbtn';
-    b.innerHTML = `${ic('login')}<span class="l-long">${IN_CLAUDE ? 'Bật lưu tài khoản' : 'Đăng nhập'}</span><span class="l-short">${IN_CLAUDE ? 'Bật lưu' : 'Đăng nhập'}</span>`;
-    b.title = IN_CLAUDE ? 'Cho phép ứng dụng lưu tiến độ vào tài khoản' : 'Đăng nhập tài khoản học viên để lưu tiến độ lên máy chủ của nhóm';
+    b.innerHTML = `${ic('login')}<span class="l-long">Đăng nhập</span><span class="l-short">Đăng nhập</span>`;
+    b.title = IN_CLAUDE ? 'Đăng nhập tài khoản học viên trên trang web của nhóm, hoặc lưu tiến độ vào tài khoản claude.ai' : 'Đăng nhập tài khoản học viên để lưu tiến độ lên máy chủ của nhóm';
   }
   b.setAttribute('aria-label', b.title);
 }
 function acctAction() {
   if ((Sync.mode === 'server' && ACC.sess) || Sync.mode === 'claude') { if (SES) exitStudy(); go('settings'); const a = $('#acctBox'); if (a) a.scrollIntoView({block:'center'}); return; }
-  if (IN_CLAUDE) { enableCloud(); return; }
+  if (IN_CLAUDE) { openClaudeAcct(); return; }
   openLoginModal('login');
+}
+const webBtn = (cls = 'btn-sec btn-sm') => WEB_URL ? `<a class="btn ${cls}" href="${esc(WEB_URL)}" target="_blank" rel="noopener">${ic('login')} Đăng nhập / Đăng ký trên trang web</a>` : '';
+/* claude.ai copy: it cannot reach the group's server, so accounts (name + password) are used on the group's web page */
+function openClaudeAcct() {
+  openModal(`<div class="mpad"><h2 class="mh">${ic('user')} Tài khoản học viên</h2><p class="small" style="margin:0 0 12px">Đăng nhập và đăng ký tài khoản (tên đăng nhập + mật khẩu) dùng trên trang web của nhóm — bản trong claude.ai không kết nối được máy chủ của nhóm.</p>${WEB_URL ? `<div class="row">${webBtn('btn-pri')}</div>` : ''}<p class="small muted" style="margin:16px 0 8px">Hoặc dùng bản cá nhân này: lưu tiến độ vào tài khoản claude.ai của bạn. Muốn chuyển sang tài khoản học viên sau này, vào Cài đặt → Chép mã tiến độ.</p><div class="factions" style="justify-content:flex-start;margin-top:0"><button class="btn btn-sec" data-act="cloudon">${ic('cloud')} Lưu vào tài khoản claude.ai</button><button class="btn btn-ghost" data-act="closemodal">Để sau</button></div></div>`);
 }
 async function enableCloud() {
   const p = await cap('permissions');
@@ -2904,31 +2942,31 @@ async function loadAuthInfo(url) {
 function authKind() {
   const i = ACC.info, k = UI.auth.kind;
   if (i && !i.hasAdmin) return 'setup';
-  if (k === 'register' && !(i && i.selfReg)) return 'login';
-  return k === 'setup' ? 'login' : k;
+  return k === 'register' ? 'register' : 'login';
 }
 function authHtml(inModal) {
   const i = ACC.info, kind = authKind(), off = !GAS;
   const url = off ? (UI.auth.url != null ? UI.auth.url : lsGet(SRV_KEY) || FIXED_SRV || '') : '';
   const title = kind === 'setup' ? 'Tạo tài khoản quản trị' : kind === 'register' ? 'Đăng ký tài khoản' : 'Đăng nhập';
   const sub = kind === 'setup' ? 'Lần đầu dùng máy chủ: tạo tài khoản quản trị viên của nhóm.' : 'Tài khoản học tập N3 Nihongo Go — mỗi người một tiến độ riêng.';
-  const tabs = kind !== 'setup' && i && i.selfReg ? `<div class="auth-tabs" role="tablist"><button type="button" role="tab" data-act="authtab" data-k="login" aria-selected="${kind === 'login'}">Đăng nhập</button><button type="button" role="tab" data-act="authtab" data-k="register" aria-selected="${kind === 'register'}">Đăng ký</button></div>` : '';
+  const closed = kind === 'register' && !!i && !i.selfReg;
+  const tabs = kind !== 'setup' ? `<div class="auth-tabs" role="tablist"><button type="button" role="tab" data-act="authtab" data-k="login" aria-selected="${kind === 'login'}">Đăng nhập</button><button type="button" role="tab" data-act="authtab" data-k="register" aria-selected="${kind === 'register'}">Đăng ký</button></div>` : '';
   const f = (id, lab, type, ac, extra = '', hint = '') => `<label class="fl" for="${id}"><span>${lab}${hint ? ` <small>${hint}</small>` : ''}</span><input class="input" id="${id}" type="${type}" autocomplete="${ac}" ${extra}></label>`;
   const nameF = f('authName', 'Tên đăng nhập', 'text', 'username', 'autocapitalize="off" autocorrect="off" spellcheck="false"', kind === 'login' ? '' : 'chữ thường không dấu, số, . _ -');
-  const fields = kind === 'login' ? nameF + f('authPw', 'Mật khẩu', 'password', 'current-password')
+  const fields = closed ? `<p class="auth-st bad">${ic('warn')} <span>${SRV_ERR.closed} Có tài khoản rồi thì chọn Đăng nhập.</span></p>` : kind === 'login' ? nameF + f('authPw', 'Mật khẩu', 'password', 'current-password')
     : (kind === 'setup' ? f('authCode', 'Mã khởi tạo', 'text', 'off', 'autocapitalize="characters" spellcheck="false"', 'ở tab CaiDat của Google Sheet máy chủ') : '')
       + f('authDisplay', 'Họ và tên', 'text', 'name', 'maxlength="40"') + nameF
       + f('authPw', 'Mật khẩu', 'password', 'new-password', '', 'ít nhất 6 ký tự') + f('authPw2', 'Nhập lại mật khẩu', 'password', 'new-password')
       + (kind === 'register' ? f('authCode', 'Mã lớp', 'text', 'off', 'autocapitalize="characters" spellcheck="false"', 'quản trị viên gửi cho bạn') : '');
   const urlF = off && FIXED_SRV ? `<input type="hidden" id="authUrl" value="${esc(FIXED_SRV)}">` : off ? `<label class="fl" for="authUrl"><span>Link máy chủ của nhóm <small>quản trị viên gửi cho bạn, đuôi /exec</small></span><input class="input" id="authUrl" type="url" autocomplete="url" spellcheck="false" placeholder="https:\/\/script.google.com/macros/s/…/exec" value="${esc(url)}"></label>` : '';
-  const carry = off && Sync.mode === 'local' && hasLocalData() ? `<label class="chk"><input type="checkbox" id="authCarry" checked><span>Mang tiến độ đang có trên máy này (${fmtN(Object.keys(S.cards).length)} thẻ) vào tài khoản</span></label>` : '';
+  const carry = !closed && off && Sync.mode === 'local' && hasLocalData() ? `<label class="chk"><input type="checkbox" id="authCarry" checked><span>Mang tiến độ đang có trên máy này (${fmtN(Object.keys(S.cards).length)} thẻ) vào tài khoản</span></label>` : '';
   const showErr = ACC.infoErr && (GAS || normUrl(url));
   const status = ACC.infoBusy ? `<p class="auth-st">${ic('cloud')} Đang kết nối máy chủ…</p>` : showErr ? `<p class="auth-st bad">${ic('warn')} <span>${esc(ACC.infoErr)}</span> <button type="button" class="btn btn-ghost btn-sm" data-act="authretry">Thử lại</button></p>` : '';
   const go = kind === 'setup' ? 'Tạo tài khoản quản trị' : kind === 'register' ? 'Đăng ký và vào học' : 'Đăng nhập';
-  const foot = kind === 'login' ? 'Quên mật khẩu? Nhờ quản trị viên đặt lại.' + (i && i.selfReg ? ' Chưa có tài khoản? Chọn Đăng ký.' : ' Chưa có tài khoản? Nhờ quản trị viên tạo.') : kind === 'setup' ? 'Mở Google Sheet máy chủ → tab CaiDat để xem Mã khởi tạo. Sau đó bạn tạo tài khoản cho học viên ở trang Quản trị.' : 'Đã có tài khoản? Chọn Đăng nhập.';
+  const foot = kind === 'login' ? 'Quên mật khẩu? Nhờ quản trị viên đặt lại.' + (i && !i.selfReg ? ' Chưa có tài khoản? Nhờ quản trị viên tạo.' : ' Chưa có tài khoản? Chọn Đăng ký (cần Mã lớp do quản trị viên gửi).') : kind === 'setup' ? 'Mở Google Sheet máy chủ → tab CaiDat để xem Mã khởi tạo. Sau đó bạn tạo tài khoản cho học viên ở trang Quản trị.' : 'Đã có tài khoản? Chọn Đăng nhập.';
   return `<div id="authBox" class="auth-card${inModal ? ' in-modal' : ''}"><div class="auth-h"><span class="lg-ic">${ic(kind === 'setup' ? 'key' : 'user')}</span><div><h2>${title}</h2><p class="small muted">${sub}</p></div></div>${tabs}
     <form id="authForm" data-kind="${kind}" class="fstack" novalidate>${urlF}${fields}${carry}${status}<p class="auth-err" id="authErr" role="alert">${esc(UI.auth.msg || '')}</p>
-    <button class="btn btn-pri auth-go" type="submit" ${UI.auth.busy ? 'disabled' : ''}>${UI.auth.busy ? 'Đang xử lý…' : go}</button></form>
+    ${closed ? '' : `<button class="btn btn-pri auth-go" type="submit" ${UI.auth.busy ? 'disabled' : ''}>${UI.auth.busy ? 'Đang xử lý…' : go}</button>`}</form>
     <p class="auth-note">${foot}</p>${inModal ? `<div class="factions" style="margin-top:4px"><button class="btn btn-ghost" data-act="closemodal">Để sau</button></div>` : ''}</div>`;
 }
 const viewAuth = () => `<div class="auth">${authHtml(false)}</div>`;
@@ -2946,7 +2984,7 @@ function openLoginModal(kind) {
   openModal(authHtml(true));
   const u = srvUrl();
   if (u && (!ACC.info || ACC.infoUrl !== u)) loadAuthInfo(u);
-  const first = $(u ? '#authName' : '#authUrl'); if (first) first.focus();
+  const first = $(u ? (UI.auth.kind === 'register' ? '#authDisplay' : '#authName') : '#authUrl'); if (first) first.focus();
 }
 async function doAuth(form) {
   if (UI.auth.busy) return;
@@ -3245,7 +3283,7 @@ function startMulti(ids) {
   const rev = [], learn = [], seen = new Set();
   for (const id of ids) { const d = deckById(id); if (!d) continue; const q = deckQueue(d); for (const c of q.rev) if (!seen.has(c)) { seen.add(c); rev.push(c); } for (const c of q.learn) if (!seen.has(c)) { seen.add(c); learn.push(c); } }
   if (!rev.length && !learn.length) { toast('Các bộ đã chọn chưa có thẻ cần ôn.'); return; }
-  openSession({mode:'srs', title:`Ôn tập ${ids.length} bộ`, main:shuffle(rev), learn});
+  openSession({mode:'multi', title:`Ôn tập ${ids.length} bộ`, main:shuffle([...rev, ...learn]), learn:[]});
 }
 function activeDecks() { return ALL_DECKS().map(deckById).filter(Boolean).map(d => ({d, st:deckStats(d)})).filter(x => x.st.learned).sort((a, b) => b.st.due - a.st.due || b.st.learned - a.st.learned); }
 function openMulti() {
@@ -3253,7 +3291,7 @@ function openMulti() {
   if (!ds.length) { toast('Chưa có bộ nào đang học — hãy bắt đầu một bộ trong Thư viện.'); return; }
   const keep = new Set((UI.multi || []).filter(id => ds.some(x => x.d.id === id)));
   const sel = keep.size ? keep : new Set(ds.filter(x => x.st.due).map(x => x.d.id));
-  openModal(`<div class="mpad"><h2 class="mh">${ic('layers')} Luyện tập nhiều bộ</h2><p class="small muted" style="margin:0 0 10px">Chọn các bộ muốn ôn: thẻ đến hạn của tất cả các bộ được gộp vào một phiên (lựa chọn được ghi nhớ cho lần sau).</p><div class="mlist">${ds.map(x => `<label class="chk mrow"><input type="checkbox" name="mdeck" value="${x.d.id}" ${sel.has(x.d.id) ? 'checked' : ''}><span><b>${esc(x.d.title)}</b> <span class="muted">· ${esc(BOOKS[x.d.book].name)}</span><small>Cần ôn tập: <b>${x.st.due}</b> · Đã nhớ: ${x.st.remembered} · Đã học: ${x.st.learned}/${x.st.total}</small></span></label>`).join('')}</div><div class="factions"><button class="btn btn-pri" data-act="multigo">${ic('play')} Bắt đầu ôn tập</button><button class="btn btn-ghost" data-act="closemodal">Hủy</button></div></div>`);
+  openModal(`<div class="mpad"><h2 class="mh">${ic('layers')} Luyện tập nhiều bộ</h2><p class="small muted" style="margin:0 0 10px">Thẻ cần ôn của các bộ đã chọn được trộn ngẫu nhiên vào một lượt. Lật thẻ rồi bấm <b>1 Nhớ</b> (thẻ xong, bỏ khỏi lượt này) hoặc <b>2 Quên</b> (thẻ quay lại, xen ngẫu nhiên giữa các thẻ chưa ôn). Lựa chọn bộ được ghi nhớ cho lần sau.</p><div class="mlist">${ds.map(x => `<label class="chk mrow"><input type="checkbox" name="mdeck" value="${x.d.id}" ${sel.has(x.d.id) ? 'checked' : ''}><span><b>${esc(x.d.title)}</b> <span class="muted">· ${esc(BOOKS[x.d.book].name)}</span><small>Cần ôn tập: <b>${x.st.due}</b> · Đã nhớ: ${x.st.remembered} · Đã học: ${x.st.learned}/${x.st.total}</small></span></label>`).join('')}</div><div class="factions"><button class="btn btn-pri" data-act="multigo">${ic('play')} Bắt đầu ôn tập</button><button class="btn btn-ghost" data-act="closemodal">Hủy</button></div></div>`);
 }
 /* Dừng học bộ này: delete the deck's progress here and remember the time (settings.deckReset), so older copies
    merged back from another device or from the server are dropped too; cards studied again later are newer and stay. */
@@ -3524,6 +3562,8 @@ const ACT = {
   copyexp: () => { const t = $('#expText'); if (!t) return; copyText(t.value, t).then(ok => toast(ok ? 'Đã sao chép' : 'Hãy chọn và sao chép thủ công')); },
   copyprog: () => { saveLocal(); packCode(exportData()).then(code => copyText(code)).then(ok => toast(ok ? 'Đã chép mã tiến độ — dán vào ứng dụng kia: Cài đặt → Dán mã tiến độ' : 'Không chép được — hãy dùng Xuất bản sao lưu')); },
   acct: () => acctAction(),
+  register: () => { if (SES) exitStudy(); openLoginModal('register'); },
+  cloudon: () => { closeModal(); enableCloud(); },
   authtab: el => { UI.auth.kind = el.dataset.k; UI.auth.msg = ''; refreshAuth(); const f = $('#authBox input:not([type=hidden]):not([type=checkbox])'); if (f) f.focus(); },
   authretry: () => { ACC.infoErr = ''; loadAuthInfo(GAS ? '' : ($('#authUrl') ? $('#authUrl').value : '')); },
   logout: el => doLogout(el),
@@ -3649,7 +3689,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') { exitStudy(); return; }
   if (e.key === 'z' || e.key === 'Z') { e.preventDefault(); undo(); return; }
   if (e.key === '5' && SES.mode === 'srs' && SES.cur && SES.revealed) { e.preventDefault(); answer(5); return; }
-  if (/^[1-4]$/.test(e.key) && SES.cur && SES.revealed) { e.preventDefault(); let r = +e.key; if (SES.mode !== 'srs') r = r === 1 ? 1 : 3; answer(r); }
+  if (/^[1-4]$/.test(e.key) && SES.cur && SES.revealed) { e.preventDefault(); let r = +e.key; if (SES.mode === 'multi') { if (r > 2) return; r = r === 1 ? 3 : 1; } else if (SES.mode !== 'srs') r = r === 1 ? 1 : 3; answer(r); }
 });
 document.addEventListener('pointerover', e => { const el = e.target.closest && e.target.closest('[data-tip]'); if (el) showTip(el); else hideTip(); });
 document.addEventListener('focusin', e => { const el = e.target.closest && e.target.closest('[data-tip]'); if (el) showTip(el); else hideTip(); });
