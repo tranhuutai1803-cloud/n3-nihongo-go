@@ -1,14 +1,16 @@
 # N3 Nihongo Go
 
-N3 Nihongo Go: ứng dụng flashcard miễn phí học 880 từ vựng và 110 mẫu ngữ pháp Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, ví dụ có furigana, thẻ chữ Hán, xem ngẫu nhiên, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
+N3 Nihongo Go: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
 
 **Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/n3-nihongo-go/
 
-- 880 từ vựng Mimikara N3, lặp lại ngắt quãng (Quên / Khó / Nhớ / Dễ), lịch học theo mục tiêu 14–365 ngày.
-- 110 mẫu ngữ pháp Mimikara N3 chia 10 Unit + phụ lục kính ngữ: cách nối, ý nghĩa, ví dụ có furigana, lưu ý.
-- Thư viện bộ thẻ theo giáo trình: luyện tập flashcards, xem ngẫu nhiên (phím tắt, tự phát), luyện nhiều bộ cùng lúc.
-- Thẻ cách đọc và thẻ chữ Hán, Hán Việt từng chữ, cụm từ có furigana, cặp động từ tự/tha.
-- Luyện đề JLPT 4 dạng, kiểm tra 100 từ, mẹo nhớ cho từ hay quên.
-- Khách học ngay, tiến độ lưu trên máy. Thành viên nhóm đăng nhập để đồng bộ giữa điện thoại và máy tính.
+- Thời khóa biểu mỗi ngày: ôn thẻ đến hạn, từ vựng mới theo lịch, ngữ pháp, đọc hiểu; đếm ngược tới ngày thi JLPT.
+- Từ vựng: 880 từ Mimikara N3 (24 nhóm) + 281 từ N3 bổ sung, xếp thêm theo 21 chủ đề và 8 nhóm loại từ theo dàn bài Shinkanzen N3.
+- Ngữ pháp: 110 mẫu Mimikara N3 + kính ngữ + 34 mẫu bổ sung, xếp thêm thành 12 bài và 8 bài ôn theo dàn bài Shinkanzen N3.
+- Đọc hiểu: 11 bài tự viết theo dạng đề N3, có câu hỏi, lời giải thích, từ khó, bản dịch.
+- Flashcard lặp lại ngắt quãng, thẻ chữ Hán, Hán Việt từng chữ, xem ngẫu nhiên, trắc nghiệm từ vựng và ngữ pháp, tra cứu nhanh.
+- Khách học ngay, tiến độ lưu trên máy. Thành viên nhóm đăng nhập (mã lớp, tên đăng nhập, mật khẩu) để đồng bộ giữa các máy.
 
-Phiên bản 5.1 · 2026-11-10
+Nội dung các bộ theo dàn bài Shinkanzen do nhóm tự biên soạn; chỉ dùng thứ tự bài của sách để tiện học song song.
+
+Phiên bản 6.0 · 2026-11-11

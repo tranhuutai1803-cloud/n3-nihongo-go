@@ -7,7 +7,7 @@
  "display": "standalone",
  "background_color": "#16151a",
  "theme_color": "#16151a",
- "description": "N3 Nihongo Go: ứng dụng flashcard miễn phí học 880 từ vựng và 110 mẫu ngữ pháp Mimikara N3 (JLPT N3) bằng tiếng Việt: lặp lại ngắt quãng, cách đọc, Hán Việt, nghĩa, ví dụ có furigana, thẻ chữ Hán, xem ngẫu nhiên, luyện đề JLPT, lịch học 30–365 ngày. Học ngay trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
+ "description": "N3 Nihongo Go: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
  "icons": [
   {
    "src": "icon-192.png",
