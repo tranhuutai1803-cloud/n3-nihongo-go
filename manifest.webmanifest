@@ -1,13 +1,13 @@
 {
- "name": "N3 Nihongo Go",
- "short_name": "N3 Nihongo Go",
+ "name": "Daruma N3",
+ "short_name": "Daruma N3",
  "lang": "vi",
  "start_url": "./",
  "scope": "./",
  "display": "standalone",
  "background_color": "#16151a",
  "theme_color": "#16151a",
- "description": "N3 Nihongo Go: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
+ "description": "Daruma N3: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
  "icons": [
   {
    "src": "icon-192.png",

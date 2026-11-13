@@ -1,6 +1,6 @@
-# N3 Nihongo Go
+# Daruma N3
 
-N3 Nihongo Go: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
+Daruma N3: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
 
 **Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/n3-nihongo-go/
 
@@ -13,4 +13,4 @@ N3 Nihongo Go: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Th�
 
 Nội dung các bộ theo dàn bài Shinkanzen do nhóm tự biên soạn; chỉ dùng thứ tự bài của sách để tiện học song song.
 
-Phiên bản 6.0 · 2026-11-11
+Phiên bản 6.1 · 2026-11-13
