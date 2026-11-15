@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="google-site-verification" content="le9jQVmBJsoRbnAlUqIXqvBY6fw5QW9MPQTZ9NMIPzM">
 <link rel="manifest" href="manifest.webmanifest">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daruma N3", "alternateName": ["N3 Nihongo Go", "MIMIKARA N3 Flashcard"], "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "Daruma N3: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "6.1", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daruma N3", "alternateName": ["N3 Nihongo Go", "MIMIKARA N3 Flashcard"], "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "Daruma N3: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "6.2", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
 <script>window.MMK_SERVER = "https://script.google.com/macros/s/AKfycbxplbNcR2JKVCaU0STY8ZG1f55cYr7YzoacVLbtRZrfuSxj7m7t16ZOMFjCPZcwNleAQw/exec";</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1173,20 +1173,106 @@ body.gate .top .brand{display:flex}
 .tt-dots i.on{background:var(--daruma)}
 @media (max-width:560px){.td-main{gap:12px}.td-d{width:60px}.td-d .daruma{width:60px;height:60px}.td-d i{font-size:10.5px;padding:0 6px}}
 @media (prefers-reduced-motion:reduce){.daruma{animation:none!important}}
+
+/* ===== v6.2: giao diện Navy ánh kim ===== */
+:root{--metal:linear-gradient(135deg,#f3dc9a 0%,#c99a34 38%,#f7e7b0 56%,#b98a2a 78%,#e6c877 100%)}
+:root[data-theme="navy"]{
+  color-scheme:dark;
+  --bg:#07102a;--bg-2:#0a1634;--surface:#0e1c40;--surface-2:#13244f;--surface-3:#1c3163;
+  --ink:#f6efdc;--ink-2:#d9d3c2;--muted:#a3adc8;--faint:#6f7ca3;
+  --line:#22376a;--line-2:#3a4f86;--grid:#16264f;
+  --pri:#e0b95e;--pri-hover:#efcf82;--on-pri:#1b1403;--pri-soft:#2b2a2c;--pri-ink:#f0d48c;
+  --ver:#e4573f;--ver-soft:#3d211c;
+  --gold:#e8c26a;--gold-bg:#c99a34;--gold-soft:#33290f;
+  --again:#f08279;--again-bg:#3a1f22;--hard:#eba15a;--hard-bg:#3a2a1a;--good:#62cd8d;--good-bg:#12332b;--easy:#8eabf5;--easy-bg:#1a2a55;
+  --st-new:#e0b95e;--st-learn:#eba15a;--st-review:#62cd8d;--st-relearn:#f08279;
+  --card:#101f47;--card-edge:#5d4f2a;
+  --shadow-1:0 1px 2px rgba(0,0,0,.5);--shadow-2:0 2px 6px rgba(0,0,0,.4),0 18px 40px rgba(0,0,0,.55);
+  --v1:#86b6ef;--v2:#3987e5;--v3:#1c5cab;--vt:#253447;--v1-ink:#0b0b0b;--v2-ink:#fff;--v3-ink:#fff;--vt-ink:#c9d6e6;--v-bar:#3987e5;--v-base:#363d55;
+  --pn-bg:#1d2f4a;--pn-fg:#9cc2f3;--pns-bg:#3d2318;--pns-fg:#f4ab88;--pv-bg:#12352a;--pv-fg:#79d8ae;--pa-bg:#3a2e10;--pa-fg:#f0c862;--pd-bg:#3d1f2b;--pd-fg:#f3a5c4;--po-bg:#16321a;--po-fg:#8bd68b;
+  --w1:#0b776d;--w2:#4a3fb8;--w3:#a8335c;--w4:#8f5a00;--w5:#3d4a6e;--wu:#1f5f8b;--ws:#b0481a;--w1t:#4cc9be;--w2t:#a9a2f7;--w3t:#f292b5;--w4t:#e6ac52;--w5t:#c7cfdb;--wut:#86bde6;--wst:#f0a070;
+  --daruma:#e2452f;--daruma-soft:#3a1f1b;--daruma-gold:#f0c04a;
+}
+:root[data-theme="navy"] body{background:radial-gradient(1200px 520px at 78% -8%,#16306b 0,transparent 62%),var(--bg);background-attachment:fixed}
+:root[data-theme="navy"] .btn-pri,:root[data-theme="navy"] .btn-hero{background-image:var(--metal);color:#1b1403;border-color:#f3dc9a;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 6px 16px rgba(201,154,52,.22)}
+:root[data-theme="navy"] .btn-pri:hover{filter:brightness(1.07)}
+:root[data-theme="navy"] .panel,:root[data-theme="navy"] .tt{border-color:color-mix(in srgb,var(--gold) 26%,var(--line))}
+:root[data-theme="navy"] .td-head h1,:root[data-theme="navy"] .h-page h1,:root[data-theme="navy"] .brand b{background:var(--metal);-webkit-background-clip:text;background-clip:text;color:transparent}
+:root[data-theme="navy"] .tt-dots i.on{background:var(--gold)}
+/* theme picker */
+.thpick{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.thb{display:grid;gap:7px;justify-items:center;padding:10px 6px 9px;border:1.5px solid var(--line);border-radius:14px;background:var(--surface-2);cursor:pointer;font-size:13.5px;line-height:1.2;text-align:center}
+.thb:hover{border-color:var(--line-2)}
+.thb.on{border-color:var(--pri);box-shadow:var(--ring);font-weight:700}
+.thsw{width:100%;max-width:74px;height:34px;border-radius:9px;border:1px solid rgba(128,128,128,.35);position:relative;overflow:hidden}
+.thsw::after{content:'';position:absolute;right:7px;bottom:7px;width:22px;height:8px;border-radius:4px}
+.th-light{background:#eef1f8}.th-light::after{background:#2c3fb0}
+.th-dark{background:#0d1120}.th-dark::after{background:#93a0ff}
+.th-navy{background:#07102a}.th-navy::after{background:linear-gradient(135deg,#f3dc9a,#c99a34 45%,#f7e7b0 60%,#b98a2a)}
+.th-auto{background:linear-gradient(105deg,#eef1f8 0 50%,#0d1120 50% 100%)}.th-auto::after{background:#7f8ad6}
+@media (max-width:420px){.thpick{grid-template-columns:repeat(2,1fr)}}
+/* folded panels in Settings */
+details.fold{padding:0}
+details.fold>summary{list-style:none;display:flex;align-items:center;gap:8px;padding:15px 20px;cursor:pointer;border-radius:inherit;font-size:16.5px;font-weight:700}
+details.fold>summary::-webkit-details-marker{display:none}
+details.fold>summary .ic{color:var(--muted)}
+details.fold>summary .aside{margin-left:auto;font-size:13.5px;color:var(--muted);font-weight:400}
+details.fold>summary::after{content:'';flex:none;width:9px;height:9px;margin:0 4px 3px 6px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);transition:transform .15s}
+details.fold[open]>summary::after{transform:rotate(-135deg);margin-bottom:-4px}
+details.fold>summary:hover{background:var(--surface-2)}
+details.fold>summary:focus-visible{outline:none;box-shadow:var(--ring)}
+details.fold>.fold-b{padding:2px 20px 18px}
+/* month calendar */
+.mp-st{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;margin-bottom:12px;background:var(--surface-2);border:1px solid var(--line)}
+.mp-st b{display:block;font-size:19px;line-height:1.2}
+.mp-st small{display:block;font-size:13.5px;color:var(--ink-2)}
+.mp-st .mp-badge{flex:none;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;background:var(--muted)}
+.mp-st.ok{background:var(--good-bg);border-color:color-mix(in srgb,var(--good) 40%,transparent)}.mp-st.ok .mp-badge{background:var(--good)}.mp-st.ok b{color:var(--good)}
+.mp-st.late{background:var(--again-bg);border-color:color-mix(in srgb,var(--again) 45%,transparent)}.mp-st.late .mp-badge{background:var(--again)}.mp-st.late b{color:var(--again)}
+.mp-bar{position:relative;height:14px;border-radius:7px;background:var(--surface-3);margin:22px 0 6px}
+.mp-bar i{position:absolute;top:0;bottom:0;border-radius:7px}
+.mp-fill{left:0;background:var(--good)}
+.mp-gap{background:repeating-linear-gradient(135deg,var(--again) 0 5px,color-mix(in srgb,var(--again) 45%,transparent) 5px 10px);border-radius:0 7px 7px 0!important}
+.mp-mark{width:2px;top:-6px!important;bottom:-6px!important;background:var(--ink);border-radius:1px!important}
+.mp-mark::after{content:'hôm nay';position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:11.5px;font-style:normal;color:var(--ink-2);white-space:nowrap;padding-bottom:1px}
+.mp-mark.r::after{left:auto;right:0;transform:none}.mp-mark.l::after{left:0;transform:none}
+.mp-num{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-bottom:14px}
+.mp-num b{color:var(--ink)}
+.mp-nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+.mp-nav button{border:0;background:none;width:32px;height:32px;border-radius:9px;display:grid;place-items:center;cursor:pointer;color:var(--ink-2)}
+.mp-nav button:hover{background:var(--surface-2)}
+.mp-nav .mp-now{width:auto;padding:0 9px;font-size:13px;font-weight:400}
+.mp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.mp-grid .wh{font-size:12px;color:var(--muted);text-align:center;padding-bottom:2px}
+.mc{position:relative;min-height:46px;border-radius:10px;border:1px solid transparent;background:none;padding:4px 2px 3px;display:grid;align-content:start;justify-items:center;gap:0;font-size:14px;line-height:1.25;color:var(--faint)}
+button.mc{cursor:pointer}
+.mc small{font-size:10.5px;line-height:1.2;white-space:nowrap}
+.mc.plan{background:var(--surface-2);border-color:var(--line);color:var(--ink-2)}.mc.plan small{color:var(--muted)}
+.mc.ok{background:var(--good-bg);color:var(--good);font-weight:700}
+.mc.part{background:var(--hard-bg);color:var(--hard);font-weight:700}
+.mc.miss{background:var(--again-bg);color:var(--again);font-weight:700;border-color:color-mix(in srgb,var(--again) 45%,transparent)}
+.mc.free{color:var(--ink-2)}.mc.free::after{content:'';width:5px;height:5px;border-radius:50%;background:var(--easy);margin-top:3px}
+.mc.now{border:2px solid var(--pri);color:var(--ink);font-weight:700}
+button.mc:hover{filter:brightness(.97);border-color:var(--line-2)}
+.mp-leg{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:12.5px;color:var(--muted)}
+.mp-leg span{display:inline-flex;align-items:center;gap:5px}
+.mp-leg i{width:12px;height:12px;border-radius:4px;border:1px solid transparent}
+.mp-leg .ok{background:var(--good-bg);border-color:var(--good)}.mp-leg .part{background:var(--hard-bg);border-color:var(--hard)}.mp-leg .miss{background:var(--again-bg);border-color:var(--again)}.mp-leg .plan{background:var(--surface-2);border-color:var(--line-2)}.mp-leg .free{width:6px;height:6px;border-radius:50%;background:var(--easy)}
+.mp-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
 </style>
 </head>
 <body>
 <noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.6 system-ui;color:#eee"><h1>Daruma N3</h1><p>Daruma N3: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.</p><p>Hãy bật JavaScript để dùng ứng dụng.</p></div></noscript>
 <div id="app">
   <aside class="side" id="side">
-    <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.1</em></small></span></button>
+    <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.2</em></small></span></button>
     <nav class="tabs" id="tabs" aria-label="Điều hướng"></nav>
     <div class="side-foot" id="sideFoot"></div>
   </aside>
   <div class="page">
     <header class="top">
       <div class="wrap top-in">
-        <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.1</em></small></span></button>
+        <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.2</em></small></span></button>
         <button class="srch" data-act="search" aria-label="Tra cứu từ vựng, ngữ pháp"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Tra từ, chữ Hán, ngữ pháp…</span><kbd>/</kbd></button>
         <div class="tright"><button class="acctbtn reg" id="regBtn" data-act="register" hidden>Đăng ký</button><button class="acctbtn" id="acctBtn" data-act="acct" hidden></button><button class="sync" id="sync" data-act="go" data-view="settings" data-s="connecting" aria-label="Trạng thái lưu dữ liệu"></button></div>
       </div>
@@ -1207,11 +1293,17 @@ body.gate .top .brand{display:flex}
 (() => {
 'use strict';
 /* ================= App identity ================= */
-const APP_VER = '6.1', BUILD = '2026-11-13', FILE_NAME = 'MIMIKARA_N3_Flashcard_v6_2026-11-13';
+const APP_VER = '6.2', BUILD = '2026-11-15', FILE_NAME = 'MIMIKARA_N3_Flashcard_v6_2026-11-15';
 const WEB_URL = 'https:\/\/tranhuutai1803-cloud.github.io\/n3-nihongo-go\/';   // public site of the group (accounts live there)
 const APP_NAME = 'Daruma N3';
 const SCHEMA = 1, LS_KEY = 'mimikara-n3-flashcard', LS_UI = 'mimikara-n3-flashcard-ui';
 const CHANGELOG = [
+  {v:'6.2', d:'15/11/2026', s:'Ba giao diện (sáng, tối, navy ánh kim), lịch tháng báo trễ tiến độ, Cài đặt gọn hơn', t:[
+    'Cài đặt › Giao diện: chọn Sáng, Tối, Navy ánh kim hoặc Theo máy. Lựa chọn lưu riêng cho từng máy.',
+    'Trang Tiến độ: “Lịch tháng” thay cho “Hoạt động 20 tuần”. Ô xanh là ngày đủ bài, cam là học chưa đủ, đỏ là bỏ lỡ, xám là sắp tới.',
+    'Đầu lịch có dòng kết luận (Đúng tiến độ, Vượt tiến độ hoặc Chậm mấy ngày) và thanh so số từ đã học với mốc kế hoạch đến hôm nay.',
+    'Khi bị chậm, ngay dưới lịch có nút Học bù và Xếp lại lịch. Bấm vào một ngày để xem chi tiết ngày đó.',
+    'Cài đặt: phần Cách học và Phiên bản thu gọn thành nút, bấm mới xổ ra.']},
   {v:'6.1', d:'13/11/2026', s:'Tên mới Daruma N3, búp bê Daruma làm biểu tượng và chủ đề trang trí', t:[
     'Trang web đổi tên thành Daruma N3. Daruma là búp bê cầu may của Nhật: đặt mục tiêu thì tô một mắt, đạt được thì tô nốt mắt còn lại.',
     'Biểu tượng mới là một Daruma đỏ mới tô một mắt (mục tiêu thi JLPT N3 đã đặt).',
@@ -2750,6 +2842,7 @@ function viewSettings() {
   const sw = (id, on, lab) => `<label class="switch"><input type="checkbox" id="${id}" ${on ? 'checked' : ''} aria-label="${lab}"><i></i></label>`;
   return `<div class="h-page"><div><h1>Cài đặt</h1><p>${APP_NAME} · phiên bản ${APP_VER}</p></div></div>
   <div class="grid2" style="margin-top:0"><div class="stack">
+    ${themePanel()}
     <section class="panel"><h2>${ic('plan')} Học tập</h2>
       <div class="setrow"><div class="t"><b>Mục tiêu: ${goalLabel(clampDays(st.days))}</b><small>${dmy(st.start)} → ${dmy(dateOfDay(clampDays(st.days)))} · ${Math.round(goalStats().avg)} từ mới mỗi ngày học</small></div><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Đổi mục tiêu</button></div>
       <div class="setrow"><div class="t"><b>Ngày bắt đầu kế hoạch</b><small>Dời cả lịch sang ngày khác, giữ nguyên mục tiêu.</small></div><input class="input" type="date" id="setStart" value="${esc(st.start)}"></div>
@@ -2773,7 +2866,7 @@ function viewSettings() {
       <div class="setrow" style="margin-top:8px"><div class="t"><b>Đặt lại tiến độ</b><small>Xóa lịch ôn của mọi thẻ (giữ nguyên Từ của tôi, mẹo nhớ và cài đặt).</small></div><button class="btn btn-danger btn-sm" data-act="resetall" data-confirm="Bấm lần nữa để xóa toàn bộ tiến độ">${ic('trash')} Đặt lại</button></div>
     </section>
   </div><div class="stack">
-    <section class="panel"><h2>${ic('info')} Cách học</h2><div class="help">
+    <details class="panel fold" id="foldHelp"><summary>${ic('info')} Cách học<span class="aside">bấm để xem</span></summary><div class="help fold-b">
       <p>Mặt trước thẻ là <b>cách đọc</b>. Hãy tự nhớ chữ Hán, nghĩa, từ loại và cách dùng rồi bấm <b>Lật thẻ</b> để kiểm tra mặt sau.</p>
       <p>Sau khi lật, tự chấm: <b style="color:var(--again)">Quên</b> (học lại sau 1 phút) · <b style="color:var(--hard)">Khó</b> · <b style="color:var(--good)">Nhớ</b> · <b style="color:var(--easy)">Dễ</b>. Nhớ càng tốt, thẻ càng lâu mới quay lại (1 → 3 → 8 → 20 ngày…).</p>
       <p>Mỗi ngày: làm hết thẻ ôn đến hạn và phần từ mới theo lịch (số từ mỗi ngày tùy mục tiêu bạn chọn ở Lịch học). Ngày thứ 7 mỗi tuần ôn lại cả tuần; ngày áp chót luyện cặp tự/tha động từ; ngày cuối kiểm tra 100 từ. Bị chậm thì dùng “Xếp lại lịch từ hôm nay”.</p>
@@ -2790,12 +2883,12 @@ function viewSettings() {
       <p><b>Đã biết — bỏ khỏi ôn tập</b> (phím 5): thẻ bạn đã chắc chắn sẽ không xuất hiện trong lịch ôn nữa; xem lại hoặc đưa về lịch ôn trong Học › Của tôi › Thẻ đã bỏ qua.</p>
       <p><b>Tài khoản học viên</b>: mỗi người đăng nhập bằng tên đăng nhập + mật khẩu của mình nên tiến độ không lẫn vào nhau; học trên máy nào cũng tiếp tục được. Dùng chung máy thì nhớ <b>Đăng xuất</b> sau khi học.</p>
       <div class="keys"><kbd>Space</kbd><span>Lật thẻ (hoặc chạm vào thẻ)</span><kbd>1–4</kbd><span>Quên · Khó · Nhớ · Dễ · chọn đáp án khi luyện đề</span><kbd>1 · 2</kbd><span>Luyện tập nhiều bộ: Nhớ · Quên</span><kbd>Enter</kbd><span>Kiểm tra cách đọc đã gõ · câu tiếp khi luyện đề</span><kbd>5</kbd><span>Đã biết — bỏ thẻ khỏi lịch ôn</span><kbd>Z</kbd><span>Hoàn tác thẻ vừa chấm</span><kbd>Esc</kbd><span>Thoát phiên học</span><kbd>← →</kbd><span>Xem ngẫu nhiên: thẻ trước / sau (hoặc A / D) · <kbd>↑</kbd> <kbd>↓</kbd> biết / chưa biết (Z / X) · <kbd>C</kbd> đánh dấu · <kbd>P</kbd> tự phát</span></div>
-    </div></section>
-    <section class="panel"><h2>${ic('layers')} Phiên bản</h2>
+    </div></details>
+    <details class="panel fold" id="foldVer"><summary>${ic('layers')} Phiên bản<span class="aside">v${APP_VER} · ${BUILD.split('-').reverse().join('/')}</span></summary><div class="fold-b">
       <div class="vbox"><span class="vbig">v${APP_VER}</span><span class="small muted">${esc(FILE_NAME)}<br>Cập nhật ${BUILD.split('-').reverse().join('/')}</span></div>
       <div class="vlog">${CHANGELOG.map(c => `<details><summary><b>v${c.v}</b><span class="vs">${esc(c.s)}</span><span class="vd">${c.d}</span></summary><ul class="clog">${c.t.map(x => `<li>${esc(x)}</li>`).join('')}</ul></details>`).join('')}</div>
       <p class="note" style="margin:12px 0 0">Bản đang chạy: ${GAS ? 'máy chủ của nhóm (tài khoản học viên)' : Sync.mode === 'server' ? 'tệp HTML trên máy, đăng nhập máy chủ của nhóm' : Sync.mode === 'claude' ? 'claude.ai (bản cá nhân)' : 'offline / tệp HTML'}. Phông chữ: tiếng Việt TCVN 7284; tiếng Nhật UD Digi Kyokasho N (dùng phông đã cài trên máy; nếu máy chưa có, ứng dụng dùng phông kiểu chữ giáo khoa Klee One).</p>
-    </section>
+    </div></details>
   </div></div>`;
 }
 function exportData() {
@@ -3971,7 +4064,7 @@ function skillTiles() {
 }
 function viewProgress() {
   return `<div class="h-page"><div><h1>Tiến độ</h1><p>Bạn đã học được gì và những ngày tới cần ôn bao nhiêu</p></div>${countdownBtn()}</div>${progTabs('progress')}${skillTiles()}
-    <div class="grid2" style="margin-top:0"><div class="stack">${goalPanel()}${progressPanel()}</div><div class="stack">${weekPanel(planDay())}${heatPanel()}${forecastPanel()}</div></div>`;
+    <div class="grid2" style="margin-top:0"><div class="stack">${goalPanel()}${progressPanel()}</div><div class="stack">${monthPanel()}${weekPanel(planDay())}${forecastPanel()}</div></div>`;
 }
 
 /* ================= Grammar quiz: fill the pattern (with translation) · pattern to meaning · meaning to pattern ================= */
@@ -4243,6 +4336,8 @@ const ACT = {
   libtab: el => { const k = el.dataset.k; if (['v', 'g', 'r', 'm'].includes(k)) UI.learnTab = k; if (el.dataset.b) UI.lbook = el.dataset.b; if (SES) exitStudy(); if (UI.view !== 'learn') go('learn'); else { saveUI(); render(); } },
   lbook: el => { UI.lbook = el.dataset.k === 'sk' ? 'sk' : 'mm'; saveUI(); render(); },
   search: () => openSearch(),
+  theme: el => { THEME = el.dataset.k; lsSet(LS_THEME, THEME); applyTheme(); render(); },
+  calm: el => { const k = +el.dataset.s; UI.calM = k ? (UI.calM || 0) + k : 0; render(); },
   darumatip: (el) => toast(el.getAttribute('title') || ''),
   examedit: () => { if (SES) exitStudy(); go('settings'); const i = $('#setExam'); if (i) { i.scrollIntoView({block:'center'}); i.focus(); } },
   read: el => openRead(el.dataset.id),
@@ -4343,6 +4438,54 @@ document.addEventListener('visibilitychange', () => { if (document.visibilitySta
 window.addEventListener('pagehide', () => { saveLocal(); Sync.flushAll(); });
 
 /* ================= Boot ================= */
+
+/* ================= v6.2: themes ================= */
+const LS_THEME = 'mimikara-n3-theme', THEMES = [['auto', 'Theo máy'], ['light', 'Sáng'], ['dark', 'Tối'], ['navy', 'Navy ánh kim']];
+const HOST_THEME = document.documentElement.getAttribute('data-theme');
+let THEME = (() => { const t = lsGet(LS_THEME); return THEMES.some(x => x[0] === t) ? t : 'auto'; })();
+function applyTheme() {
+  const r = document.documentElement;
+  if (THEME === 'auto') { if (HOST_THEME && HOST_THEME !== 'navy') r.setAttribute('data-theme', HOST_THEME); else r.removeAttribute('data-theme'); }
+  else r.setAttribute('data-theme', THEME);
+}
+applyTheme();
+const themePanel = () => `<section class="panel"><h2>${ic('eye')} Giao diện</h2><div class="thpick" role="group" aria-label="Chọn giao diện">${THEMES.map(([k, l]) => `<button type="button" class="thb${THEME === k ? ' on' : ''}" data-act="theme" data-k="${k}" aria-pressed="${THEME === k}"><i class="thsw th-${k}" aria-hidden="true"></i>${l}</button>`).join('')}</div><p class="small muted" style="margin:10px 0 0">Lưu riêng cho máy này. “Theo máy” đổi sáng, tối theo cài đặt của thiết bị.</p></section>`;
+
+/* ================= v6.2: lịch tháng, nhìn là biết có trễ tiến độ không ================= */
+function monthPanel() {
+  const today = studyDate(), P = plan(), d0 = planDay(), off = UI.calM || 0, t = parseYmd(today);
+  const first = new Date(t.getFullYear(), t.getMonth() + off, 1), y = first.getFullYear(), m = first.getMonth(), nd = new Date(y, m + 1, 0).getDate(), lead = (first.getDay() + 6) % 7;
+  const dsOf = n => y + '-' + String(m + 1).padStart(2, '0') + '-' + String(n).padStart(2, '0');
+  // progress against the plan
+  const behind = d0 >= 1 ? behindBatches() : [], lateW = behind.reduce((a, x) => a + x.n, 0);
+  let T = 0, due = 0, got = 0;
+  P.batches.forEach((b, i) => { T += b.ids.length; if (P.learnDays[i] <= d0) due += b.ids.length; got += b.ids.filter(id => S.cards[id]).length; });
+  const pc = v => T ? Math.max(0, Math.min(100, v / T * 100)) : 0, pG = pc(got), pD = pc(due);
+  let cls = '', icn = 'clock', head, sub;
+  if (d0 < 1) { head = 'Chưa tới ngày bắt đầu'; sub = `Kế hoạch bắt đầu ${dmy(S.settings.start)}.`; }
+  else if (lateW) { cls = 'late'; icn = 'warn'; head = `Chậm ${behind.length} ngày`; sub = `Còn ${fmtN(lateW)} từ của những ngày đã qua chưa học.`; }
+  else if (T && got >= T) { cls = 'ok'; icn = 'check'; head = 'Đã học hết từ trong kế hoạch'; sub = 'Giờ chỉ cần ôn đúng hạn.'; }
+  else if (got > due) { cls = 'ok'; icn = 'check'; head = 'Vượt tiến độ'; sub = `Bạn đi trước kế hoạch ${fmtN(got - due)} từ.`; }
+  else { cls = 'ok'; icn = 'check'; head = 'Đúng tiến độ'; sub = dayDone(d0) ? 'Phần của hôm nay cũng đã xong.' : 'Các ngày đã qua đều đủ bài. Còn phần của hôm nay.'; }
+  const bar = T ? `<div class="mp-bar" role="img" aria-label="Đã học ${got} trên ${T} từ; theo kế hoạch đến hôm nay là ${due} từ"><i class="mp-fill" style="width:${pG}%"></i>${pD > pG ? `<i class="mp-gap" style="left:${pG}%;width:${pD - pG}%"></i>` : ''}${d0 >= 1 ? `<i class="mp-mark${pD > 88 ? ' r' : pD < 12 ? ' l' : ''}" style="left:${pD}%"></i>` : ''}</div><div class="mp-num"><span>Đã học <b>${fmtN(got)}</b> / ${fmtN(T)} từ</span><span>Kế hoạch đến hôm nay: <b>${fmtN(Math.min(due, T))}</b> từ</span></div>` : '';
+  // the month grid
+  let cells = WDS.slice(1).concat(WDS[0]).map(w => `<span class="wh">${w}</span>`).join('') + '<span></span>'.repeat(lead);
+  for (let n = 1; n <= nd; n++) {
+    const ds = dsOf(n), d = diffDays(ds, S.settings.start) + 1, p = dayInfo(d), act = active(ds);
+    if (!p) { cells += `<div class="mc ${act ? 'free' : ''}${ds === today ? ' now' : ''}" title="${dmy(ds)}${act ? ': có học (ngoài lịch từ vựng)' : ''}">${n}</div>`; continue; }
+    const b = p.t === 'learn' ? P.batches[p.b] : null, left = b ? b.ids.filter(id => !S.cards[id]).length : 0, done = dayDone(d);
+    const st = ds > today ? 'plan' : done ? 'ok' : ds === today ? 'plan' : act ? 'part' : 'miss';
+    const lab = b ? (st === 'ok' || !left ? b.ids.length + ' từ' : st === 'plan' ? b.ids.length + ' từ' : 'thiếu ' + left) : 'ôn';
+    const tip = `${WD[wdOf(ds)]} ${dmy(ds)} · Ngày ${d}: ${b ? b.ids.length + ' từ mới' : 'ngày ôn tập'} — ${st === 'ok' ? 'đã xong' : st === 'part' ? 'học chưa đủ' : st === 'miss' ? 'bỏ lỡ' : ds === today ? 'hôm nay' : 'sắp tới'}`;
+    cells += `<button type="button" class="mc ${st}${ds === today ? ' now' : ''}" data-act="pickday" data-d="${d}" title="${tip}" aria-label="${tip}">${n}<small>${lab}</small></button>`;
+  }
+  const acts = lateW ? `<div class="mp-acts"><button class="btn btn-pri btn-sm" data-act="batch" data-b="${behind[0].b}">${ic('play')} Học bù Ngày ${behind[0].d}</button><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Xếp lại lịch từ hôm nay</button></div>` : '';
+  return `<section class="panel mp"><h2>${ic('plan')} Lịch tháng ${m + 1}/${y}<span class="mp-nav"><button type="button" data-act="calm" data-s="-1" aria-label="Tháng trước">${ic('left')}</button>${off ? `<button type="button" class="mp-now" data-act="calm" data-s="0">Tháng này</button>` : ''}<button type="button" data-act="calm" data-s="1" aria-label="Tháng sau">${ic('right')}</button></span></h2>
+    <div class="mp-st ${cls}"><span class="mp-badge">${ic(icn)}</span><div><b>${head}</b><small>${sub}</small></div></div>${bar}
+    <div class="mp-grid">${cells}</div>
+    <div class="mp-leg"><span><i class="ok"></i>Đủ bài</span><span><i class="part"></i>Học chưa đủ</span><span><i class="miss"></i>Bỏ lỡ</span><span><i class="plan"></i>Sắp tới</span><span><i class="free"></i>Học ngoài lịch</span></div>${acts}</section>`;
+}
+
 loadUIPrefs();
 ACC.sess = loadSess();
 if (ACC.sess) { ACCOUNT = {kind:'server', name:ACC.sess.user.display, email:ACC.sess.user.name}; Sync.mode = 'server'; loadState(userKey(ACC.sess)); }
