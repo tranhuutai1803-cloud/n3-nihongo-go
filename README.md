@@ -1,16 +1,18 @@
 # Daruma N3
 
-Daruma N3: ứng dụng miễn phí học JLPT N3 bằng tiếng Việt. Thời khóa biểu mỗi ngày, 1.161 từ vựng và 164 thẻ ngữ pháp (giáo trình Mimikara N3 và các bộ sắp theo dàn bài Shinkanzen N3), bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
+Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
 
 **Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/n3-nihongo-go/
 
 - Thời khóa biểu mỗi ngày: ôn thẻ đến hạn, từ vựng mới theo lịch, ngữ pháp, đọc hiểu; đếm ngược tới ngày thi JLPT.
-- Từ vựng: 880 từ Mimikara N3 (24 nhóm) + 281 từ N3 bổ sung, xếp thêm theo 21 chủ đề và 8 nhóm loại từ theo dàn bài Shinkanzen N3.
-- Ngữ pháp: 110 mẫu Mimikara N3 + kính ngữ + 34 mẫu bổ sung, xếp thêm thành 12 bài và 8 bài ôn theo dàn bài Shinkanzen N3.
-- Đọc hiểu: 11 bài tự viết theo dạng đề N3, có câu hỏi, lời giải thích, từ khó, bản dịch.
+- Chọn trình độ: bấm N4 hoặc N3 ở thanh bên (hoặc nút trình độ trên đầu trang khi dùng điện thoại); mỗi trình độ có kế hoạch, tiến độ và bộ thẻ riêng.
+- N4: 791 từ vựng chia 25 bài (thứ tự bài 26–50), 95 thẻ ngữ pháp có ví dụ, 9 bài đọc hiểu; toàn bộ nội dung do nhóm tự biên soạn, chỉ dùng thứ tự các bài của giáo trình để tiện học song song.
+- N3 · Từ vựng: 880 từ Mimikara N3 (24 nhóm) + 281 từ N3 bổ sung, xếp thêm theo 21 chủ đề và 8 nhóm loại từ theo dàn bài Shinkanzen N3.
+- N3 · Ngữ pháp: 110 mẫu Mimikara N3 + kính ngữ + 34 mẫu bổ sung, xếp thêm thành 12 bài và 8 bài ôn theo dàn bài Shinkanzen N3.
+- N3 · Đọc hiểu: 11 bài tự viết theo dạng đề N3, có câu hỏi, lời giải thích, từ khó, bản dịch.
 - Flashcard lặp lại ngắt quãng, thẻ chữ Hán, Hán Việt từng chữ, xem ngẫu nhiên, trắc nghiệm từ vựng và ngữ pháp, tra cứu nhanh.
 - Khách học ngay, tiến độ lưu trên máy. Thành viên nhóm đăng nhập (mã lớp, tên đăng nhập, mật khẩu) để đồng bộ giữa các máy.
 
 Nội dung các bộ theo dàn bài Shinkanzen do nhóm tự biên soạn; chỉ dùng thứ tự bài của sách để tiện học song song.
 
-Phiên bản 6.2 · 2026-11-15
+Phiên bản 6.3 · 2026-11-15
