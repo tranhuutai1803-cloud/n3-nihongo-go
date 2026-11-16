@@ -10,9 +10,9 @@ Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riê
 - N3 · Từ vựng: 880 từ Mimikara N3 (24 nhóm) + 281 từ N3 bổ sung, xếp thêm theo 21 chủ đề và 8 nhóm loại từ theo dàn bài Shinkanzen N3.
 - N3 · Ngữ pháp: 110 mẫu Mimikara N3 + kính ngữ + 34 mẫu bổ sung, xếp thêm thành 12 bài và 8 bài ôn theo dàn bài Shinkanzen N3.
 - N3 · Đọc hiểu: 11 bài tự viết theo dạng đề N3, có câu hỏi, lời giải thích, từ khó, bản dịch.
-- Flashcard lặp lại ngắt quãng, thẻ chữ Hán, Hán Việt từng chữ, xem ngẫu nhiên, trắc nghiệm từ vựng và ngữ pháp, tra cứu nhanh.
+- Flashcard lặp lại ngắt quãng: lật thẻ rồi chấm bằng hai nút Đang học / Đã nhớ; tự chọn nội dung mặt trước và mặt sau của thẻ. Thẻ chữ Hán, Hán Việt từng chữ, xem ngẫu nhiên, trắc nghiệm từ vựng và ngữ pháp, tra cứu nhanh.
 - Khách học ngay, tiến độ lưu trên máy. Thành viên nhóm đăng nhập (mã lớp, tên đăng nhập, mật khẩu) để đồng bộ giữa các máy.
 
 Nội dung các bộ theo dàn bài Shinkanzen do nhóm tự biên soạn; chỉ dùng thứ tự bài của sách để tiện học song song.
 
-Phiên bản 6.3 · 2026-11-15
+Phiên bản 6.4 · 2026-11-16
