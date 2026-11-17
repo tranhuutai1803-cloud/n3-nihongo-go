@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="google-site-verification" content="le9jQVmBJsoRbnAlUqIXqvBY6fw5QW9MPQTZ9NMIPzM">
 <link rel="manifest" href="manifest.webmanifest">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daruma N3", "alternateName": ["Daruma N4", "N3 Nihongo Go", "MIMIKARA N3 Flashcard"], "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "6.4", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daruma N3", "alternateName": ["Daruma N4", "N3 Nihongo Go", "MIMIKARA N3 Flashcard"], "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "6.5", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
 <script>window.MMK_SERVER = "https://script.google.com/macros/s/AKfycbxplbNcR2JKVCaU0STY8ZG1f55cYr7YzoacVLbtRZrfuSxj7m7t16ZOMFjCPZcwNleAQw/exec";</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -541,6 +541,20 @@ rt{font-size:.48em;color:var(--muted);font-weight:400;letter-spacing:-.02em;font
 .gleg .gl-fill{width:12px;height:8px;border-radius:2px;background:var(--v2)}
 .gleg .gl-mark{width:3px;height:12px;border-radius:2px;background:var(--ink)}
 .goaled{margin-bottom:16px}
+.curpick{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;margin:0 0 14px}
+.curc{border:1.5px solid var(--line-2);background:var(--surface);border-radius:14px;padding:11px 13px;cursor:pointer;display:grid;gap:3px;text-align:left;align-content:start;color:var(--ink);font:inherit}
+.curc b{font-size:16px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}.curc .jp{font-size:12.5px;color:var(--muted)}
+.curc small{font-size:13px;color:var(--muted);line-height:1.45}.curc em{font-style:normal;font-size:11px;font-weight:700;color:var(--pri-ink);background:var(--pri-soft);border-radius:999px;padding:1px 8px;letter-spacing:.02em}
+.curc:hover{border-color:var(--pri)}
+.curc.on{border-color:var(--pri);background:var(--pri-soft);box-shadow:inset 0 0 0 1px var(--pri)}
+.curc:focus-visible{outline:none;box-shadow:var(--ring)}
+.glab{font-size:13px;font-weight:700;color:var(--muted);margin:0 0 8px;letter-spacing:.02em}
+.tt-cur{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:10px 18px;border-bottom:1px solid var(--line);background:var(--surface-2);font-size:14px}
+.tt-cur > span{min-width:0;flex:1 1 220px;color:var(--muted)}.tt-cur > span b{color:var(--ink)}
+.tt-cur .btn{flex:none}
+.gday{margin-top:14px;border-top:1px dashed var(--line-2);padding-top:12px}
+.gday h4{margin:0 0 6px;font-size:15px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.gday .tagk{font-size:12px}
 .gchips{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px;align-items:stretch}
 .gpre{border:1.5px solid var(--line-2);background:var(--surface);border-radius:14px;padding:9px 11px;cursor:pointer;display:grid;gap:1px;text-align:left;align-content:start}
 .gpre b{font-size:16px}.gpre small{font-size:12.5px;color:var(--muted)}.gpre em{font-style:normal;font-size:11px;font-weight:700;color:var(--pri-ink);letter-spacing:.03em}
@@ -1375,7 +1389,7 @@ body.gate .lvpill,body.gate .lvsw,body.one-level .lvpill,body.one-level .lvsw{di
 <noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.6 system-ui;color:#eee"><h1>Daruma N3</h1><p>Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.</p><p>Hãy bật JavaScript để dùng ứng dụng.</p></div></noscript>
 <div id="app">
   <aside class="side" id="side">
-    <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.4</em></small></span></button>
+    <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.5</em></small></span></button>
     <div class="lvsw" id="lvSide" role="group" aria-label="Chọn trình độ học"><button type="button" data-act="lv" data-lv="n4" aria-pressed="false"><b>N4</b><small>Sơ cấp</small></button><button type="button" data-act="lv" data-lv="n3" aria-pressed="true"><b>N3</b><small>Trung cấp</small></button></div>
     <nav class="tabs" id="tabs" aria-label="Điều hướng"></nav>
     <div class="side-foot" id="sideFoot"></div>
@@ -1383,7 +1397,7 @@ body.gate .lvpill,body.gate .lvsw,body.one-level .lvpill,body.one-level .lvsw{di
   <div class="page">
     <header class="top">
       <div class="wrap top-in">
-        <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.4</em></small></span></button>
+        <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.5</em></small></span></button>
         <button class="srch" data-act="search" aria-label="Tra cứu từ vựng, ngữ pháp"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Tra từ, chữ Hán, ngữ pháp…</span><kbd>/</kbd></button>
         <div class="tright"><button class="lvpill" id="lvTop" type="button" data-act="lvopen" aria-haspopup="dialog" aria-label="Chọn trình độ: đang học N3"><span id="lvTopT">N3</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button><button class="acctbtn reg" id="regBtn" data-act="register" hidden>Đăng ký</button><button class="acctbtn" id="acctBtn" data-act="acct" hidden></button><button class="sync" id="sync" data-act="go" data-view="settings" data-s="connecting" aria-label="Trạng thái lưu dữ liệu"></button></div>
       </div>
@@ -1404,11 +1418,16 @@ body.gate .lvpill,body.gate .lvsw,body.one-level .lvpill,body.one-level .lvsw{di
 (() => {
 'use strict';
 /* ================= App identity ================= */
-const APP_VER = '6.4', BUILD = '2026-11-16', FILE_NAME = 'MIMIKARA_N3_Flashcard_v6.4_2026-11-16';
+const APP_VER = '6.5', BUILD = '2026-11-17', FILE_NAME = 'MIMIKARA_N3_Flashcard_v6.5_2026-11-17';
 const WEB_URL = 'https:\/\/tranhuutai1803-cloud.github.io\/n3-nihongo-go\/';   // public site of the group (accounts live there)
 const APP_NAME = 'Daruma N3';
 const SCHEMA = 1, LS_KEY = 'mimikara-n3-flashcard', LS_UI = 'mimikara-n3-flashcard-ui';
 const CHANGELOG = [
+  {v:'6.5', d:'17/11/2026', s:'Chọn giáo trình cho lịch học: Mimikara N3 hoặc Shinkanzen N3, kèm số ngày học xong', t:[
+    'Thời khóa biểu có dòng “Lịch theo giáo trình” và nút Đổi giáo trình / số ngày. Chọn giáo trình (N3: Mimikara hoặc Shinkanzen; N4: Minna no Nihongo II bài 26–50) và số ngày, lịch chỉ gồm từ vựng và ngữ pháp của giáo trình đó.',
+    'Ngữ pháp nay cũng được chia theo ngày như từ vựng: tiết Ngữ pháp mỗi ngày học có phần mẫu riêng, ngày ôn tuần luyện lại các mẫu của tuần; Học bù và Lịch tháng tính cả ngữ pháp.',
+    'Đổi giáo trình giữa chừng thì thẻ đã học vẫn giữ và vẫn ôn; chọn “Bắt đầu từ hôm nay” để chia phần chưa học của giáo trình mới cho số ngày đã chọn.'
+  ]},
   {v:'6.4', d:'16/11/2026', s:'Chấm thẻ chỉ còn hai nút Đang học / Đã nhớ · tự chọn nội dung mặt trước, mặt sau', t:[
     'Sau khi lật thẻ chỉ còn hai nút: Đang học (thẻ quay lại ngay trong phiên) và Đã nhớ (thẻ vào lịch ôn thưa dần). Hai nút này thay cho Quên / Khó / Nhớ / Dễ và Đã biết ở mọi kiểu luyện flashcards; dưới mỗi nút vẫn ghi lần gặp lại tiếp theo.',
     'Thẻ mới mà bạn nhớ ngay từ lần đầu sẽ ôn lại vào hôm sau; thẻ đang học cần bấm Đã nhớ hai lần, cách nhau khoảng 10 phút, rồi mới sang lịch ôn theo ngày.',
@@ -1635,7 +1654,7 @@ const groupTheme = g => g === 'u' ? 'Từ bạn tự thêm' : g === 's' ? 'Từ 
 const groupShort = g => g === 'u' ? 'Từ bạn tự thêm' : g === 's' ? 'Từ N3 bổ sung theo chủ đề' : LD.short[g];
 
 /* ================= State ================= */
-const fresh = () => ({schema:SCHEMA, cards:{}, settings:{start:DEFAULT_START, days:30, plan:null, perDay:10, autoSpeak:false, kOn:true, kPerDay:15, typeK:true, listen:false, shuffle:true, deckNew:10, star:[], deckReset:{}, dk:{}, rd:{}, exam:'', faces:{}, upd:0}, log:{}, tests:[], notes:{}, resetAt:0, upd:0});
+const fresh = () => ({schema:SCHEMA, cards:{}, settings:{start:DEFAULT_START, days:30, plan:null, gplan:null, cur:'mm', perDay:10, autoSpeak:false, kOn:true, kPerDay:15, typeK:true, listen:false, shuffle:true, deckNew:10, star:[], deckReset:{}, dk:{}, rd:{}, exam:'', faces:{}, upd:0}, log:{}, tests:[], notes:{}, resetAt:0, upd:0});
 let S = fresh(), CW = {};
 const UI = {view:'today', planSel:0, calPage:null, goal:null, list:{q:'', g:'all', st:'all', limit:80}, editId:null, bulk:null, libTab:'book', learnTab:'v', lbook:'mm', read:'', furi:true, deck:'', multi:[], deckLimit:200, vDir:'jv'};
 let ACCOUNT = {kind:'local', name:'', email:''};
@@ -1649,6 +1668,8 @@ function migrate(o) {
   if (!(s.settings.upd > 0) && !Object.keys((o && o.cards) || {}).length) s.settings.start = DEFAULT_START;   // nothing learned, nothing set: no lessons to catch up on
   s.settings.days = clampDays(s.settings.days || 30);
   if (typeof s.settings.plan !== 'string' || !s.settings.plan) s.settings.plan = null;
+  if (typeof s.settings.gplan !== 'string' || !s.settings.gplan) s.settings.gplan = null;
+  if (!['mm', 'sk'].includes(s.settings.cur)) s.settings.cur = 'mm';
   s.cards = s.cards && typeof s.cards === 'object' ? s.cards : {};
   s.log = s.log && typeof s.log === 'object' ? s.log : {};
   s.tests = Array.isArray(s.tests) ? s.tests : [];
@@ -1731,44 +1752,78 @@ const MIN_DAYS = 14, MAX_DAYS = 365;
 function clampDays(n) { return Math.max(MIN_DAYS, Math.min(MAX_DAYS, Math.round(Number(n) || 30))); }
 const goalLabel = n => n === 180 ? '6 tháng' : n === 365 ? '1 năm' : n + ' ngày';
 function encodeIds(ids) {
-  const ns = ids.map(Number).sort((a, b) => a - b), out = [];
-  for (let i = 0; i < ns.length; i++) { let j = i; while (j + 1 < ns.length && ns[j + 1] === ns[j] + 1) j++; out.push(i === j ? String(ns[i]) : ns[i] + '-' + ns[j]); i = j; }
+  const by = new Map(), out = [];
+  for (const id of ids) { const m = /^([a-z]*)(\d+)$/.exec(String(id)); if (!m) continue; if (!by.has(m[1])) by.set(m[1], []); by.get(m[1]).push(+m[2]); }
+  for (const [p, ns] of by) {
+    ns.sort((a, b) => a - b);
+    for (let i = 0; i < ns.length; i++) { let j = i; while (j + 1 < ns.length && ns[j + 1] === ns[j] + 1) j++; out.push(i === j ? p + ns[i] : p + ns[i] + '-' + ns[j]); i = j; }
+  }
   return out.join(',');
 }
 function decodeIds(str) {
   const out = [];
-  String(str || '').split(',').forEach(p => { const [a, b] = p.split('-').map(Number); if (!a) return; for (let n = a; n <= (b || a) && n <= 100000; n++) out.push(String(n)); });
+  String(str || '').split(',').forEach(p => { const m = /^([a-z]*)(\d+)(?:-(\d+))?$/.exec(p.trim()); if (!m) return; const a = +m[2], b = m[3] ? +m[3] : a; if (!a) return; for (let n = a; n <= b && n - a <= 100000; n++) out.push(m[1] + n); });
   return out;
 }
-/* Split the ordered word list into L daily batches. Enough days: every batch stays inside one Mimikara group
-   (big groups get more days, chosen so the words/day stay even). Fewer days than groups: even contiguous split. */
-function splitBatches(ids, L) {
+/* Split the units of a curriculum (already reduced to the ids being planned, in order) into L daily batches.
+   Enough days: every batch stays inside one unit (big units get more days, so the amount per day stays even).
+   Fewer days than units: even contiguous split. Batch.groups holds unit indexes of the curriculum. */
+function splitBatches(units, L) {
   const out = [];
   if (L <= 0) return out;
-  const byG = [];
-  for (const id of ids) { const g = WORDS.get(id).g, last = byG[byG.length - 1]; if (last && last.g === g) last.ids.push(id); else byG.push({g, ids:[id]}); }
+  const ids = [], unitOf = new Map();
+  units.forEach(u => u.ids.forEach(id => { ids.push(id); unitOf.set(id, u.g); }));
   if (!ids.length) { for (let i = 0; i < L; i++) out.push({ids:[], groups:[], part:1, parts:1}); return out; }
-  if (L >= byG.length) {
-    const alloc = byG.map(() => 1);
-    for (let r = L - byG.length; r > 0; r--) { let best = 0, bv = -1; byG.forEach((x, i) => { const v = x.ids.length / alloc[i]; if (v > bv) { bv = v; best = i; } }); alloc[best]++; }
-    byG.forEach((x, i) => { const n = alloc[i], sz = x.ids.length; for (let k = 0; k < n; k++) out.push({ids:x.ids.slice(Math.round(k * sz / n), Math.round((k + 1) * sz / n)), groups:[x.g], part:k + 1, parts:n}); });
+  if (L >= units.length) {
+    const alloc = units.map(() => 1);
+    for (let r = L - units.length; r > 0; r--) { let best = 0, bv = -1; units.forEach((x, i) => { const v = x.ids.length / alloc[i]; if (v > bv) { bv = v; best = i; } }); alloc[best]++; }
+    units.forEach((x, i) => { const n = alloc[i], sz = x.ids.length; for (let k = 0; k < n; k++) out.push({ids:x.ids.slice(Math.round(k * sz / n), Math.round((k + 1) * sz / n)), groups:[x.g], part:k + 1, parts:n}); });
   } else {
     const T = ids.length;
-    for (let k = 0; k < L; k++) { const part = ids.slice(Math.round(k * T / L), Math.round((k + 1) * T / L)); out.push({ids:part, groups:[...new Set(part.map(id => WORDS.get(id).g))], part:1, parts:1}); }
+    for (let k = 0; k < L; k++) { const part = ids.slice(Math.round(k * T / L), Math.round((k + 1) * T / L)); out.push({ids:part, groups:[...new Set(part.map(id => unitOf.get(id)))], part:1, parts:1}); }
   }
   out.forEach(b => { if (!b.ids.length) b.groups = []; });
   return out;
 }
-function buildPlan(N, ids) {
+function buildPlan(N, ids, gids, cd) {
+  cd = cd || curData();
   const days = [null], learnDays = [];
   for (let d = 1; d <= N; d++) {
     const t = d === N ? 'test' : d === N - 1 ? 'verbs' : d % 7 === 0 ? 'review' : 'learn';
     days.push(t === 'review' ? {t, w:d / 7} : {t});
     if (t === 'learn') learnDays.push(d);
   }
-  const batches = splitBatches(ids, learnDays.length), dayOfId = new Map();
-  learnDays.forEach((d, i) => { days[d].b = i; batches[i].ids.forEach(id => dayOfId.set(id, d)); });
-  return {N, ids, days, learnDays, batches, dayOfId, reviewDays:days.filter(x => x && x.t === 'review').length};
+  const vs = new Set(ids), gs = new Set(gids || []);
+  const vu = cd.v.map((u, g) => ({g, ids:u.ids.filter(id => vs.has(id))})).filter(x => x.ids.length);
+  const gu = cd.g.map((u, g) => ({g, ids:u.ids.filter(id => gs.has(id))})).filter(x => x.ids.length);
+  const batches = splitBatches(vu, learnDays.length), gbatches = splitBatches(gu, learnDays.length), dayOfId = new Map();
+  learnDays.forEach((d, i) => { days[d].b = i; batches[i].ids.forEach(id => dayOfId.set(id, d)); gbatches[i].ids.forEach(id => dayOfId.set(id, d)); });
+  return {N, ids:vu.flatMap(x => x.ids), gids:gu.flatMap(x => x.ids), days, learnDays, batches, gbatches, dayOfId, reviewDays:days.filter(x => x && x.t === 'review').length, cur:cd.c, vu:cd.v, gu:cd.g};
+}
+
+/* ================= v6.5: the curriculum (giáo trình) the plan follows ================= */
+const CUR_LV = {n3:['mm', 'sk'], n4:['mn']};
+const CUR_META = {
+  mm:{name:'Mimikara N3', jp:'耳から覚える 語彙・文法トレーニング N3', what:'Từ vựng theo 24 nhóm của sách; ngữ pháp Unit 01–10 và phụ lục kính ngữ.'},
+  sk:{name:'Shinkanzen N3', jp:'新完全マスター 語彙・文法 N3', what:'Từ vựng theo 21 chủ đề và 8 nhóm loại từ; ngữ pháp 12 bài và 8 bài ôn, theo dàn bài của sách.'},
+  mn:{name:'Minna no Nihongo II', jp:'みんなの日本語 初級II 26〜50課', what:'Từ vựng và ngữ pháp theo 25 bài, từ bài 26 đến bài 50.'}
+};
+const curOf = c => { const L = CUR_LV[LEVEL] || ['mm']; c = c || PS().cur; return L.includes(c) ? c : L[0]; };
+const curName = c => CUR_META[curOf(c)].name;
+const CURC = new Map();
+const pad2 = n => String(n).padStart(2, '0');
+function curData(c) {
+  c = curOf(c); const key = LEVEL + '|' + c; let o = CURC.get(key); if (o) return o;
+  const seen = new Set(), uniq = list => list.map(u => Object.assign(u, {ids:u.ids.filter(id => !seen.has(id) && (seen.add(id), true))})).filter(u => u.ids.length);
+  let v, g;
+  if (c === 'sk') v = [...SKZ_VD.values()].map(d => { const pre = d.part === 1 ? 'Chủ đề' : 'Loại từ'; return {pre, num:pad2(d.n), label:pre + ' ' + pad2(d.n), tag:(d.part === 1 ? 'C' : 'L') + d.n, theme:d.name, short:d.name, deck:d.id, ids:d.ids.filter(id => WORDS.has(id))}; });
+  else v = GROUP_IDS.map((ids, i) => { const n4 = LEVEL === 'n4', num = String(i + (n4 ? 26 : 1)); return {pre:n4 ? 'Bài' : 'Nhóm', num, label:(n4 ? 'Bài ' : 'Nhóm ') + num, tag:(n4 ? 'B' : 'N') + num, theme:LD.themes[i], short:LD.short[i], deck:vPre() + i, ids:ids.slice()}; });
+  v = uniq(v); seen.clear();
+  if (c === 'mm') g = [...GUNITS.map(U => ({pre:'Unit', num:pad2(U.u), label:'Unit ' + pad2(U.u), theme:'Mẫu ' + U.range, short:'Mẫu ' + U.range, deck:'g' + U.u, ids:U.ids.slice()})), ...(KEIGO_IDS.length ? [{pre:'', num:'', label:'Kính ngữ', theme:'Phụ lục kính ngữ', short:'Kính ngữ', deck:'gk', ids:KEIGO_IDS.slice()}] : [])];
+  else g = [...SKZ_GL.values()].map(d => { const m = /^(\S+)\s+(\S+)$/.exec(d.label) || [, '', '']; return {pre:m[1], num:m[2], label:d.label, theme:d.name, short:d.name, deck:d.id, ids:d.ids.slice()}; });
+  g = uniq(g);
+  const vIds = v.flatMap(u => u.ids), gIds = g.flatMap(u => u.ids);
+  o = {c, v, g, vIds, gIds, vSet:new Set(vIds), gSet:new Set(gIds)}; CURC.set(key, o); return o;
 }
 let PLANC = null;
 /* the plan of the level being studied: N3 keeps its own fields on settings (as before), N4 has a copy in settings.n4 */
@@ -1779,13 +1834,17 @@ function PS() {
   if (!isYmd(o.start)) o.start = DEFAULT_START;
   o.days = clampDays(o.days || 60);
   if (typeof o.plan !== 'string' || !o.plan) o.plan = null;
+  if (typeof o.gplan !== 'string' || !o.gplan) o.gplan = null;
+  if (o.cur !== 'mn') o.cur = 'mn';
   return o;
 }
 function plan() {
-  const st = PS(), key = LEVEL + '|' + st.start + '|' + st.days + '|' + (st.plan || '');
+  const st = PS(), cd = curData(st.cur), key = LEVEL + '|' + cd.c + '|' + st.start + '|' + st.days + '|' + (st.plan || '') + '|' + (st.gplan || '');
   if (!PLANC || PLANC.key !== key) {
-    const ids = st.plan ? decodeIds(st.plan).filter(id => WORDS.has(id) && WORDS.get(id).base) : BASE_IDS.slice();
-    PLANC = buildPlan(clampDays(st.days), ids); PLANC.key = key;
+    let ids = st.plan ? decodeIds(st.plan).filter(id => cd.vSet.has(id)) : cd.vIds;
+    let gids = st.gplan ? decodeIds(st.gplan).filter(id => cd.gSet.has(id)) : cd.gIds;
+    if (!ids.length) ids = cd.vIds; if (!gids.length) gids = cd.gIds;
+    PLANC = buildPlan(clampDays(st.days), ids, gids, cd); PLANC.key = key;
   }
   return PLANC;
 }
@@ -1795,16 +1854,43 @@ const planWeek = d => Math.ceil(d / 7);
 const dayCls = (d, N) => d >= N - 1 ? 'wk-g' : 'wk-' + ((planWeek(d) - 1) % 4 + 1);
 function dayInfo(d) { const P = plan(); return (d >= 1 && d <= P.N) ? P.days[d] : null; }
 function batchOfDay(d) { const p = dayInfo(d); return p && p.t === 'learn' ? plan().batches[p.b] : null; }
-function batchTitle(b) {
+function unitTitle(b, U) {
   if (!b || !b.groups.length) return 'Ôn tự do';
-  const g0 = b.groups[0];
-  if (b.groups.length === 1) return grpLabel(g0) + (b.parts > 1 ? ` (${b.part}/${b.parts})` : '');
-  return grpLabel(g0) + '–' + (b.groups[b.groups.length - 1] + (LEVEL === 'n4' ? 26 : 1));
+  const u0 = U[b.groups[0]];
+  if (b.groups.length === 1) return u0.label + (b.parts > 1 ? ` (${b.part}/${b.parts})` : '');
+  const uL = U[b.groups[b.groups.length - 1]];
+  return u0.pre && u0.pre === uL.pre ? `${u0.label}–${uL.num}` : `${u0.label} → ${uL.label}`;
 }
-const batchTheme = b => (!b || !b.groups.length) ? 'Không có từ mới — ôn các thẻ đến hạn' : b.groups.map(g => LD.themes[g]).join(' · ');
-const batchShort = b => (!b || !b.groups.length) ? 'Ôn tự do' : b.groups.map(g => LD.short[g]).join(' · ');
-const batchTag = b => { if (!b || !b.groups.length) return 'Ôn'; const p = LEVEL === 'n4' ? 'B' : 'N', n = b.groups[0] + (LEVEL === 'n4' ? 26 : 1); return b.groups.length > 1 ? p + n + '+' : p + n + (b.parts > 1 ? '.' + b.part : ''); };
-function batchRange(b) { if (!b || !b.ids.length) return ''; const ns = b.ids.map(id => WORDS.get(id).no); return '#' + Math.min(...ns) + '–#' + Math.max(...ns); }
+const batchTitle = b => unitTitle(b, plan().vu);
+const batchTheme = b => (!b || !b.groups.length) ? 'Không có từ mới — ôn các thẻ đến hạn' : b.groups.map(g => plan().vu[g].theme).join(' · ');
+const batchShort = b => (!b || !b.groups.length) ? 'Ôn tự do' : b.groups.map(g => plan().vu[g].short).join(' · ');
+const batchTag = b => { if (!b || !b.groups.length) return 'Ôn'; const t = plan().vu[b.groups[0]].tag; return b.groups.length > 1 ? t + '+' : t + (b.parts > 1 ? '.' + b.part : ''); };
+function batchRange(b) { if (!b || !b.ids.length || plan().cur === 'sk') return ''; const ns = b.ids.map(id => WORDS.get(id).no); return '#' + Math.min(...ns) + '–#' + Math.max(...ns); }
+/* grammar of a day */
+const gTitle = b => unitTitle(b, plan().gu);
+function gSub(b) {
+  if (!b || !b.ids.length) return '';
+  if (plan().cur === 'mm') {
+    const ns = b.ids.filter(id => /^mg\d+$/.test(id)).map(id => +id.slice(2)), k = b.ids.some(id => /^mk/.test(id));
+    return [ns.length ? `Mẫu ${Math.min(...ns)}–${Math.max(...ns)}` : '', k ? (ns.length ? 'kính ngữ' : 'Kính ngữ') : ''].filter(Boolean).join(' và ');
+  }
+  return b.groups.map(g => plan().gu[g].short).join(' · ');
+}
+const gBatchOfDay = d => { const p = dayInfo(d); return p && p.t === 'learn' ? plan().gbatches[p.b] : null; };
+function behindG() {
+  const P = plan(), d0 = planDay(), out = [];
+  P.learnDays.forEach((d, i) => { if (d < d0) { const n = P.gbatches[i].ids.filter(id => !S.cards[id]).length; if (n) out.push({d, b:i, n}); } });
+  return out;
+}
+function nextAheadG() {
+  const P = plan(), d0 = planDay();
+  for (let i = 0; i < P.learnDays.length; i++) { const d = P.learnDays[i]; if (d > d0 && P.gbatches[i].ids.some(id => !S.cards[id])) return {d, b:i}; }
+  return null;
+}
+function weekGIds(w) { const P = plan(), out = []; for (let d = (w - 1) * 7 + 1; d <= Math.min(P.N, w * 7); d++) { const p = P.days[d]; if (p && p.t === 'learn') out.push(...P.gbatches[p.b].ids.filter(id => S.cards[id])); } return out; }
+/* the decks a plan session draws from count as being studied (Học › Bộ đang học) */
+function markUnits(b, U) { if (!b) return; for (const g of b.groups) { const d = deckById(U[g] && U[g].deck); if (d && d.own) markDeck(d); } }
+const gquizToday = () => S.tests.some(t => t && t.k === 'gquiz' && t.d === studyDate());
 function todayNewIds() { const b = batchOfDay(planDay()); return b ? b.ids.filter(id => !S.cards[id]) : []; }
 function customNewToday() {
   const t = studyDate(); let intro = 0;
@@ -1832,7 +1918,8 @@ function goalStats() {
   P.learnDays.forEach((d, i) => { if (d <= d0) expected += P.batches[i].ids.length; else ahead += P.batches[i].ids.filter(id => S.cards[id]).length; });
   const behind = behindBatches().reduce((s, x) => s + x.n, 0);
   const sizes = P.batches.map(b => b.ids.length).filter(Boolean);
-  return {N:P.N, d0, total, learned, expected:Math.min(total, expected), behind, ahead, end:dateOfDay(P.N), L:P.learnDays.length, R:P.reviewDays,
+  const gTotal = P.gids.length, gLearned = P.gids.filter(id => S.cards[id]).length, gs = P.gbatches.map(b => b.ids.length).filter(Boolean);
+  return {N:P.N, d0, total, learned, expected:Math.min(total, expected), behind, ahead, end:dateOfDay(P.N), L:P.learnDays.length, R:P.reviewDays, gTotal, gLearned, gmin:gs.length ? Math.min(...gs) : 0, gmax:gs.length ? Math.max(...gs) : 0,
     min:sizes.length ? Math.min(...sizes) : 0, max:sizes.length ? Math.max(...sizes) : 0, avg:sizes.length ? total / sizes.length : 0};
 }
 function dueInfo() {
@@ -1844,7 +1931,7 @@ const active = d => { const a = S.log[d]; return !!(a && (a[0] + a[1]) > 0); };
 function streak() { let n = 0, d = studyDate(); if (!active(d)) d = addDays(d, -1); while (active(d) && n < 4000) { n++; d = addDays(d, -1); } return n; }
 function dayDone(d) {
   const p = dayInfo(d); if (!p) return false;
-  if (p.t === 'learn') { const b = plan().batches[p.b]; return b.ids.length ? b.ids.every(id => S.cards[id]) : active(dateOfDay(d)); }
+  if (p.t === 'learn') { const ids = [...plan().batches[p.b].ids, ...plan().gbatches[p.b].ids]; return ids.length ? ids.every(id => S.cards[id]) : active(dateOfDay(d)); }
   return active(dateOfDay(d));
 }
 const weakCard = a => !!a && (a[0] === 1 || a[0] === 3 || a[6] > 0 || a[3] < 2300);
@@ -2696,7 +2783,7 @@ function renderGate() {
 
 /* ================= View: Today ================= */
 function goalPanel() {
-  const g = goalStats(), full = g.total === BASE_IDS.length;
+  const g = goalStats(), full = g.total === curData().vIds.length;
   const pL = g.total ? g.learned / g.total * 100 : 100, pE = g.total ? g.expected / g.total * 100 : 0;
   let st, cls;
   if (!g.total || g.learned >= g.total) { st = 'Đã học hết'; cls = 'ok'; }
@@ -2706,12 +2793,12 @@ function goalPanel() {
   else { st = 'Đúng tiến độ'; cls = 'ok'; }
   const left = g.d0 > g.N ? 'Đã hết thời gian mục tiêu' : g.d0 < 1 ? `Bắt đầu sau ${1 - g.d0} ngày` : `Còn ${g.N - g.d0 + 1} ngày`;
   const showMark = g.d0 >= 1 && g.d0 <= g.N && g.total;
-  return `<section class="panel goal"><h2>${ic('target')} Mục tiêu ${goalLabel(g.N)}<span class="aside">${dmy(PS().start)} → ${dmy(g.end)}</span></h2>
+  return `<section class="panel goal"><h2>${ic('target')} ${esc(curName())} · ${goalLabel(g.N)}<span class="aside">${dmy(PS().start)} → ${dmy(g.end)}</span></h2>
     <div class="gtop"><span class="gbig"><b>${fmtN(g.learned)}</b> / ${fmtN(g.total)} từ${full ? '' : ' (phần còn lại)'}</span><span class="gst g-${cls}">${st}</span></div>
     <div class="gmeter" role="img" aria-label="Đã học ${g.learned} trên ${g.total} từ${showMark ? '; theo kế hoạch đến hết hôm nay ' + g.expected + ' từ' : ''}"><span class="gfill" style="width:${pL}%"></span>${showMark ? `<span class="gmark" style="left:${pE}%" tabindex="0" data-tip="Kế hoạch đến hết hôm nay: ${g.expected} từ"></span>` : ''}</div>
     <div class="gleg"><span><i class="gl-fill"></i>Đã học</span>${showMark ? `<span><i class="gl-mark"></i>Kế hoạch đến hết hôm nay: ${fmtN(g.expected)} từ</span>` : ''}</div>
-    <div class="mini"><span><b>${g.min === g.max ? g.max : g.min + '–' + g.max}</b> từ mới / ngày học</span><span><b>${g.L}</b> ngày học · <b>${g.R}</b> ngày ôn tuần</span><span>${left}</span></div>
-    <div class="row" style="margin-top:12px"><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Đổi mục tiêu</button></div></section>`;
+    <div class="mini"><span><b>${g.min === g.max ? g.max : g.min + '–' + g.max}</b> từ mới / ngày học</span>${g.gTotal ? `<span>Ngữ pháp <b>${fmtN(g.gLearned)}</b>/${fmtN(g.gTotal)} mẫu · <b>${g.gmin === g.gmax ? g.gmax : g.gmin + '–' + g.gmax}</b> mẫu / ngày</span>` : ''}<span><b>${g.L}</b> ngày học · <b>${g.R}</b> ngày ôn tuần</span><span>${left}</span></div>
+    <div class="row" style="margin-top:12px"><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('book')} Đổi giáo trình / số ngày</button></div></section>`;
 }
 function boostPanel() {
   const pool = BASE_IDS.filter(id => S.cards[id]).length, lc = leechCards().length, ks = kStats();
@@ -2755,7 +2842,7 @@ function weekPanel(d) {
     const w = planWeek(d), a = (w - 1) * 7 + 1, b = Math.min(P.N, w * 7), cells = [];
     for (let x = a; x <= b; x++) {
       const p = P.days[x], ds = dateOfDay(x), done = dayDone(x);
-      const cls = x === d ? 'today' : x < d ? (done ? 'ok' : (p.t === 'learn' && P.batches[p.b].ids.length ? 'miss' : '')) : 'fut';
+      const cls = x === d ? 'today' : x < d ? (done ? 'ok' : (p.t === 'learn' && (P.batches[p.b].ids.length || P.gbatches[p.b].ids.length) ? 'miss' : '')) : 'fut';
       const lab = p.t === 'learn' ? batchTag(P.batches[p.b]) : p.t === 'review' ? 'Ôn' : p.t === 'verbs' ? 'ĐT' : 'KT';
       cells.push(`<button class="wsd ${cls} ${done && x === d ? 'ok' : ''} k-${p.t} ${dayCls(x, P.N)}" data-act="pickday" data-d="${x}" title="Ngày ${x} · ${dmy(ds)}"><span>${WDS[wdOf(ds)]}</span><b>${dm(ds).slice(0, 2)}</b><span class="dot">${done && x <= d ? ic('check') : ''}</span><span>${lab}</span></button>`);
     }
@@ -2767,34 +2854,46 @@ function weekPanel(d) {
 /* ================= View: Plan ================= */
 const PAGE_W = 5;
 const learnDaysCount = n => (n - 2) - Math.floor((n - 2) / 7);
-function goalDefaultFrom() { return (BASE_IDS.some(id => S.cards[id]) || planDay() > 1) ? 'today' : 'keep'; }
+function goalDefaultFrom(c) {
+  const cd = curData(c);
+  if (c && curOf(c) !== curOf()) return 'today';
+  return (cd.vIds.some(id => S.cards[id]) || cd.gIds.some(id => S.cards[id]) || planDay() > 1) ? 'today' : 'keep';
+}
+const goalDraft = o => Object.assign({days:clampDays(PS().days), from:goalDefaultFrom(), cur:curOf()}, UI.goal || {}, o || {});
+function curCard(c, on, cur) {
+  const cd = curData(c), m = CUR_META[c], learned = cd.vIds.filter(id => S.cards[id]).length + cd.gIds.filter(id => S.cards[id]).length;
+  return `<button class="curc${on ? ' on' : ''}" data-act="goalcur" data-cur="${c}" aria-pressed="${on}"><b>${esc(m.name)}${c === cur ? '<em>đang dùng</em>' : ''}</b><span class="jp" lang="ja">${m.jp}</span><small>${fmtN(cd.vIds.length)} từ vựng · ${fmtN(cd.gIds.length)} mẫu ngữ pháp${learned ? ` · đã học ${fmtN(learned)}` : ''}</small><small>${esc(m.what)}</small></button>`;
+}
 function goalEditor() {
-  const cur = clampDays(PS().days), dr = UI.goal, sel = dr ? dr.days : cur;
-  const learnedAny = BASE_IDS.some(id => S.cards[id]);
+  const cur = clampDays(PS().days), curC = curOf(), dr = UI.goal, sel = dr ? dr.days : cur, selC = dr ? curOf(dr.cur) : curC, cd = curData(selC);
+  const learnedAny = cd.vIds.some(id => S.cards[id]) || cd.gIds.some(id => S.cards[id]);
   const from = dr ? dr.from : goalDefaultFrom();
-  const pool = (from === 'today' && learnedAny) ? BASE_IDS.filter(id => !S.cards[id]).length : BASE_IDS.length;
-  const chips = GOAL_PRESETS.map(n => `<button class="gpre${sel === n ? ' on' : ''}" data-act="goalpick" data-days="${n}" aria-pressed="${sel === n}"><b>${goalLabel(n)}</b><small>~${Math.max(1, Math.round(pool / learnDaysCount(n)))} từ/ngày</small>${n === cur ? '<em>đang dùng</em>' : ''}</button>`).join('');
+  const vLeft = cd.vIds.filter(id => !S.cards[id]), gLeft = cd.gIds.filter(id => !S.cards[id]);
+  const pool = (from === 'today' && learnedAny) ? vLeft.length : cd.vIds.length, gpool = (from === 'today' && learnedAny) ? gLeft.length : cd.gIds.length;
+  const curs = CUR_LV[LEVEL].map(c => curCard(c, c === selC, curC)).join('');
+  const chips = GOAL_PRESETS.map(n => `<button class="gpre${sel === n ? ' on' : ''}" data-act="goalpick" data-days="${n}" aria-pressed="${sel === n}"><b>${goalLabel(n)}</b><small>~${Math.max(1, Math.round(pool / learnDaysCount(n)))} từ${gpool ? ` + ${Math.max(1, Math.round(gpool / learnDaysCount(n)))} mẫu` : ''}/ngày</small>${n === cur && selC === curC ? '<em>đang dùng</em>' : ''}</button>`).join('');
   const custom = `<label class="gcust"><span>Số ngày khác</span><input class="input" type="number" id="goalDays" min="${MIN_DAYS}" max="${MAX_DAYS}" inputmode="numeric" value="${!GOAL_PRESETS.includes(sel) ? sel : ''}" placeholder="${MIN_DAYS}–${MAX_DAYS}"></label>`;
   let prev = '';
   if (dr) {
     const today = studyDate(), start = from === 'keep' ? PS().start : today;
-    const ids = (from === 'today' && learnedAny) ? BASE_IDS.filter(id => !S.cards[id]) : BASE_IDS.slice();
-    const Pp = buildPlan(dr.days, ids), sizes = Pp.batches.map(b => b.ids.length).filter(Boolean);
-    const mn = sizes.length ? Math.min(...sizes) : 0, mx = sizes.length ? Math.max(...sizes) : 0;
+    const ids = (from === 'today' && learnedAny) ? vLeft : cd.vIds, gids = (from === 'today' && learnedAny) ? gLeft : cd.gIds;
+    const Pp = buildPlan(dr.days, ids, gids, cd), sizes = Pp.batches.map(b => b.ids.length).filter(Boolean), gsz = Pp.gbatches.map(b => b.ids.length).filter(Boolean);
+    const rng = a => a.length ? (Math.min(...a) === Math.max(...a) ? String(a[0]) : Math.min(...a) + '–' + Math.max(...a)) : '0';
     const dNow = diffDays(today, start) + 1;
-    let lateN = 0; Pp.learnDays.forEach((x, i) => { if (x < dNow) lateN += Pp.batches[i].ids.filter(id => !S.cards[id]).length; });
-    const unl = BASE_IDS.filter(id => !S.cards[id]).length;
+    let lateN = 0; Pp.learnDays.forEach((x, i) => { if (x < dNow) lateN += [...Pp.batches[i].ids, ...Pp.gbatches[i].ids].filter(id => !S.cards[id]).length; });
+    const nl = cd.vIds.length - vLeft.length + cd.gIds.length - gLeft.length;
     prev = `<div class="gprev">
       <div class="gopts" role="radiogroup" aria-label="Bắt đầu lịch">
-        <label class="gopt"><input type="radio" name="gfrom" value="today" ${from === 'today' ? 'checked' : ''}><span><b>Bắt đầu từ hôm nay (${dmy(today)})</b><small>${learnedAny ? `Xếp lịch cho ${fmtN(unl)} từ chưa học; ${fmtN(BASE_IDS.length - unl)} từ đã học tiếp tục ôn như cũ.` : `Xếp lịch cho cả ${fmtN(BASE_IDS.length)} từ.`}</small></span></label>
-        <label class="gopt"><input type="radio" name="gfrom" value="keep" ${from === 'keep' ? 'checked' : ''}><span><b>Giữ ngày bắt đầu ${dmy(PS().start)}</b><small>Xếp lại cả ${fmtN(BASE_IDS.length)} từ từ ngày bắt đầu cũ; từ đã học được tính là xong.</small></span></label>
+        <label class="gopt"><input type="radio" name="gfrom" value="today" ${from === 'today' ? 'checked' : ''}><span><b>Bắt đầu từ hôm nay (${dmy(today)})</b><small>${learnedAny ? `Xếp lịch cho ${fmtN(vLeft.length)} từ và ${fmtN(gLeft.length)} mẫu chưa học; ${fmtN(nl)} thẻ đã học tiếp tục ôn như cũ.` : `Xếp lịch cho cả ${fmtN(cd.vIds.length)} từ và ${fmtN(cd.gIds.length)} mẫu ngữ pháp.`}</small></span></label>
+        <label class="gopt"><input type="radio" name="gfrom" value="keep" ${from === 'keep' ? 'checked' : ''}><span><b>Giữ ngày bắt đầu ${dmy(PS().start)}</b><small>Xếp lại cả giáo trình từ ngày bắt đầu cũ; phần đã học được tính là xong.</small></span></label>
       </div>
-      <div class="gsum"><div><b>${dm(start)} → ${dmy(addDays(start, dr.days - 1))}</b><span>${goalLabel(dr.days)}</span></div><div><b>${fmtN(ids.length)}</b><span>từ cần học</span></div><div><b>${Pp.learnDays.length}</b><span>ngày học từ mới</span></div><div><b>${mn === mx ? mx : mn + '–' + mx}</b><span>từ mới / ngày</span></div></div>
-      ${lateN ? `<p class="note warnline">${ic('warn')} Với lựa chọn này, bạn sẽ bắt đầu ở Ngày ${dNow} và cần học bù ${fmtN(lateN)} từ. Chọn “Bắt đầu từ hôm nay” để chia đều lại.</p>` : ''}
-      <p class="small muted" style="margin:10px 0 0">Mỗi tuần 6 ngày học + 1 ngày ôn tuần (${Pp.reviewDays} ngày) · Ngày ${dr.days - 1}: luyện cặp động từ tự/tha · Ngày ${dr.days}: kiểm tra 100 từ. Thẻ đã học vẫn được ôn mỗi ngày theo lịch lặp lại ngắt quãng.</p>
-      <div class="factions"><button class="btn btn-pri" data-act="goalapply">${ic('check')} Áp dụng mục tiêu ${goalLabel(dr.days)}</button><button class="btn btn-ghost" data-act="goalcancel">Hủy</button></div></div>`;
+      <div class="gsum"><div><b>${dm(start)} → ${dmy(addDays(start, dr.days - 1))}</b><span>${goalLabel(dr.days)}</span></div><div><b>${fmtN(ids.length)}</b><span>từ cần học</span></div><div><b>${fmtN(gids.length)}</b><span>mẫu ngữ pháp</span></div><div><b>${rng(sizes)} + ${rng(gsz)}</b><span>từ + mẫu / ngày học</span></div></div>
+      ${lateN ? `<p class="note warnline">${ic('warn')} Với lựa chọn này, bạn sẽ bắt đầu ở Ngày ${dNow} và cần học bù ${fmtN(lateN)} thẻ. Chọn “Bắt đầu từ hôm nay” để chia đều lại.</p>` : ''}
+      <p class="small muted" style="margin:10px 0 0">Lịch chỉ gồm từ vựng và ngữ pháp của ${esc(CUR_META[selC].name)}. ${Pp.learnDays.length} ngày học, mỗi tuần 6 ngày học + 1 ngày ôn tuần (${Pp.reviewDays} ngày) · Ngày ${dr.days - 1}: luyện cặp động từ tự/tha · Ngày ${dr.days}: kiểm tra 100 từ. Thẻ đã học vẫn được ôn mỗi ngày theo lịch lặp lại ngắt quãng; các giáo trình khác vẫn học được ở trang Học.</p>
+      <div class="factions"><button class="btn btn-pri" data-act="goalapply">${ic('check')} Lên lịch ${esc(CUR_META[selC].name)} · ${goalLabel(dr.days)}</button><button class="btn btn-ghost" data-act="goalcancel">Hủy</button></div></div>`;
   }
-  return `<section class="panel goaled" id="goaled"><h2>${ic('target')} Mục tiêu hoàn thành bộ từ<span class="aside">đang dùng: ${goalLabel(cur)}</span></h2><p class="small muted" style="margin:-4px 0 12px">Chọn số ngày muốn học xong ${fmtN(BASE_IDS.length)} từ; ứng dụng chia lại số từ mới mỗi ngày.</p><div class="gchips">${chips}${custom}</div>${prev}</section>`;
+  return `<section class="panel goaled" id="goaled"><h2>${ic('target')} Lịch học theo giáo trình<span class="aside">đang dùng: ${esc(CUR_META[curC].name)} · ${goalLabel(cur)}</span></h2><p class="small muted" style="margin:-4px 0 12px">Chọn giáo trình và số ngày muốn học xong; lịch chỉ gồm từ vựng và ngữ pháp của giáo trình đó, chia đều cho các ngày học.</p>
+    <p class="glab">1. Giáo trình</p><div class="curpick">${curs}</div><p class="glab">2. Số ngày học xong</p><div class="gchips">${chips}${custom}</div>${prev}</section>`;
 }
 function viewPlan() {
   const P = plan(), N = P.N, d0 = planDay();
@@ -2817,7 +2916,7 @@ function viewPlan() {
   }
   const pager = pages > 1 ? `<div class="pager"><button class="btn btn-sec btn-sm" data-act="calpage" data-p="${page - 1}" ${page ? '' : 'disabled'} aria-label="Các tuần trước">‹ Trước</button><span><b>Tuần ${page * PAGE_W + 1}–${Math.min(weeks, (page + 1) * PAGE_W)}</b> · ${dmy(dateOfDay(a))} – ${dmy(dateOfDay(b))}</span><button class="btn btn-sec btn-sm" data-act="calpage" data-p="${page + 1}" ${page < pages - 1 ? '' : 'disabled'} aria-label="Các tuần sau">Sau ›</button></div>` : '';
   const legend = `<div class="legend"><span class="wk-1"><i></i>Màu theo tuần</span><span style="--wc:var(--gold-bg)"><i></i>Ôn động từ & kiểm tra</span><span><span class="lg-bar"></span>Phần từ mới đã học</span><span><span class="lg-ck">${ic('check')}</span>Đã xong</span></div>`;
-  return `<div class="h-page"><div><h1>Tiến độ</h1><p>Lịch học ${fmtN(BASE_IDS.length)} ${LVI().wordsOf} ${goalLabel(N)} · ${dmy(dateOfDay(1))} – ${dmy(dateOfDay(N))} · ${P.learnDays.length} ngày học từ mới, ${P.reviewDays} ngày ôn tuần, 1 ngày động từ, 1 ngày kiểm tra</p></div></div>${progTabs('plan')}${goalEditor()}${legend}${pager}<div class="cal-h">${head}</div><div class="cal">${cells.join('')}</div>${dayDetail(sel, d0)}`;
+  return `<div class="h-page"><div><h1>Tiến độ</h1><p>Lịch học ${esc(curName())}: ${fmtN(P.ids.length)} từ và ${fmtN(P.gids.length)} mẫu ngữ pháp trong ${goalLabel(N)} · ${dmy(dateOfDay(1))} – ${dmy(dateOfDay(N))} · ${P.learnDays.length} ngày học, ${P.reviewDays} ngày ôn tuần, 1 ngày động từ, 1 ngày kiểm tra</p></div></div>${progTabs('plan')}${goalEditor()}${legend}${pager}<div class="cal-h">${head}</div><div class="cal">${cells.join('')}</div>${dayDetail(sel, d0)}`;
 }
 function dayDetail(x, d0) {
   const P = plan(), p = P.days[x], ds = dateOfDay(x), cls = dayCls(x, P.N);
@@ -2825,12 +2924,16 @@ function dayDetail(x, d0) {
   const when = x === d0 ? 'Hôm nay' : x < d0 ? `${d0 - x} ngày trước` : `Còn ${x - d0} ngày`;
   let body = '';
   if (p.t === 'learn') {
-    const bt = P.batches[p.b], ids = bt.ids, st = statsOf(ids), nNew = st.new;
-    if (!ids.length) body = `<div class="dh">${badge}<div><h3>Ôn tự do</h3><div class="meta">${WD[wdOf(ds)]} ${dmy(ds)} · ${when} · Không có từ mới theo kế hoạch — hãy ôn các thẻ đến hạn.</div></div></div>`;
-    else body = `<div class="dh">${badge}<div><h3>${esc(batchTitle(bt))}: ${esc(batchTheme(bt))}</h3><div class="meta">${WD[wdOf(ds)]} ${dmy(ds)} · ${when} · Từ ${batchRange(bt)}</div>
+    const bt = P.batches[p.b], ids = bt.ids, st = statsOf(ids), nNew = st.new, gb = P.gbatches[p.b];
+    const gNew = gb.ids.filter(id => !S.cards[id]).length;
+    const gpart = gb.ids.length ? `<div class="gday"><h4><span class="tagk" lang="ja">文法</span>Ngữ pháp · ${esc(gTitle(gb))}${gSub(gb) ? ' · ' + esc(gSub(gb)) : ''}</h4><div class="mini" style="margin:0 0 8px"><span><b>${gb.ids.length}</b> mẫu</span><span><b>${gb.ids.length - gNew}</b> đã học</span><span><b>${gNew}</b> chưa học</span></div>
+      ${gNew ? `<div class="acts"><button class="btn btn-pri" data-act="gbatch" data-b="${p.b}">${ic('play')} Học ${gNew} mẫu mới</button></div>` : ''}
+      <div class="wchips">${gb.ids.map(id => { const g = GRAM.get(id); return `<button class="wchip s-${stOf(id)}" data-act="gram" data-id="${id}" title="${esc(gMeanPlain(g))}"><span class="jp">${esc(plainOf(g.t))}</span></button>`; }).join('')}</div></div>` : '';
+    if (!ids.length) body = `<div class="dh">${badge}<div><h3>${gb.ids.length ? 'Ngữ pháp' : 'Ôn tự do'}</h3><div class="meta">${WD[wdOf(ds)]} ${dmy(ds)} · ${when} · Không có từ mới theo kế hoạch${gb.ids.length ? '' : ' — hãy ôn các thẻ đến hạn'}.</div></div></div>${gpart}`;
+    else body = `<div class="dh">${badge}<div><h3>${esc(batchTitle(bt))}: ${esc(batchTheme(bt))}</h3><div class="meta">${WD[wdOf(ds)]} ${dmy(ds)} · ${when} · ${batchRange(bt) ? 'Từ ' + batchRange(bt) : ids.length + ' từ'}${gb.ids.length ? ` · ${gb.ids.length} mẫu ngữ pháp` : ''}</div>
       <div class="mini"><span><b>${st.total}</b> từ</span><span><b>${st.seen}</b> đã học</span><span><b>${st.mature}</b> đã thuộc</span><span><b>${nNew}</b> chưa học</span></div></div></div>
       <div class="acts">${nNew ? `<button class="btn btn-pri" data-act="batch" data-b="${p.b}">${ic('play')} Học ${nNew} từ mới</button>` : ''}<button class="btn btn-sec" data-act="practice" data-k="batch" data-b="${p.b}">${ic('layers')} Luyện tập</button>${nNew ? `<button class="btn btn-ghost" data-act="markbatch" data-b="${p.b}" data-confirm="Bấm lần nữa để đánh dấu ${nNew} từ là đã thuộc">${ic('check')} Đánh dấu đã thuộc</button>` : ''}</div>
-      <div class="wchips">${ids.map(id => { const wd = WORDS.get(id); return `<button class="wchip s-${stOf(id)}" data-act="word" data-id="${id}" title="${esc(wd.k)} — ${esc(wd.m)}"><span class="jp">${esc(wd.w)}</span></button>`; }).join('')}</div>`;
+      <div class="wchips">${ids.map(id => { const wd = WORDS.get(id); return `<button class="wchip s-${stOf(id)}" data-act="word" data-id="${id}" title="${esc(wd.k)} — ${esc(wd.m)}"><span class="jp">${esc(wd.w)}</span></button>`; }).join('')}</div>${gpart}`;
   } else if (p.t === 'review') {
     const ids = weekIds(p.w), weak = weakIds(ids), wb = weekBatches(p.w);
     body = `<div class="dh">${badge}<div><h3>Ôn tập tuần ${p.w}</h3><div class="meta">${WD[wdOf(ds)]} ${dmy(ds)} · ${when} · Không học từ mới — luyện lại ${ids.length} từ của tuần</div></div></div>
@@ -3077,7 +3180,7 @@ function viewSettings() {
     ${themePanel()}
     <section class="panel"><h2>${ic('plan')} Học tập · ${LVI().name}</h2>
       ${HAS_N4 ? `<div class="setrow stackm"><div class="t"><b>Trình độ đang học</b><small>Mỗi trình độ có lộ trình, bộ thẻ và lịch riêng; tiến độ của cả hai được giữ. Lựa chọn lưu riêng cho từng máy.</small></div><div class="lvset">${levelSwitchHtml()}</div></div>` : ''}
-      <div class="setrow"><div class="t"><b>Mục tiêu: ${goalLabel(clampDays(ps.days))}</b><small>${dmy(ps.start)} → ${dmy(dateOfDay(clampDays(ps.days)))} · ${Math.round(goalStats().avg)} từ mới mỗi ngày học</small></div><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Đổi mục tiêu</button></div>
+      <div class="setrow"><div class="t"><b>Lịch học: ${esc(curName())} · ${goalLabel(clampDays(ps.days))}</b><small>${dmy(ps.start)} → ${dmy(dateOfDay(clampDays(ps.days)))} · ${Math.round(goalStats().avg)} từ mới mỗi ngày học; lịch chỉ gồm từ vựng và ngữ pháp của giáo trình đã chọn.</small></div><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('book')} Đổi giáo trình / số ngày</button></div>
       <div class="setrow"><div class="t"><b>Ngày bắt đầu kế hoạch</b><small>Dời cả lịch sang ngày khác, giữ nguyên mục tiêu.</small></div><input class="input" type="date" id="setStart" value="${esc(ps.start)}"></div>
       <div class="setrow"><div class="t"><b>Ngày thi JLPT</b><small>Dùng cho bộ đếm ngược. Để trống thì lấy kỳ thi gần nhất: ${dmy(nextJlpt(studyDate()))} (chủ nhật đầu tháng 7 và tháng 12).</small></div><input class="input" type="date" id="setExam" value="${esc(examSet() ? st.exam : '')}" min="${studyDate()}"></div>
       <div class="setrow"><div class="t"><b>Thẻ mới mỗi lần luyện bộ thẻ</b><small>Ở trang Học, mỗi lần bấm “Luyện tập flashcards” của một bộ: ôn các thẻ đến hạn + tối đa bấy nhiêu thẻ mới (1–100).</small></div><input class="input" type="number" min="1" max="100" id="setDeckNew" value="${deckNewLimit()}" style="width:90px"></div>
@@ -3200,17 +3303,29 @@ function startToday(k) {
   const q = todayQueue(), b = batchOfDay(planDay());
   const title = b && b.ids.length ? `Hôm nay · ${batchTitle(b)} · ${batchShort(b)}` : 'Học hôm nay';
   if (k === 'rev') { openSession({mode:'srs', title:'Ôn thẻ đến hạn', main:shuffle([...q.rev, ...q.kNew]), learn:q.learn}); return; }
-  if (k === 'new') { openSession({mode:'srs', title:b && b.ids.length ? `Từ mới · ${batchTitle(b)} · ${batchShort(b)}` : 'Từ mới hôm nay', main:ordList(q.neu), learn:[]}); return; }
+  if (k === 'new') { if (b) markUnits(b, plan().vu); openSession({mode:'srs', title:b && b.ids.length ? `Từ mới · ${batchTitle(b)} · ${batchShort(b)}` : 'Từ mới hôm nay', main:ordList(q.neu), learn:[]}); return; }
   openSession({mode:'srs', title, main:interleave(shuffle([...q.rev, ...q.kNew]), ordList(q.neu)), learn:q.learn});
 }
 function startGroup(g) {
   const ids = (g === 'u' ? CUSTOM_IDS : GROUP_IDS[g] || []).filter(id => !S.cards[id]);
   openSession({mode:'srs', title:`${groupName(g)} · ${groupShort(g)}`, main:ordList(ids), learn:[]});
 }
-function startBatch(bi) {
+function startBatch(bi, both) {
   const P = plan(), bt = P.batches[bi]; if (!bt) return;
-  const d = P.learnDays[bi];
-  openSession({mode:'srs', title:`Ngày ${d} · ${batchTitle(bt)} · ${batchShort(bt)}`, main:ordList(bt.ids.filter(id => !S.cards[id])), learn:[]});
+  const d = P.learnDays[bi], gb = P.gbatches[bi];
+  markUnits(bt, P.vu);
+  const v = bt.ids.filter(id => !S.cards[id]), g = both ? gb.ids.filter(id => !S.cards[id]) : [];
+  if (g.length) markUnits(gb, P.gu);
+  openSession({mode:'srs', title:`Ngày ${d} · ${bt.ids.length ? batchTitle(bt) + ' · ' + batchShort(bt) : gTitle(gb)}`, main:[...ordList(v), ...ordList(g)], learn:[]});
+}
+function startGBatch(bi) {
+  const P = plan(), gb = P.gbatches[bi]; if (!gb) return;
+  markUnits(gb, P.gu);
+  openSession({mode:'srs', title:`Ngữ pháp · Ngày ${P.learnDays[bi]} · ${gTitle(gb)}${gSub(gb) ? ' · ' + gSub(gb) : ''}`, main:ordList(gb.ids.filter(id => !S.cards[id])), learn:[]});
+}
+function startGLeft() {
+  const P = plan(), ids = P.gids.filter(id => !S.cards[id]).slice(0, deckNewLimit());
+  openSession({mode:'srs', title:`Ngữ pháp · ${curName()} · phần còn lại`, main:ids, learn:[]});
 }
 function startPractice(k, el) {
   let ids = [], title = 'Luyện tập', ordered = false;
@@ -3218,13 +3333,14 @@ function startPractice(k, el) {
   else if (k === 'batch') { const bt = plan().batches[+el.dataset.b]; ids = bt ? bt.ids.slice() : []; title = `Luyện tập · Ngày ${plan().learnDays[+el.dataset.b]} · ${bt ? batchTitle(bt) : ''}`; }
   else if (k === 'week') { const w = +el.dataset.w; ids = weekIds(w); title = `Ôn tập tuần ${w}`; }
   else if (k === 'weak') { const w = +el.dataset.w; ids = weakIds(weekIds(w)); title = `Ôn từ khó · tuần ${w}`; }
+  else if (k === 'gweek') { const w = +el.dataset.w; ids = weekGIds(w); title = `Ôn ngữ pháp tuần ${w}`; }
   else if (k === 'verbs') { ids = shuffle(PAIRS.slice()).flat(); ordered = true; title = 'Luyện cặp động từ tự / tha'; }
   else if (k === 'redo') { ids = (SES && SES.wrong || []).slice(); title = 'Luyện lại thẻ chưa nhớ'; }
   else if (k === 'leech') { ids = leechCards(); title = 'Ôn từ hay quên'; }
   openSession({mode:'practice', title, main:ordered ? ids : ordList(ids), learn:[]});
 }
 function startTest() {
-  let pool = allIds().filter(id => S.cards[id]); if (pool.length < 100) pool = BASE_IDS.slice();
+  let pool = allIds().filter(id => S.cards[id]); if (pool.length < 100) pool = plan().ids.length >= 100 ? plan().ids.slice() : BASE_IDS.slice();
   openSession({mode:'test', title:'Kiểm tra 100 từ', main:shuffle(pool.slice()).slice(0, 100), learn:[]});
 }
 function openSession(o) {
@@ -4105,7 +4221,7 @@ function applyLevel(lv) {
   LEVEL = lv === 'n4' && HAS_N4 ? 'n4' : 'n3'; LD = LEVELS[LEVEL]();
   loadWords(); loadSeg(); loadGram(); loadSkz();
   Object.assign(BOOKS, BOOKS_LV[LEVEL]);
-  PLANC = null; GFRAG = null; HAY.clear();
+  PLANC = null; GFRAG = null; HAY.clear(); CURC.clear();
   applyCustom();   // my own words are shared by both levels; this also rebuilds the search indexes
   renderLevelUI();
 }
@@ -4238,9 +4354,12 @@ function ttRow(n, sk, kj, title, sub, act, done) {
 }
 const ttOk = `<span class="tt-ok">${ic('check')} Xong</span>`;
 function catchPanel() {
-  const P = plan(), behind = planDay() >= 1 ? behindBatches() : []; if (!behind.length) return '';
-  const total = behind.reduce((s, x) => s + x.n, 0), shown = behind.slice(0, 8);
-  return `<section class="catch"><h3>${ic('clock')} Học bù · ${behind.length} ngày còn ${total} từ chưa học</h3><div class="chips">${shown.map(x => { const b = P.batches[x.b]; return `<button class="gchip ${b.groups.length ? wkClass(b.groups[0]) : ''}" data-act="batch" data-b="${x.b}"><i></i>Ngày ${x.d} · ${esc(batchTitle(b))} <em>${x.n} từ</em></button>`; }).join('')}${behind.length > shown.length ? `<span class="small muted" style="align-self:center">+${behind.length - shown.length} ngày nữa</span>` : ''}</div><div class="catch-foot"><p class="small muted" style="margin:0">Từ đã thuộc thì bấm <b>Đã nhớ</b> ngay lần đầu: thẻ sang thẳng lịch ôn, hôm sau mới gặp lại. Chậm nhiều thì xếp lại lịch: chia đều phần còn lại từ hôm nay.</p><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Xếp lại lịch từ hôm nay</button></div></section>`;
+  const P = plan(), bv = planDay() >= 1 ? behindBatches() : [], bg = planDay() >= 1 ? behindG() : [];
+  if (!bv.length && !bg.length) return '';
+  const nv = bv.reduce((s, x) => s + x.n, 0), ng = bg.reduce((s, x) => s + x.n, 0), nd = new Set([...bv, ...bg].map(x => x.d)).size;
+  const sv = bv.slice(0, 8), sg = bg.slice(0, 6);
+  const what = [nv ? fmtN(nv) + ' từ' : '', ng ? fmtN(ng) + ' mẫu ngữ pháp' : ''].filter(Boolean).join(' và ');
+  return `<section class="catch"><h3>${ic('clock')} Học bù · ${nd} ngày còn ${what} chưa học</h3><div class="chips">${sv.map(x => { const b = P.batches[x.b]; return `<button class="gchip ${b.groups.length ? wkClass(b.groups[0]) : ''}" data-act="batch" data-b="${x.b}"><i></i>Ngày ${x.d} · ${esc(batchTitle(b))} <em>${x.n} từ</em></button>`; }).join('')}${sg.map(x => { const b = P.gbatches[x.b]; return `<button class="gchip wk-5" data-act="gbatch" data-b="${x.b}"><i></i>Ngày ${x.d} · ${esc(gTitle(b))} <em>${x.n} mẫu</em></button>`; }).join('')}${bv.length + bg.length > sv.length + sg.length ? `<span class="small muted" style="align-self:center">+${bv.length + bg.length - sv.length - sg.length} phần nữa</span>` : ''}</div><div class="catch-foot"><p class="small muted" style="margin:0">Thẻ đã thuộc thì bấm <b>Đã nhớ</b> ngay lần đầu: thẻ sang thẳng lịch ôn, hôm sau mới gặp lại. Chậm nhiều thì xếp lại lịch: chia đều phần còn lại từ hôm nay.</p><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Xếp lại lịch từ hôm nay</button></div></section>`;
 }
 function viewToday() {
   const P = plan(), N = P.N, d = planDay(), today = studyDate(), p = dayInfo(d);
@@ -4279,16 +4398,37 @@ function viewToday() {
     rows.push(ttRow(2, 'sk-v', '語彙', title, sub, done && !act ? ttOk : act, done));
   }
   {
-    const g = nextGramDeck(); let gToday = 0;
-    for (const id in S.cards) if (isGram(id) && S.cards[id][8] === today) gToday++;
-    let sub, act, done = gToday > 0;
-    if (g) {
-      const lim = Math.min(deckNewLimit(), g.st.fresh);
-      sub = `${esc(g.d.title)} · ${esc(g.d.short)} <em>— ${esc(BOOKS[g.d.book].name)}, còn ${g.st.fresh} mẫu chưa học${gToday ? `; hôm nay đã học ${gToday} mẫu` : ''}</em>`;
-      act = `<button class="btn ${gToday ? 'btn-sec' : bc()}" data-act="deckgo" data-id="${g.d.id}">${ic('play')} Học ${lim} mẫu${gToday ? ' nữa' : ' mới'}</button>`;
-    } else { done = true; sub = 'Đã học hết các mẫu ngữ pháp. Làm trắc nghiệm để giữ phong độ.'; act = `<button class="btn btn-sec" data-act="gquiz">${ic('trophy')} Trắc nghiệm ngữ pháp</button>`; }
+    let gToday = 0; for (const id in S.cards) if (isGram(id) && S.cards[id][8] === today) gToday++;
+    let title = 'Ngữ pháp', sub = '', act = '', done = false;
+    const cn = esc(curName()), gb = d >= 1 && d <= N ? gBatchOfDay(d) : null, gNew = gb ? gb.ids.filter(id => !S.cards[id]) : [];
+    const gBehind = d >= 1 ? behindG() : [], gAhead = nextAheadG(), gLeft = P.gids.filter(id => !S.cards[id]).length, qz = gquizToday();
+    const quizBtn = cls => `<button class="btn ${cls}" data-act="gquiz">${ic('trophy')} Trắc nghiệm ngữ pháp</button>`;
+    const bBtn = cls => gBehind.length ? `<button class="btn ${cls}" data-act="gbatch" data-b="${gBehind[0].b}">${ic('clock')} Học bù Ngày ${gBehind[0].d} (${gBehind[0].n} mẫu)</button>` : '';
+    if (!P.gids.length) {
+      const g = nextGramDeck(); done = gToday > 0;
+      if (g) { const lim = Math.min(deckNewLimit(), g.st.fresh); sub = `${esc(g.d.title)} · ${esc(g.d.short)} <em>— ${esc(BOOKS[g.d.book].name)}, còn ${g.st.fresh} mẫu chưa học</em>`; act = `<button class="btn ${gToday ? 'btn-sec' : bc()}" data-act="deckgo" data-id="${g.d.id}">${ic('play')} Học ${lim} mẫu${gToday ? ' nữa' : ' mới'}</button>`; }
+      else { done = true; sub = 'Đã học hết các mẫu ngữ pháp. Làm trắc nghiệm để giữ phong độ.'; act = quizBtn('btn-sec'); }
+    } else if (d < 1) {
+      sub = `Lịch ${cn} bắt đầu từ ${dmy(PS().start)}. Bạn có thể học trước.`; done = gToday > 0;
+      act = gAhead ? `<button class="btn ${bc()}" data-act="gbatch" data-b="${gAhead.b}">${ic('bolt')} Học trước Ngày ${gAhead.d}</button>` : '';
+    } else if (d > N) {
+      if (gLeft) { sub = `Đã hết lịch ${goalLabel(N)}; còn ${gLeft} mẫu ${cn} chưa học.`; act = `<button class="btn ${gToday ? 'btn-sec' : bc()}" data-act="gleft">${ic('play')} Học ${Math.min(deckNewLimit(), gLeft)} mẫu${gToday ? ' nữa' : ''}</button>`; done = gToday > 0; }
+      else { done = true; sub = `Đã học hết ngữ pháp ${cn}. Làm trắc nghiệm để giữ phong độ.`; act = quizBtn('btn-sec'); }
+    } else if (gb && gb.ids.length) {
+      if (gNew.length) { sub = `Ngày ${d}/${N} · ${esc(gTitle(gb))}${gSub(gb) ? ' · ' + esc(gSub(gb)) : ''} <em>— ${cn}${gToday ? `; hôm nay đã học ${gToday} mẫu` : ''}</em>`; act = `<button class="btn ${bc()}" data-act="gbatch" data-b="${dayInfo(d).b}">${ic('play')} Học ${gNew.length} mẫu mới</button>`; }
+      else { done = true; sub = `Ngày ${d}/${N} · đã học xong ${gb.ids.length} mẫu của hôm nay (${esc(gTitle(gb))}).`; act = gBehind.length ? bBtn('btn-sec') : gAhead ? `<button class="btn btn-ghost" data-act="gbatch" data-b="${gAhead.b}">${ic('bolt')} Học trước Ngày ${gAhead.d}</button>` : ''; }
+    } else {
+      const p2 = dayInfo(d), wk = p2 && p2.t === 'review' ? weekGIds(p2.w) : [];
+      title = p2 && p2.t === 'review' ? `Ôn ngữ pháp tuần ${p2.w}` : 'Ngữ pháp';
+      done = qz; sub = `Ngày ${d}/${N} · hôm nay không có mẫu mới${gBehind.length ? `; còn ${gBehind.reduce((s, x) => s + x.n, 0)} mẫu của những ngày trước` : ''}. ${wk.length ? `Luyện lại ${wk.length} mẫu của tuần hoặc làm` : 'Làm'} trắc nghiệm ngữ pháp để ôn.`;
+      const parts = [];
+      if (gBehind.length) parts.push(bBtn);
+      if (wk.length) parts.push(k => `<button class="btn ${k}" data-act="practice" data-k="gweek" data-w="${p2.w}">${ic('layers')} Ôn ${wk.length} mẫu của tuần</button>`);
+      parts.push(quizBtn);
+      act = parts.map((f, i) => f(i === 0 && !qz ? bc() : 'btn-sec')).join('');
+    }
     if (done) doneN++;
-    rows.push(ttRow(3, 'sk-g', '文法', 'Ngữ pháp', sub, act, done));
+    rows.push(ttRow(3, 'sk-g', '文法', title, sub, done && !act ? ttOk : act, done));
   }
   {
     const r = nextRead(), rd = readDone(); let rToday = 0;
@@ -4303,7 +4443,7 @@ function viewToday() {
   const full = doneN >= nP;
   const dTip = full ? 'Daruma hôm nay đã đủ hai mắt.' : `Xong cả ${nP} tiết thì Daruma hôm nay được tô nốt mắt còn lại.`;
   const head = `<div class="td-head"><div class="td-main"><button type="button" class="td-d${full ? ' full' : ''}" data-act="darumatip" title="${dTip}" aria-label="${dTip}">${daruma(full ? 2 : 1)}<i>${doneN}/${nP} tiết</i></button><div><p class="td-date">${WD[wdOf(today)]} · ${dmy(today)}${who ? ' · Chào ' + esc(who) : ''}</p><h1>${h1}</h1><p class="td-sub">${sk > 1 ? `Bạn đã học ${sk} ngày liên tiếp. ` : ''}Làm theo thứ tự từ trên xuống: ôn trước, học mới sau. Mỗi tiết chừng 5 đến 15 phút. <span class="d-tip">${dTip}</span></p></div></div>${countdownBtn()}</div>`;
-  const tt = `<section class="tt" aria-label="Thời khóa biểu hôm nay"><div class="tt-h"><h2>Thời khóa biểu hôm nay</h2><span class="aside">${doneN}/${nP} tiết xong</span><span class="tt-dots" aria-hidden="true">${rows.map((x, i) => `<i class="${i < doneN ? 'on' : ''}"></i>`).join('')}</span></div><ol class="tt-list">${rows.join('')}</ol></section>`;
+  const tt = `<section class="tt" aria-label="Thời khóa biểu hôm nay"><div class="tt-h"><h2>Thời khóa biểu hôm nay</h2><span class="aside">${doneN}/${nP} tiết xong</span><span class="tt-dots" aria-hidden="true">${rows.map((x, i) => `<i class="${i < doneN ? 'on' : ''}"></i>`).join('')}</span></div><div class="tt-cur"><span>Lịch theo giáo trình <b>${esc(curName())}</b> · ${goalLabel(N)} (${dmy(dateOfDay(1))} → ${dmy(dateOfDay(N))}) · ${fmtN(P.ids.length)} từ, ${fmtN(P.gids.length)} mẫu ngữ pháp</span><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('book')} Đổi giáo trình / số ngày</button></div><ol class="tt-list">${rows.join('')}</ol></section>`;
   const pool = allIds().filter(id => S.cards[id]).length, lc = leechCards().length;
   const quick = `<section class="panel"><h2>${ic('bolt')} Luyện nhanh<span class="aside">không tính vào thời khóa biểu</span></h2><div class="qlinks"><button class="qlink sk-v" data-act="quiz" ${pool >= QUIZ_MIN ? '' : 'disabled'}>${ic('trophy')}<b>Đề từ vựng</b><small>${pool >= QUIZ_MIN ? QUIZ_N + ' câu kiểu JLPT' : 'cần học ' + QUIZ_MIN + ' từ'}</small></button><button class="qlink sk-g" data-act="gquiz">${ic('trophy')}<b>Đề ngữ pháp</b><small>điền mẫu, chọn nghĩa</small></button><button class="qlink sk-k" data-act="practice" data-k="leech" ${lc ? '' : 'disabled'}>${ic('warn')}<b>Thẻ hay quên</b><small>${lc ? lc + ' thẻ' : 'chưa có'}</small></button></div></section>`;
   return lvAskPanel() + head + tt + catchPanel() + `<div class="td-grid"><div class="stack">${decksPanel()}${quick}</div><div class="stack">${darumaWeek()}${weekPanel(d)}</div></div>`;
@@ -4616,18 +4756,22 @@ const ACT = {
   go: el => { if (SES) exitStudy(); go(el.dataset.view); },
   today: el => startToday(el && el.dataset ? el.dataset.k : ''),
   group: el => { const g = el.dataset.g === 'u' ? 'u' : +el.dataset.g; startGroup(g); },
-  batch: el => startBatch(+el.dataset.b),
-  goaledit: () => { if (SES) exitStudy(); UI.goal = {days:clampDays(PS().days), from:goalDefaultFrom()}; UI.view = 'plan'; saveUI(); render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'start'}); },
-  goalpick: el => { UI.goal = {days:+el.dataset.days, from:UI.goal ? UI.goal.from : goalDefaultFrom()}; render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'nearest'}); },
+  batch: el => startBatch(+el.dataset.b, el.dataset.all === '1'),
+  gbatch: el => startGBatch(+el.dataset.b),
+  gleft: () => startGLeft(),
+  goaledit: () => { if (SES) exitStudy(); closeModal(); UI.goal = {days:clampDays(PS().days), from:goalDefaultFrom(), cur:curOf()}; UI.view = 'plan'; saveUI(); render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'start'}); },
+  goalpick: el => { UI.goal = goalDraft({days:+el.dataset.days}); render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'nearest'}); },
+  goalcur: el => { const c = curOf(el.dataset.cur); UI.goal = goalDraft({cur:c, from:goalDefaultFrom(c)}); render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'nearest'}); },
   goalcancel: () => { UI.goal = null; render(); },
   goalapply: () => {
     const dr = UI.goal; if (!dr) return;
-    const learnedAny = BASE_IDS.some(id => S.cards[id]), t = now();
-    PS().days = clampDays(dr.days);
+    const cd = curData(dr.cur), learnedAny = cd.vIds.some(id => S.cards[id]) || cd.gIds.some(id => S.cards[id]), t = now(), re = dr.from !== 'keep' && learnedAny;
+    PS().cur = cd.c; PS().days = clampDays(dr.days);
     if (dr.from !== 'keep') PS().start = studyDate(t);
-    PS().plan = (dr.from !== 'keep' && learnedAny) ? encodeIds(BASE_IDS.filter(id => !S.cards[id])) : null;
+    PS().plan = re ? (encodeIds(cd.vIds.filter(id => !S.cards[id])) || null) : null;
+    PS().gplan = re ? (encodeIds(cd.gIds.filter(id => !S.cards[id])) || null) : null;
     S.settings.upd = t; PLANC = null; UI.goal = null; UI.planSel = 0; UI.calPage = null;
-    touch('meta'); toast(`Đã đặt mục tiêu ${goalLabel(PS().days)}: xong ngày ${dmy(dateOfDay(PS().days))}`); render(); window.scrollTo(0, 0);
+    touch('meta'); toast(`Đã lên lịch ${CUR_META[cd.c].name} · ${goalLabel(PS().days)}: xong ngày ${dmy(dateOfDay(PS().days))}`); render(); window.scrollTo(0, 0);
   },
   calpage: el => { UI.calPage = +el.dataset.p; UI.planSel = 0; render(); },
   practice: el => startPractice(el.dataset.k, el),
@@ -4793,7 +4937,7 @@ document.addEventListener('change', e => {
   else if (t.id === 'setStart') { if (isYmd(t.value)) { PS().start = t.value; S.settings.upd = now(); UI.planSel = 0; UI.calPage = null; touch('meta'); toast('Đã đổi ngày bắt đầu: ' + dmy(t.value)); } }
   else if (t.id === 'setExam') { const v = isYmd(t.value) ? t.value : ''; S.settings.exam = v; S.settings.upd = now(); touch('meta'); renderSide(); toast(v ? 'Đã đặt ngày thi: ' + dmy(v) : 'Dùng kỳ thi JLPT gần nhất: ' + dmy(nextJlpt(studyDate()))); }
   else if (t.id === 'setPer') { const v = Math.max(0, Math.min(200, parseInt(t.value, 10) || 0)); t.value = v; S.settings.perDay = v; S.settings.upd = now(); touch('meta'); toast('Đã lưu: ' + v + ' từ của tôi mỗi ngày'); }
-  else if (t.id === 'goalDays') { const v = parseInt(t.value, 10); if (v) { UI.goal = {days:clampDays(v), from:UI.goal ? UI.goal.from : goalDefaultFrom()}; render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'nearest'}); } }
+  else if (t.id === 'goalDays') { const v = parseInt(t.value, 10); if (v) { UI.goal = goalDraft({days:clampDays(v)}); render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'nearest'}); } }
   else if (t.name === 'gfrom') { if (UI.goal) { UI.goal.from = t.value; render(); const g = $('#goaled'); if (g) g.scrollIntoView({block:'nearest'}); } }
   else if (t.id === 'setSpeak') { S.settings.autoSpeak = t.checked; S.settings.upd = now(); touch('meta'); }
   else if (t.id === 'setKOn' || t.id === 'setTypeK' || t.id === 'setShuffle' || t.id === 'setListen') { const k = {setKOn:'kOn', setTypeK:'typeK', setShuffle:'shuffle', setListen:'listen'}[t.id]; S.settings[k] = t.checked; S.settings.upd = now(); touch('meta'); toast('Đã lưu cài đặt'); }
@@ -4850,13 +4994,13 @@ function monthPanel() {
   const first = new Date(t.getFullYear(), t.getMonth() + off, 1), y = first.getFullYear(), m = first.getMonth(), nd = new Date(y, m + 1, 0).getDate(), lead = (first.getDay() + 6) % 7;
   const dsOf = n => y + '-' + String(m + 1).padStart(2, '0') + '-' + String(n).padStart(2, '0');
   // progress against the plan
-  const behind = d0 >= 1 ? behindBatches() : [], lateW = behind.reduce((a, x) => a + x.n, 0);
+  const behind = d0 >= 1 ? behindBatches() : [], lateW = behind.reduce((a, x) => a + x.n, 0), bG = d0 >= 1 ? behindG() : [], lateG = bG.reduce((a, x) => a + x.n, 0), lateD = new Set([...behind, ...bG].map(x => x.d)).size;
   let T = 0, due = 0, got = 0;
   P.batches.forEach((b, i) => { T += b.ids.length; if (P.learnDays[i] <= d0) due += b.ids.length; got += b.ids.filter(id => S.cards[id]).length; });
   const pc = v => T ? Math.max(0, Math.min(100, v / T * 100)) : 0, pG = pc(got), pD = pc(due);
   let cls = '', icn = 'clock', head, sub;
   if (d0 < 1) { head = 'Chưa tới ngày bắt đầu'; sub = `Kế hoạch bắt đầu ${dmy(PS().start)}.`; }
-  else if (lateW) { cls = 'late'; icn = 'warn'; head = `Chậm ${behind.length} ngày`; sub = `Còn ${fmtN(lateW)} từ của những ngày đã qua chưa học.`; }
+  else if (lateW || lateG) { cls = 'late'; icn = 'warn'; head = `Chậm ${lateD} ngày`; sub = `Còn ${[lateW ? fmtN(lateW) + ' từ' : '', lateG ? fmtN(lateG) + ' mẫu ngữ pháp' : ''].filter(Boolean).join(' và ')} của những ngày đã qua chưa học.`; }
   else if (T && got >= T) { cls = 'ok'; icn = 'check'; head = 'Đã học hết từ trong kế hoạch'; sub = 'Giờ chỉ cần ôn đúng hạn.'; }
   else if (got > due) { cls = 'ok'; icn = 'check'; head = 'Vượt tiến độ'; sub = `Bạn đi trước kế hoạch ${fmtN(got - due)} từ.`; }
   else { cls = 'ok'; icn = 'check'; head = 'Đúng tiến độ'; sub = dayDone(d0) ? 'Phần của hôm nay cũng đã xong.' : 'Các ngày đã qua đều đủ bài. Còn phần của hôm nay.'; }
@@ -4866,13 +5010,14 @@ function monthPanel() {
   for (let n = 1; n <= nd; n++) {
     const ds = dsOf(n), d = diffDays(ds, PS().start) + 1, p = dayInfo(d), act = active(ds);
     if (!p) { cells += `<div class="mc ${act ? 'free' : ''}${ds === today ? ' now' : ''}" title="${dmy(ds)}${act ? ': có học (ngoài lịch từ vựng)' : ''}">${n}</div>`; continue; }
-    const b = p.t === 'learn' ? P.batches[p.b] : null, left = b ? b.ids.filter(id => !S.cards[id]).length : 0, done = dayDone(d);
+    const b = p.t === 'learn' ? P.batches[p.b] : null, gb = p.t === 'learn' ? P.gbatches[p.b] : null, left = b ? [...b.ids, ...gb.ids].filter(id => !S.cards[id]).length : 0, done = dayDone(d);
     const st = ds > today ? 'plan' : done ? 'ok' : ds === today ? 'plan' : act ? 'part' : 'miss';
-    const lab = b ? (st === 'ok' || !left ? b.ids.length + ' từ' : st === 'plan' ? b.ids.length + ' từ' : 'thiếu ' + left) : 'ôn';
-    const tip = `${WD[wdOf(ds)]} ${dmy(ds)} · Ngày ${d}: ${b ? b.ids.length + ' từ mới' : 'ngày ôn tập'} — ${st === 'ok' ? 'đã xong' : st === 'part' ? 'học chưa đủ' : st === 'miss' ? 'bỏ lỡ' : ds === today ? 'hôm nay' : 'sắp tới'}`;
+    const lab = b ? (st === 'ok' || !left || st === 'plan' ? (b.ids.length ? b.ids.length + ' từ' : gb.ids.length + ' mẫu') : 'thiếu ' + left) : 'ôn';
+    const tip = `${WD[wdOf(ds)]} ${dmy(ds)} · Ngày ${d}: ${b ? [b.ids.length ? b.ids.length + ' từ mới' : '', gb.ids.length ? gb.ids.length + ' mẫu ngữ pháp' : ''].filter(Boolean).join(' + ') || 'ôn tự do' : 'ngày ôn tập'} — ${st === 'ok' ? 'đã xong' : st === 'part' ? 'học chưa đủ' : st === 'miss' ? 'bỏ lỡ' : ds === today ? 'hôm nay' : 'sắp tới'}`;
     cells += `<button type="button" class="mc ${st}${ds === today ? ' now' : ''}" data-act="pickday" data-d="${d}" title="${tip}" aria-label="${tip}">${n}<small>${lab}</small></button>`;
   }
-  const acts = lateW ? `<div class="mp-acts"><button class="btn btn-pri btn-sm" data-act="batch" data-b="${behind[0].b}">${ic('play')} Học bù Ngày ${behind[0].d}</button><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Xếp lại lịch từ hôm nay</button></div>` : '';
+  const lb = [...behind, ...bG].sort((a, b) => a.d - b.d)[0];
+  const acts = lb ? `<div class="mp-acts"><button class="btn btn-pri btn-sm" data-act="batch" data-all="1" data-b="${lb.b}">${ic('play')} Học bù Ngày ${lb.d}</button><button class="btn btn-sec btn-sm" data-act="goaledit">${ic('target')} Xếp lại lịch từ hôm nay</button></div>` : '';
   return `<section class="panel mp"><h2>${ic('plan')} Lịch tháng ${m + 1}/${y}<span class="mp-nav"><button type="button" data-act="calm" data-s="-1" aria-label="Tháng trước">${ic('left')}</button>${off ? `<button type="button" class="mp-now" data-act="calm" data-s="0">Tháng này</button>` : ''}<button type="button" data-act="calm" data-s="1" aria-label="Tháng sau">${ic('right')}</button></span></h2>
     <div class="mp-st ${cls}"><span class="mp-badge">${ic(icn)}</span><div><b>${head}</b><small>${sub}</small></div></div>${bar}
     <div class="mp-grid">${cells}</div>
