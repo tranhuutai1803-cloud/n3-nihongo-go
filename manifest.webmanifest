@@ -7,7 +7,7 @@
  "display": "standalone",
  "background_color": "#16151a",
  "theme_color": "#16151a",
- "description": "Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Bài đọc hiểu có lời giải, flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
+ "description": "Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Chọn giáo trình và số ngày để lên lịch học; flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.",
  "icons": [
   {
    "src": "icon-192.png",
