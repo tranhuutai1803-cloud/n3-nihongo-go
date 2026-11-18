@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="icon-192.png">
 <meta name="google-site-verification" content="le9jQVmBJsoRbnAlUqIXqvBY6fw5QW9MPQTZ9NMIPzM">
 <link rel="manifest" href="manifest.webmanifest">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daruma N3", "alternateName": ["Daruma N4", "N3 Nihongo Go", "MIMIKARA N3 Flashcard"], "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Đọc hiểu N3 học kèm sách Shinkanzen (72 bài: từ vựng, ngữ pháp, đáp án và giải thích). Chọn giáo trình và số ngày để lên lịch học; flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "6.7", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Daruma N3", "alternateName": ["Daruma N4", "N3 Nihongo Go", "MIMIKARA N3 Flashcard"], "url": "https://tranhuutai1803-cloud.github.io/n3-nihongo-go/", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "inLanguage": ["vi", "ja"], "description": "Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Đọc hiểu N3 học kèm sách Shinkanzen (72 bài: từ vựng, ngữ pháp, đáp án và giải thích). Chọn giáo trình và số ngày để lên lịch học; flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.", "softwareVersion": "6.8", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "VND"}}</script>
 <script>window.MMK_SERVER = "https://script.google.com/macros/s/AKfycbxplbNcR2JKVCaU0STY8ZG1f55cYr7YzoacVLbtRZrfuSxj7m7t16ZOMFjCPZcwNleAQw/exec";</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -488,6 +488,9 @@ details.bulk[open] summary::after{transform:rotate(180deg)}
 .hr{display:block;font-size:18px;color:var(--muted);margin-top:6px;letter-spacing:.06em}
 .b-tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding-bottom:4px}
 .pos{font-size:13px;font-weight:700;padding:3px 10px;border-radius:8px;background:var(--pbg);color:var(--pfg);white-space:nowrap}
+.gk{display:inline-block;font-family:var(--f-vn);font-size:.74em;line-height:1.35;padding:.08em .55em;margin:0 .14em;border-radius:7px;vertical-align:.1em;letter-spacing:0;white-space:nowrap}
+.gk + .gk{margin-left:.05em}
+.gkx{font-family:var(--f-vn);font-size:.78em;color:var(--muted);white-space:nowrap}
 .c-n{--pbg:var(--pn-bg);--pfg:var(--pn-fg)}.c-ns{--pbg:var(--pns-bg);--pfg:var(--pns-fg)}.c-v{--pbg:var(--pv-bg);--pfg:var(--pv-fg)}.c-adj{--pbg:var(--pa-bg);--pfg:var(--pa-fg)}.c-adv{--pbg:var(--pd-bg);--pfg:var(--pd-fg)}.c-oth{--pbg:var(--po-bg);--pfg:var(--po-fg)}
 .vt{font-family:var(--f-jp);font-size:14px;font-weight:700;padding:1px 8px;border-radius:8px;border:1.5px solid var(--pfg);color:var(--pfg);line-height:1.5}
 .vt.solid{background:var(--pfg);color:var(--card)}
@@ -1459,7 +1462,7 @@ body.gate .lvpill,body.gate .lvsw,body.one-level .lvpill,body.one-level .lvsw{di
 <noscript><div style="max-width:640px;margin:40px auto;padding:0 16px;font:16px/1.6 system-ui;color:#eee"><h1>Daruma N3</h1><p>Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Đọc hiểu N3 học kèm sách Shinkanzen (72 bài: từ vựng, ngữ pháp, đáp án và giải thích). Chọn giáo trình và số ngày để lên lịch học; flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.</p><p>Hãy bật JavaScript để dùng ứng dụng.</p></div></noscript>
 <div id="app">
   <aside class="side" id="side">
-    <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.7</em></small></span></button>
+    <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.8</em></small></span></button>
     <div class="lvsw" id="lvSide" role="group" aria-label="Chọn trình độ học"><button type="button" data-act="lv" data-lv="n4" aria-pressed="false"><b>N4</b><small>Sơ cấp</small></button><button type="button" data-act="lv" data-lv="n3" aria-pressed="true"><b>N3</b><small>Trung cấp</small></button></div>
     <nav class="tabs" id="tabs" aria-label="Điều hướng"></nav>
     <div class="side-foot" id="sideFoot"></div>
@@ -1467,7 +1470,7 @@ body.gate .lvpill,body.gate .lvsw,body.one-level .lvpill,body.one-level .lvsw{di
   <div class="page">
     <header class="top">
       <div class="wrap top-in">
-        <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.7</em></small></span></button>
+        <button class="brand" data-act="go" data-view="today" aria-label="Daruma N3 — về trang Hôm nay"><span class="seal" aria-hidden="true"><svg class="daruma" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C16 4 6 16.5 6 33c0 16 10.5 27 26 27s26-11 26-27C58 16.5 48 4 32 4z" fill="#d3311f"/><path d="M32 60c-9.4 0-17-3.9-21.6-10.4C16.6 53.6 24 55.6 32 55.6s15.4-2 21.6-6C49 56.1 41.4 60 32 60z" fill="#000" opacity=".18"/><path d="M32 12.5c-11.2 0-19 6.7-19 16S20.8 43.5 32 43.5s19-5.7 19-15-7.8-16-19-16z" fill="#f6e3c5"/><path d="M16 20.2c3.2-3.4 8.4-4 12-1.3M48 20.2c-3.2-3.4-8.4-4-12-1.3" fill="none" stroke="#1d1a22" stroke-width="2.5" stroke-linecap="round"/><circle cx="23.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27" r="6.4" fill="#fffaf0" stroke="#1d1a22" stroke-width="1.3"/><circle cx="40.5" cy="27.4" r="3.6" fill="#1d1a22"/><path d="M32 30v4M27.2 38c3.2 1.7 6.4 1.7 9.6 0M17.5 33.5c2.4 2.3 5 3 7.6 2.5M46.5 33.5c-2.4 2.3-5 3-7.6 2.5" fill="none" stroke="#1d1a22" stroke-width="1.7" stroke-linecap="round"/><path d="M21 48.5c3.4-2.2 7-3.3 11-3.3s7.6 1.1 11 3.3M27 51.5v4.5M32 50.5v6M37 51.5v4.5" fill="none" stroke="#f0c04a" stroke-width="2" stroke-linecap="round"/></svg></span><span><b>Daruma N3</b><small>Học JLPT N3 mỗi ngày <em class="ver">v6.8</em></small></span></button>
         <button class="srch" data-act="search" aria-label="Tra cứu từ vựng, ngữ pháp"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><span>Tra từ, chữ Hán, ngữ pháp…</span><kbd>/</kbd></button>
         <div class="tright"><button class="lvpill" id="lvTop" type="button" data-act="lvopen" aria-haspopup="dialog" aria-label="Chọn trình độ: đang học N3"><span id="lvTopT">N3</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg></button><button class="acctbtn reg" id="regBtn" data-act="register" hidden>Đăng ký</button><button class="acctbtn" id="acctBtn" data-act="acct" hidden></button><button class="sync" id="sync" data-act="go" data-view="settings" data-s="connecting" aria-label="Trạng thái lưu dữ liệu"></button></div>
       </div>
@@ -1488,11 +1491,15 @@ body.gate .lvpill,body.gate .lvsw,body.one-level .lvpill,body.one-level .lvsw{di
 (() => {
 'use strict';
 /* ================= App identity ================= */
-const APP_VER = '6.7', BUILD = '2026-11-17', FILE_NAME = 'MIMIKARA_N3_Flashcard_v6.7_2026-11-17';
+const APP_VER = '6.8', BUILD = '2026-11-18', FILE_NAME = 'MIMIKARA_N3_Flashcard_v6.8_2026-11-18';
 const WEB_URL = 'https:\/\/tranhuutai1803-cloud.github.io\/n3-nihongo-go\/';   // public site of the group (accounts live there)
 const APP_NAME = 'Daruma N3';
 const SCHEMA = 1, LS_KEY = 'mimikara-n3-flashcard', LS_UI = 'mimikara-n3-flashcard-ui';
 const CHANGELOG = [
+  {v:'6.8', d:'18/11/2026', s:'Ký hiệu từ loại và thể động từ thống nhất, hiện trong khung màu', t:[
+    'Trong cách nối (接続), ý nghĩa và lưu ý của mọi thẻ ngữ pháp N3, N4 và phần ngữ pháp của Đọc hiểu: thể động từ hiện là khung xanh Vる, Vた, Vて, Vない, Vます…; tính từ là Tính từ い, Tính từ な; danh từ là Danh từ; thêm Phó từ, Thể thường, Thể bổ nghĩa danh từ, cùng kiểu khung với từ loại trên thẻ từ vựng.',
+    'Gom các cách viết khác nhau về một: 普通形 / thể thông thường / thể thường → Thể thường; Aい, A → Tính từ い (Aくて → Tính từ い (い→くて)); Na → Tính từ な; N → Danh từ; Thể ý chí → Vよう.'
+  ]},
   {v:'6.7', d:'17/11/2026', s:'Đọc hiểu N3 làm lại: học kèm sách Shinkanzen N3 読解 (72 bài) · thêm tab Nghe hiểu', t:[
     'Học › Đọc hiểu (N3) có 72 bài theo 4 phần của sách Shinkanzen Master N3 読解 và đề thi mẫu. Bài đọc và câu hỏi nằm trong sách; mỗi bài ghi số trang để bạn mở sách.',
     'Mỗi bài: bảng từ vựng (cách đọc, Hán Việt, nghĩa; che nghĩa hoặc cách đọc để tự kiểm tra; thêm từ chưa có vào Từ của tôi), ngữ pháp kèm ví dụ, chọn đáp án 1–4 để xem giải thích từng phương án, tóm tắt, cấu trúc từng đoạn, điểm then chốt và mẹo làm bài.',
@@ -1623,6 +1630,40 @@ function rubyHtml(s) {
   return h.replace(/\{([^{}]*)\}/g, '<b class="hl">$1</b>');
 }
 const plainOf = s => String(s || '').replace(RUBY_RE, '$1').replace(/[{}]/g, '');
+/* v6.8: notation chips. mode 'c' = connection line (接続), 't' = running text (meaning, note), 'p' = pattern line (A, B are placeholders there) */
+const VFORMS = ['ていた', 'ている', 'ないで', 'なくなる', 'なさい', 'させて', 'させる', 'られる', 'てしまう', 'でしまう', 'ちゃう', 'じゃう', 'たら', 'ない', 'ます', 'よう', 'る', 'た', 'て', 'ば'];
+const ACONJ = ['くなかった', 'くない', 'くて', 'ければ', 'かったら', 'かった', 'く'];
+const gkc = (lab, cls) => `<span class="pos gk c-${cls}">${lab}</span>`;
+const GK_RX = /(普通形\[ふつうけい\]|V可\[か\]能\[のう\]形\[けい\]|V普通形\[ふつうけい\]|[Tt]hể thông thường|[Tt]hể thường|[Tt]hể bổ nghĩa danh từ|Thể ý chí|Phó từ|[Ss]ố lượng)|(^|[^A-Za-zÀ-ỹ])(V-?[ぁ-ゖ]*|Na|A[ぁ-ゖ]*|N\d?)(?![A-Za-zÀ-ỹ])/g;
+function gkHtml(str, mode) {
+  const s = String(str || ''); let out = '', last = 0, m;
+  GK_RX.lastIndex = 0;
+  while ((m = GK_RX.exec(s))) {
+    const t = m[1] || m[3], i = m[1] ? m.index : m.index + m[2].length; let h = null;
+    if (m[1]) {
+      if (/^普通形|thường$/.test(t)) h = gkc('Thể thường', 'oth');
+      else if (/bổ nghĩa/.test(t)) h = gkc('Thể bổ nghĩa danh từ', 'oth');
+      else if (t === 'Thể ý chí') h = gkc('Vよう', 'v');
+      else if (/^V可/.test(t)) h = gkc('V khả năng', 'v');
+      else if (/^V普通形/.test(t)) h = gkc('V thể thường', 'v');
+      else if (t === 'Phó từ') h = gkc('Phó từ', 'adv');
+      else if (mode === 'c') h = gkc('Số lượng', 'n');
+    } else if (t[0] === 'V') {
+      const k = t.replace(/^V-?/, ''), f = VFORMS.find(f => k.startsWith(f));
+      h = f ? gkc('V' + f, 'v') + esc(k.slice(f.length)) : gkc('Động từ', 'v') + esc(k);
+    } else if (t === 'Na') h = gkc('Tính từ な', 'adj');
+    else if (t[0] === 'A') {
+      const k = t.slice(1), near = /[／・]\s*$/.test(s.slice(0, i)) || /^\s*[／・]/.test(s.slice(i + 1));
+      if (mode === 'p') h = null;
+      else if (!k) h = mode === 'c' || near ? gkc('Tính từ い', 'adj') : null;
+      else if (k === 'い') h = gkc('Tính từ い', 'adj');
+      else { const f = ACONJ.find(f => k.startsWith(f)); h = f && (mode === 'c' || near) ? gkc('Tính từ い', 'adj') + `<span class="gkx">(い→${f})</span>` + esc(k.slice(f.length)) : null; }
+    } else if (t[0] === 'N') h = gkc('Danh từ' + (t[1] ? ' ' + t[1] : ''), 'n');
+    if (h == null) continue;
+    out += rubyHtml(s.slice(last, i)) + h; last = i + t.length;
+  }
+  return out + rubyHtml(s.slice(last));
+}
 const lsGet = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
 const lsSet = (k, v) => { try { localStorage.setItem(k, v); return true; } catch (e) { return false; } };
 async function cap(name) {
@@ -3925,12 +3966,12 @@ function gramBackHtml(g, keys) {
   const sp = !!JA_VOICE, note = noteOf(g.id), lp = S.cards[g.id] ? S.cards[g.id][6] : 0;
   const leech = lp >= LEECH ? `<div class="leech">${ic('warn')}<span><b>Mẫu hay quên</b> · đã quên ${lp} lần.${note && has('note') ? ' Đọc lại mẹo nhớ của bạn bên dưới.' : ' Tự viết một mẹo nhớ sẽ giúp nhớ lâu hơn.'}</span></div>` : '';
   if (g.kind === 'kv') return `<div class="b-head"><div><span class="jp g-pat" lang="ja">${rubyHtml(g.t)}</span></div><div class="b-tags">${sp ? `<button class="speak sm" data-act="speak" data-t="${esc(sayable(g.t))}" aria-label="Nghe" title="Nghe">${ic('speaker')}</button>` : ''}<span class="gtag">Động từ thường</span></div></div>${leech}${keigoGrid(g)}${noteBlock(g.id, note)}`;
-  const senses = g.s.map(s => { const m = has('m') && s.m ? `<div class="g-row">${gbadge('意味', 'm')}<span class="g-mean">${rubyHtml(s.m)}</span></div>` : '', x = has('x') && s.x.length ? gExHtml(s.x, sp) : ''; return m || x ? `<div class="g-sense">${m}${x}</div>` : ''; }).join('');
+  const senses = g.s.map(s => { const m = has('m') && s.m ? `<div class="g-row">${gbadge('意味', 'm')}<span class="g-mean">${gkHtml(s.m, 't')}</span></div>` : '', x = has('x') && s.x.length ? gExHtml(s.x, sp) : ''; return m || x ? `<div class="g-sense">${m}${x}</div>` : ''; }).join('');
   if (keys && !has('t') && !(has('c') && g.c) && !senses && !(has('n') && g.n) && !(has('note') && note)) return gramBackHtml(g, ['t', 'm'].concat(keys.includes('note') ? ['note'] : []));   // this card has none of the chosen fields
   return `<div class="b-head${has('t') ? '' : ' notitle'}"><div>${has('t') ? `<span class="jp g-pat" lang="ja">${rubyHtml(g.t)}</span>` : ''}</div><div class="b-tags">${sp ? `<button class="speak sm" data-act="speak" data-t="${esc(sayable(g.t))}" aria-label="Nghe mẫu" title="Nghe">${ic('speaker')}</button>` : ''}<span class="gtag">${g.skz ? gTagOf(g) : g.u ? 'Unit ' + pad(g.u) + ' · mẫu ' + g.no : 'Kính ngữ'}</span></div></div>
-    ${leech}${has('c') && g.c ? `<div class="g-row">${gbadge('接続')}<span class="jp g-conn" lang="ja">${rubyHtml(g.c)}</span></div>` : ''}
+    ${leech}${has('c') && g.c ? `<div class="g-row">${gbadge('接続')}<span class="jp g-conn" lang="ja">${gkHtml(g.c, 'c')}</span></div>` : ''}
     ${senses}
-    ${has('n') && g.n ? `<div class="g-note"><b>Lưu ý</b><span>${rubyHtml(g.n)}</span></div>` : ''}
+    ${has('n') && g.n ? `<div class="g-note"><b>Lưu ý</b><span>${gkHtml(g.n, 't')}</span></div>` : ''}
     ${has('note') ? noteBlock(g.id, note) : ''}`;
 }
 const gMeanFront = m => String(m || '').replace(/^([①-⑳]?\s*)[^:：]{0,40}[〜～ぁ-んァ-ヶ一-龯][^:：]{0,40}[:：]\s*/, '$1');   // "① 〜間（は）: suốt…" → "① suốt…", "② N ＋ らしい: …" → "② …": on the front the meaning must not name the pattern
@@ -3939,8 +3980,8 @@ function gFront(g, chip, keys) {
   const K = keys || faceCfg('g').f, has = k => K.includes(k), ex = g.s.find(s => s.x.length), x0 = ex ? ex.x[0] : null;
   let pat = has('t'), h = '';
   if (pat) h += `<div class="g-q ${gqCls(g.t)}" lang="ja">${rubyHtml(g.t)}</div>`;
-  if (has('c') && g.c) h += `<div class="g-qc jp" lang="ja">${rubyHtml(g.c)}</div>`;
-  if (has('m')) { const ms = g.s.map(s => pat ? s.m : gMeanFront(s.m)).filter(Boolean); if (ms.length) h += `<div class="g-qm${pat ? '' : ' big'}">${ms.map(m => `<p>${rubyHtml(m)}</p>`).join('')}</div>`; }
+  if (has('c') && g.c) h += `<div class="g-qc jp" lang="ja">${gkHtml(g.c, 'c')}</div>`;
+  if (has('m')) { const ms = g.s.map(s => pat ? s.m : gMeanFront(s.m)).filter(Boolean); if (ms.length) h += `<div class="g-qm${pat ? '' : ' big'}">${ms.map(m => `<p>${gkHtml(m, 't')}</p>`).join('')}</div>`; }
   if (has('x') && x0) h += pat ? `<div class="g-qex pj" lang="ja">${rubyHtml(x0[0])}</div>` : `<div class="g-qex pj" lang="ja">${clozeHtml(x0[0])}</div>${x0[1] ? `<div class="g-qvi">${esc(x0[1])}</div>` : ''}`;   // without the pattern on the front its place in the example is left blank, and the translation is the clue
   if (!h) { h = `<div class="g-q ${gqCls(g.t)}" lang="ja">${rubyHtml(g.t)}</div>`; pat = true; }
   const ask = !pat ? 'Đây là mẫu ngữ pháp nào?' : has('m') ? '' : has('c') && g.c ? 'Mẫu này nghĩa là gì?' : 'Mẫu này nghĩa là gì, nối với từ loại nào?';
@@ -4178,8 +4219,8 @@ function vwFaces(cid) {
   const it = itemOf(cid), jv = VW.dir === 'jv';
   if (isGram(cid)) {
     if (it.kind === 'kv') return {f:`<div class="vq jp ${gqCls(it.t)}" lang="ja">${rubyHtml(it.t)}</div><div class="vsub">Tôn kính ngữ · khiêm nhường ngữ?</div>`, b:`<div class="vq jp q3" lang="ja">${rubyHtml(it.t)}</div>${keigoGrid(it)}`, fj:sayable(it.t), bj:[it.kv[1], it.kv[2]].filter(x => x !== '—').map(sayable).join('。')};
-    const pat = `<div class="vq jp ${gqCls(it.t)}" lang="ja">${rubyHtml(it.t)}</div>${it.c ? `<div class="vsub jp" lang="ja">${rubyHtml(it.c)}</div>` : ''}`;
-    const means = `<div class="vmean">${it.s.map(s => `<p>${rubyHtml(s.m)}</p>`).join('')}</div>`;
+    const pat = `<div class="vq jp ${gqCls(it.t)}" lang="ja">${rubyHtml(it.t)}</div>${it.c ? `<div class="vsub jp" lang="ja">${gkHtml(it.c, 'c')}</div>` : ''}`;
+    const means = `<div class="vmean">${it.s.map(s => `<p>${gkHtml(s.m, 't')}</p>`).join('')}</div>`;
     const exS = it.s.find(s => s.x.length), ex = exS ? exS.x[0] : null;
     const exH = ex ? `<div class="vex"><span class="pj" lang="ja">${rubyHtml(ex[0])}</span><span class="pv">${esc(ex[1])}</span></div>` : '';
     return jv ? {f:pat, b:means + exH, fj:sayable(it.t), bj:ex ? sayable(ex[0]) : ''} : {f:means, b:pat + exH, fj:'', bj:ex ? sayable(ex[0]) : sayable(it.t)};
@@ -4649,7 +4690,7 @@ function viewDk() {
   const addN = a.v.length - have;
   const vocab = `<h3 class="sub-h">Từ vựng <small>${a.v.length} từ${have ? ` · ${have} từ đã có trong bộ thẻ N3` : ''}</small></h3><div class="dk-tools">${tg('m', DKS.hm, 'Che nghĩa')}${tg('k', DKS.hk, 'Che cách đọc')}${addN ? `<button class="btn btn-ghost btn-sm" data-act="dkaddw" data-confirm="Bấm lần nữa để thêm ${addN} từ vào Từ của tôi">${ic('plus')} Thêm ${addN} từ chưa có vào Từ của tôi</button>` : ''}</div>
     <div class="dk-tbl${DKS.hm ? ' hide-m' : ''}${DKS.hk ? ' hide-k' : ''}"><table><thead><tr><th>Từ</th><th>Cách đọc</th><th>Hán Việt</th><th>Nghĩa</th></tr></thead><tbody>${vrows}</tbody></table></div>`;
-  const gram = a.g.length ? `<h3 class="sub-h" style="margin-top:16px">Ngữ pháp và mẫu câu <small>${a.g.length} mẫu</small></h3><div class="dk-g">${a.g.map(g => `<div class="dk-gc"><b lang="ja">${esc(g[0])}</b><div class="m">${esc(g[1])}</div>${g[2].map(x => `<div class="x"><span lang="ja">${esc(x[0])}</span><small>${esc(x[1])}</small></div>`).join('')}</div>`).join('')}</div>` : '';
+  const gram = a.g.length ? `<h3 class="sub-h" style="margin-top:16px">Ngữ pháp và mẫu câu <small>${a.g.length} mẫu</small></h3><div class="dk-g">${a.g.map(g => `<div class="dk-gc"><b lang="ja">${gkHtml(g[0], 'p')}</b><div class="m">${gkHtml(g[1], 'p')}</div>${g[2].map(x => `<div class="x"><span lang="ja">${esc(x[0])}</span><small>${esc(x[1])}</small></div>`).join('')}</div>`).join('')}</div>` : '';
   const gts = [], cur = []; (a.gt || []).forEach(r => { if (r === null) { if (cur.length) gts.push(cur.splice(0)); } else cur.push(r); }); if (cur.length) gts.push(cur.splice(0));
   const gtab = gts.map(t => `<div class="dk-tbl dk-gt"><table><thead><tr>${t[0].map(c => `<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.slice(1).map(r => `<tr>${r.map(c => `<td lang="ja">${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`).join('');
   const qs = a.q.map((q, qi) => {

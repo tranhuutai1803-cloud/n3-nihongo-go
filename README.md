@@ -15,4 +15,4 @@ Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riê
 
 Nội dung các bộ theo dàn bài Shinkanzen do nhóm tự biên soạn; chỉ dùng thứ tự bài của sách để tiện học song song.
 
-Phiên bản 6.7 · 2026-11-17
+Phiên bản 6.8 · 2026-11-18
