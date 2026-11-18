@@ -2,7 +2,7 @@
 
 Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riêng hai trình độ N4 và N3 (bấm chọn trình độ cần học). Thời khóa biểu mỗi ngày; N3 có 1.161 từ vựng và 164 thẻ ngữ pháp (theo Mimikara và dàn bài Shinkanzen), N4 có 791 từ vựng và 95 thẻ ngữ pháp xếp theo thứ tự 25 bài 26–50. Đọc hiểu N3 học kèm sách Shinkanzen (72 bài: từ vựng, ngữ pháp, đáp án và giải thích). Chọn giáo trình và số ngày để lên lịch học; flashcard lặp lại ngắt quãng, Hán Việt, furigana, thẻ chữ Hán, trắc nghiệm từ vựng và ngữ pháp. Học trên điện thoại hoặc máy tính, có tài khoản để đồng bộ tiến độ.
 
-**Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/n3-nihongo-go/
+**Mở ứng dụng:** https://tranhuutai1803-cloud.github.io/
 
 - Thời khóa biểu mỗi ngày: ôn thẻ đến hạn, từ vựng mới và ngữ pháp theo lịch của giáo trình bạn chọn; đếm ngược tới ngày thi JLPT.
 - Chọn trình độ: bấm N4 hoặc N3 ở thanh bên (hoặc nút trình độ trên đầu trang khi dùng điện thoại); mỗi trình độ có kế hoạch, tiến độ và bộ thẻ riêng.
@@ -15,4 +15,4 @@ Daruma N3: ứng dụng miễn phí học JLPT bằng tiếng Việt, tách riê
 
 Nội dung các bộ theo dàn bài Shinkanzen do nhóm tự biên soạn; chỉ dùng thứ tự bài của sách để tiện học song song.
 
-Phiên bản 6.8 · 2026-11-18
+Phiên bản 6.9 · 2026-11-18
